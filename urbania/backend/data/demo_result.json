@@ -1,0 +1,6315 @@
+{
+  "analysis_id": "demo-seed-axtel-cdmx",
+  "demand_geojson": {
+    "type": "FeatureCollection",
+    "name": "zona_piloto_cdmx",
+    "crs": {
+      "type": "name",
+      "properties": {
+        "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+      }
+    },
+    "features": [
+      {
+        "type": "Feature",
+        "id": "MZ-001",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.15,
+                19.432
+              ],
+              [
+                -99.149,
+                19.432
+              ],
+              [
+                -99.149,
+                19.433
+              ],
+              [
+                -99.15,
+                19.433
+              ],
+              [
+                -99.15,
+                19.432
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-001",
+          "nombre": "Manzana Reforma Norte",
+          "lat": 19.4325,
+          "lng": -99.1495,
+          "densidad_poblacional": 22000,
+          "actividad_economica_denue": 385,
+          "luminosidad_viirs": 240,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 28,
+          "tipo_delito_predominante": "Robo a transeúnte",
+          "iluminacion_publica": 95,
+          "accesibilidad_logistica": 92,
+          "score_demanda": 93.88,
+          "justificacion_top3": [
+            "Densidad poblacional: contribucion 25.4 pts al score de demanda.",
+            "Actividad economica DENUE: contribucion 24.0 pts al score de demanda.",
+            "Luminosidad nocturna VIIRS: contribucion 19.8 pts al score de demanda."
+          ],
+          "score_source": "fallback",
+          "demand_tier": "ALTA"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-002",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.148,
+                19.431
+              ],
+              [
+                -99.147,
+                19.431
+              ],
+              [
+                -99.147,
+                19.432
+              ],
+              [
+                -99.148,
+                19.432
+              ],
+              [
+                -99.148,
+                19.431
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-002",
+          "nombre": "Manzana Polanco Centro",
+          "lat": 19.4315,
+          "lng": -99.1475,
+          "densidad_poblacional": 18500,
+          "actividad_economica_denue": 342,
+          "luminosidad_viirs": 225,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 21,
+          "tipo_delito_predominante": "Fraude",
+          "iluminacion_publica": 90,
+          "accesibilidad_logistica": 88,
+          "score_demanda": 82.47,
+          "justificacion_top3": [
+            "Actividad economica DENUE: contribucion 20.8 pts al score de demanda.",
+            "Densidad poblacional: contribucion 20.0 pts al score de demanda.",
+            "Luminosidad nocturna VIIRS: contribucion 18.1 pts al score de demanda."
+          ],
+          "score_source": "fallback",
+          "demand_tier": "ALTA"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-003",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.146,
+                19.43
+              ],
+              [
+                -99.145,
+                19.43
+              ],
+              [
+                -99.145,
+                19.431
+              ],
+              [
+                -99.146,
+                19.431
+              ],
+              [
+                -99.146,
+                19.43
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-003",
+          "nombre": "Manzana Anzures Oriente",
+          "lat": 19.4305,
+          "lng": -99.1455,
+          "densidad_poblacional": 15200,
+          "actividad_economica_denue": 298,
+          "luminosidad_viirs": 210,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 35,
+          "tipo_delito_predominante": "Robo a vehículo",
+          "iluminacion_publica": 82,
+          "accesibilidad_logistica": 80,
+          "score_demanda": 71.27,
+          "justificacion_top3": [
+            "Actividad economica DENUE: contribucion 17.5 pts al score de demanda.",
+            "Luminosidad nocturna VIIRS: contribucion 16.5 pts al score de demanda.",
+            "Acceso a transporte publico GTFS: contribucion 15.0 pts al score de demanda."
+          ],
+          "score_source": "fallback",
+          "demand_tier": "ALTA"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-004",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.144,
+                19.429
+              ],
+              [
+                -99.143,
+                19.429
+              ],
+              [
+                -99.143,
+                19.43
+              ],
+              [
+                -99.144,
+                19.43
+              ],
+              [
+                -99.144,
+                19.429
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-004",
+          "nombre": "Manzana Cuauhtémoc Sur",
+          "lat": 19.4295,
+          "lng": -99.1435,
+          "densidad_poblacional": 19800,
+          "actividad_economica_denue": 361,
+          "luminosidad_viirs": 232,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 45,
+          "tipo_delito_predominante": "Robo a transeúnte",
+          "iluminacion_publica": 78,
+          "accesibilidad_logistica": 85,
+          "score_demanda": 87.18,
+          "justificacion_top3": [
+            "Actividad economica DENUE: contribucion 22.2 pts al score de demanda.",
+            "Densidad poblacional: contribucion 22.0 pts al score de demanda.",
+            "Luminosidad nocturna VIIRS: contribucion 18.9 pts al score de demanda."
+          ],
+          "score_source": "fallback",
+          "demand_tier": "ALTA"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-005",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.142,
+                19.428
+              ],
+              [
+                -99.141,
+                19.428
+              ],
+              [
+                -99.141,
+                19.429
+              ],
+              [
+                -99.142,
+                19.429
+              ],
+              [
+                -99.142,
+                19.428
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-005",
+          "nombre": "Manzana Doctores Poniente",
+          "lat": 19.4285,
+          "lng": -99.1415,
+          "densidad_poblacional": 21500,
+          "actividad_economica_denue": 310,
+          "luminosidad_viirs": 185,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 180,
+          "tipo_delito_predominante": "Robo con violencia",
+          "iluminacion_publica": 45,
+          "accesibilidad_logistica": 62,
+          "score_demanda": 78.96,
+          "justificacion_top3": [
+            "Densidad poblacional: contribucion 24.6 pts al score de demanda.",
+            "Actividad economica DENUE: contribucion 18.4 pts al score de demanda.",
+            "Acceso a transporte publico GTFS: contribucion 15.0 pts al score de demanda."
+          ],
+          "score_source": "fallback",
+          "demand_tier": "ALTA"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-006",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.14,
+                19.427
+              ],
+              [
+                -99.139,
+                19.427
+              ],
+              [
+                -99.139,
+                19.428
+              ],
+              [
+                -99.14,
+                19.428
+              ],
+              [
+                -99.14,
+                19.427
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-006",
+          "nombre": "Manzana Tepito Norte",
+          "lat": 19.4275,
+          "lng": -99.1395,
+          "densidad_poblacional": 24500,
+          "actividad_economica_denue": 220,
+          "luminosidad_viirs": 95,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 420,
+          "tipo_delito_predominante": "Robo con violencia",
+          "iluminacion_publica": 20,
+          "accesibilidad_logistica": 40,
+          "score_demanda": 63.55,
+          "justificacion_top3": [
+            "Densidad poblacional: contribucion 29.2 pts al score de demanda.",
+            "Acceso a transporte publico GTFS: contribucion 15.0 pts al score de demanda.",
+            "Actividad economica DENUE: contribucion 11.6 pts al score de demanda."
+          ],
+          "score_source": "fallback",
+          "demand_tier": "MEDIA"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-007",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.138,
+                19.426
+              ],
+              [
+                -99.137,
+                19.426
+              ],
+              [
+                -99.137,
+                19.427
+              ],
+              [
+                -99.138,
+                19.427
+              ],
+              [
+                -99.138,
+                19.426
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-007",
+          "nombre": "Manzana Guerrero Centro",
+          "lat": 19.4265,
+          "lng": -99.1375,
+          "densidad_poblacional": 20100,
+          "actividad_economica_denue": 195,
+          "luminosidad_viirs": 110,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 380,
+          "tipo_delito_predominante": "Lesiones dolosas",
+          "iluminacion_publica": 28,
+          "accesibilidad_logistica": 45,
+          "score_demanda": 56.27,
+          "justificacion_top3": [
+            "Densidad poblacional: contribucion 22.5 pts al score de demanda.",
+            "Acceso a transporte publico GTFS: contribucion 15.0 pts al score de demanda.",
+            "Actividad economica DENUE: contribucion 9.8 pts al score de demanda."
+          ],
+          "score_source": "fallback",
+          "demand_tier": "MEDIA"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-008",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.136,
+                19.425
+              ],
+              [
+                -99.135,
+                19.425
+              ],
+              [
+                -99.135,
+                19.426
+              ],
+              [
+                -99.136,
+                19.426
+              ],
+              [
+                -99.136,
+                19.425
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-008",
+          "nombre": "Manzana Santa María la Ribera",
+          "lat": 19.4255,
+          "lng": -99.1355,
+          "densidad_poblacional": 13400,
+          "actividad_economica_denue": 175,
+          "luminosidad_viirs": 155,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 92,
+          "tipo_delito_predominante": "Robo a transeúnte",
+          "iluminacion_publica": 60,
+          "accesibilidad_logistica": 66,
+          "score_demanda": 49.73,
+          "justificacion_top3": [
+            "Acceso a transporte publico GTFS: contribucion 15.0 pts al score de demanda.",
+            "Densidad poblacional: contribucion 12.2 pts al score de demanda.",
+            "Luminosidad nocturna VIIRS: contribucion 10.4 pts al score de demanda."
+          ],
+          "score_source": "fallback",
+          "demand_tier": "MEDIA"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-009",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.134,
+                19.424
+              ],
+              [
+                -99.133,
+                19.424
+              ],
+              [
+                -99.133,
+                19.425
+              ],
+              [
+                -99.134,
+                19.425
+              ],
+              [
+                -99.134,
+                19.424
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-009",
+          "nombre": "Manzana San Rafael Sur",
+          "lat": 19.4245,
+          "lng": -99.1335,
+          "densidad_poblacional": 11200,
+          "actividad_economica_denue": 142,
+          "luminosidad_viirs": 140,
+          "acceso_gtfs": false,
+          "incidencia_delictiva_snsp": 68,
+          "tipo_delito_predominante": "Robo a negocio",
+          "iluminacion_publica": 55,
+          "accesibilidad_logistica": 50,
+          "score_demanda": 26.28,
+          "justificacion_top3": [
+            "Luminosidad nocturna VIIRS: contribucion 8.8 pts al score de demanda.",
+            "Densidad poblacional: contribucion 8.8 pts al score de demanda.",
+            "Actividad economica DENUE: contribucion 5.8 pts al score de demanda."
+          ],
+          "score_source": "fallback",
+          "demand_tier": "BAJA"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-010",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.132,
+                19.423
+              ],
+              [
+                -99.131,
+                19.423
+              ],
+              [
+                -99.131,
+                19.424
+              ],
+              [
+                -99.132,
+                19.424
+              ],
+              [
+                -99.132,
+                19.423
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-010",
+          "nombre": "Manzana Escandón Oriente",
+          "lat": 19.4235,
+          "lng": -99.1315,
+          "densidad_poblacional": 16300,
+          "actividad_economica_denue": 267,
+          "luminosidad_viirs": 198,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 52,
+          "tipo_delito_predominante": "Fraude",
+          "iluminacion_publica": 75,
+          "accesibilidad_logistica": 78,
+          "score_demanda": 68.47,
+          "justificacion_top3": [
+            "Densidad poblacional: contribucion 16.6 pts al score de demanda.",
+            "Actividad economica DENUE: contribucion 15.2 pts al score de demanda.",
+            "Luminosidad nocturna VIIRS: contribucion 15.2 pts al score de demanda."
+          ],
+          "score_source": "fallback",
+          "demand_tier": "MEDIA"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-011",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.13,
+                19.422
+              ],
+              [
+                -99.129,
+                19.422
+              ],
+              [
+                -99.129,
+                19.423
+              ],
+              [
+                -99.13,
+                19.423
+              ],
+              [
+                -99.13,
+                19.422
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-011",
+          "nombre": "Manzana Condesa Norte",
+          "lat": 19.4225,
+          "lng": -99.1295,
+          "densidad_poblacional": 17100,
+          "actividad_economica_denue": 318,
+          "luminosidad_viirs": 218,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 30,
+          "tipo_delito_predominante": "Robo a vehículo",
+          "iluminacion_publica": 88,
+          "accesibilidad_logistica": 86,
+          "score_demanda": 77.13,
+          "justificacion_top3": [
+            "Actividad economica DENUE: contribucion 19.0 pts al score de demanda.",
+            "Densidad poblacional: contribucion 17.8 pts al score de demanda.",
+            "Luminosidad nocturna VIIRS: contribucion 17.4 pts al score de demanda."
+          ],
+          "score_source": "fallback",
+          "demand_tier": "ALTA"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-012",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.128,
+                19.421
+              ],
+              [
+                -99.127,
+                19.421
+              ],
+              [
+                -99.127,
+                19.422
+              ],
+              [
+                -99.128,
+                19.422
+              ],
+              [
+                -99.128,
+                19.421
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-012",
+          "nombre": "Manzana Roma Norte Poniente",
+          "lat": 19.4215,
+          "lng": -99.1275,
+          "densidad_poblacional": 18900,
+          "actividad_economica_denue": 355,
+          "luminosidad_viirs": 228,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 24,
+          "tipo_delito_predominante": "Robo a transeúnte",
+          "iluminacion_publica": 92,
+          "accesibilidad_logistica": 90,
+          "score_demanda": 84.71,
+          "justificacion_top3": [
+            "Actividad economica DENUE: contribucion 21.8 pts al score de demanda.",
+            "Densidad poblacional: contribucion 20.6 pts al score de demanda.",
+            "Luminosidad nocturna VIIRS: contribucion 18.5 pts al score de demanda."
+          ],
+          "score_source": "fallback",
+          "demand_tier": "ALTA"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-013",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.126,
+                19.42
+              ],
+              [
+                -99.125,
+                19.42
+              ],
+              [
+                -99.125,
+                19.421
+              ],
+              [
+                -99.126,
+                19.421
+              ],
+              [
+                -99.126,
+                19.42
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-013",
+          "nombre": "Manzana Roma Sur Centro",
+          "lat": 19.4205,
+          "lng": -99.1255,
+          "densidad_poblacional": 14500,
+          "actividad_economica_denue": 248,
+          "luminosidad_viirs": 190,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 48,
+          "tipo_delito_predominante": "Robo a negocio",
+          "iluminacion_publica": 70,
+          "accesibilidad_logistica": 72,
+          "score_demanda": 62.86,
+          "justificacion_top3": [
+            "Acceso a transporte publico GTFS: contribucion 15.0 pts al score de demanda.",
+            "Luminosidad nocturna VIIRS: contribucion 14.3 pts al score de demanda.",
+            "Densidad poblacional: contribucion 13.8 pts al score de demanda."
+          ],
+          "score_source": "fallback",
+          "demand_tier": "MEDIA"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-014",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.124,
+                19.419
+              ],
+              [
+                -99.123,
+                19.419
+              ],
+              [
+                -99.123,
+                19.42
+              ],
+              [
+                -99.124,
+                19.42
+              ],
+              [
+                -99.124,
+                19.419
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-014",
+          "nombre": "Manzana Narvarte Norte",
+          "lat": 19.4195,
+          "lng": -99.1235,
+          "densidad_poblacional": 12800,
+          "actividad_economica_denue": 210,
+          "luminosidad_viirs": 175,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 38,
+          "tipo_delito_predominante": "Robo a transeúnte",
+          "iluminacion_publica": 72,
+          "accesibilidad_logistica": 70,
+          "score_demanda": 54.7,
+          "justificacion_top3": [
+            "Acceso a transporte publico GTFS: contribucion 15.0 pts al score de demanda.",
+            "Luminosidad nocturna VIIRS: contribucion 12.6 pts al score de demanda.",
+            "Densidad poblacional: contribucion 11.2 pts al score de demanda."
+          ],
+          "score_source": "fallback",
+          "demand_tier": "MEDIA"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-015",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.122,
+                19.418
+              ],
+              [
+                -99.121,
+                19.418
+              ],
+              [
+                -99.121,
+                19.419
+              ],
+              [
+                -99.122,
+                19.419
+              ],
+              [
+                -99.122,
+                19.418
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-015",
+          "nombre": "Manzana Del Valle Oriente",
+          "lat": 19.4185,
+          "lng": -99.1215,
+          "densidad_poblacional": 11500,
+          "actividad_economica_denue": 185,
+          "luminosidad_viirs": 162,
+          "acceso_gtfs": false,
+          "incidencia_delictiva_snsp": 29,
+          "tipo_delito_predominante": "Fraude",
+          "iluminacion_publica": 68,
+          "accesibilidad_logistica": 63,
+          "score_demanda": 33.65,
+          "justificacion_top3": [
+            "Luminosidad nocturna VIIRS: contribucion 11.2 pts al score de demanda.",
+            "Densidad poblacional: contribucion 9.2 pts al score de demanda.",
+            "Actividad economica DENUE: contribucion 9.0 pts al score de demanda."
+          ],
+          "score_source": "fallback",
+          "demand_tier": "BAJA"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-016",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.12,
+                19.417
+              ],
+              [
+                -99.119,
+                19.417
+              ],
+              [
+                -99.119,
+                19.418
+              ],
+              [
+                -99.12,
+                19.418
+              ],
+              [
+                -99.12,
+                19.417
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-016",
+          "nombre": "Manzana Benito Juárez Sur",
+          "lat": 19.4175,
+          "lng": -99.1195,
+          "densidad_poblacional": 9800,
+          "actividad_economica_denue": 155,
+          "luminosidad_viirs": 145,
+          "acceso_gtfs": false,
+          "incidencia_delictiva_snsp": 22,
+          "tipo_delito_predominante": "Robo a vehículo",
+          "iluminacion_publica": 65,
+          "accesibilidad_logistica": 58,
+          "score_demanda": 26.01,
+          "justificacion_top3": [
+            "Luminosidad nocturna VIIRS: contribucion 9.3 pts al score de demanda.",
+            "Actividad economica DENUE: contribucion 6.8 pts al score de demanda.",
+            "Densidad poblacional: contribucion 6.6 pts al score de demanda."
+          ],
+          "score_source": "fallback",
+          "demand_tier": "BAJA"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-017",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.118,
+                19.416
+              ],
+              [
+                -99.117,
+                19.416
+              ],
+              [
+                -99.117,
+                19.417
+              ],
+              [
+                -99.118,
+                19.417
+              ],
+              [
+                -99.118,
+                19.416
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-017",
+          "nombre": "Manzana Iztapalapa Noroeste",
+          "lat": 19.4165,
+          "lng": -99.1175,
+          "densidad_poblacional": 25000,
+          "actividad_economica_denue": 130,
+          "luminosidad_viirs": 75,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 460,
+          "tipo_delito_predominante": "Robo con violencia",
+          "iluminacion_publica": 15,
+          "accesibilidad_logistica": 30,
+          "score_demanda": 53.14,
+          "justificacion_top3": [
+            "Densidad poblacional: contribucion 30.0 pts al score de demanda.",
+            "Acceso a transporte publico GTFS: contribucion 15.0 pts al score de demanda.",
+            "Actividad economica DENUE: contribucion 4.9 pts al score de demanda."
+          ],
+          "score_source": "fallback",
+          "demand_tier": "MEDIA"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-018",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.116,
+                19.415
+              ],
+              [
+                -99.115,
+                19.415
+              ],
+              [
+                -99.115,
+                19.416
+              ],
+              [
+                -99.116,
+                19.416
+              ],
+              [
+                -99.116,
+                19.415
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-018",
+          "nombre": "Manzana Iztapalapa Centro",
+          "lat": 19.4155,
+          "lng": -99.1155,
+          "densidad_poblacional": 23800,
+          "actividad_economica_denue": 112,
+          "luminosidad_viirs": 60,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 498,
+          "tipo_delito_predominante": "Homicidio doloso",
+          "iluminacion_publica": 10,
+          "accesibilidad_logistica": 25,
+          "score_demanda": 47.67,
+          "justificacion_top3": [
+            "Densidad poblacional: contribucion 28.2 pts al score de demanda.",
+            "Acceso a transporte publico GTFS: contribucion 15.0 pts al score de demanda.",
+            "Actividad economica DENUE: contribucion 3.5 pts al score de demanda."
+          ],
+          "score_source": "fallback",
+          "demand_tier": "MEDIA"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-019",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.114,
+                19.414
+              ],
+              [
+                -99.113,
+                19.414
+              ],
+              [
+                -99.113,
+                19.415
+              ],
+              [
+                -99.114,
+                19.415
+              ],
+              [
+                -99.114,
+                19.414
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-019",
+          "nombre": "Manzana Coyoacán Norte",
+          "lat": 19.4145,
+          "lng": -99.1135,
+          "densidad_poblacional": 10200,
+          "actividad_economica_denue": 198,
+          "luminosidad_viirs": 180,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 32,
+          "tipo_delito_predominante": "Robo a transeúnte",
+          "iluminacion_publica": 80,
+          "accesibilidad_logistica": 76,
+          "score_demanda": 50.18,
+          "justificacion_top3": [
+            "Acceso a transporte publico GTFS: contribucion 15.0 pts al score de demanda.",
+            "Luminosidad nocturna VIIRS: contribucion 13.2 pts al score de demanda.",
+            "Actividad economica DENUE: contribucion 10.0 pts al score de demanda."
+          ],
+          "score_source": "fallback",
+          "demand_tier": "MEDIA"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-020",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.112,
+                19.413
+              ],
+              [
+                -99.111,
+                19.413
+              ],
+              [
+                -99.111,
+                19.414
+              ],
+              [
+                -99.112,
+                19.414
+              ],
+              [
+                -99.112,
+                19.413
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-020",
+          "nombre": "Manzana Coyoacán Sur",
+          "lat": 19.4135,
+          "lng": -99.1115,
+          "densidad_poblacional": 9500,
+          "actividad_economica_denue": 172,
+          "luminosidad_viirs": 165,
+          "acceso_gtfs": false,
+          "incidencia_delictiva_snsp": 18,
+          "tipo_delito_predominante": "Fraude",
+          "iluminacion_publica": 78,
+          "accesibilidad_logistica": 71,
+          "score_demanda": 29.71,
+          "justificacion_top3": [
+            "Luminosidad nocturna VIIRS: contribucion 11.5 pts al score de demanda.",
+            "Actividad economica DENUE: contribucion 8.0 pts al score de demanda.",
+            "Densidad poblacional: contribucion 6.2 pts al score de demanda."
+          ],
+          "score_source": "fallback",
+          "demand_tier": "BAJA"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-021",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.11,
+                19.412
+              ],
+              [
+                -99.109,
+                19.412
+              ],
+              [
+                -99.109,
+                19.413
+              ],
+              [
+                -99.11,
+                19.413
+              ],
+              [
+                -99.11,
+                19.412
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-021",
+          "nombre": "Manzana Pedregal Poniente",
+          "lat": 19.4125,
+          "lng": -99.1095,
+          "densidad_poblacional": 7200,
+          "actividad_economica_denue": 88,
+          "luminosidad_viirs": 120,
+          "acceso_gtfs": false,
+          "incidencia_delictiva_snsp": 15,
+          "tipo_delito_predominante": "Robo a vehículo",
+          "iluminacion_publica": 60,
+          "accesibilidad_logistica": 48,
+          "score_demanda": 12.41,
+          "justificacion_top3": [
+            "Luminosidad nocturna VIIRS: contribucion 6.6 pts al score de demanda.",
+            "Densidad poblacional: contribucion 2.6 pts al score de demanda.",
+            "Actividad economica DENUE: contribucion 1.7 pts al score de demanda."
+          ],
+          "score_source": "fallback",
+          "demand_tier": "BAJA"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-022",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.108,
+                19.411
+              ],
+              [
+                -99.107,
+                19.411
+              ],
+              [
+                -99.107,
+                19.412
+              ],
+              [
+                -99.108,
+                19.412
+              ],
+              [
+                -99.108,
+                19.411
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-022",
+          "nombre": "Manzana Xochimilco Norte",
+          "lat": 19.4115,
+          "lng": -99.1075,
+          "densidad_poblacional": 6800,
+          "actividad_economica_denue": 65,
+          "luminosidad_viirs": 82,
+          "acceso_gtfs": false,
+          "incidencia_delictiva_snsp": 55,
+          "tipo_delito_predominante": "Robo a negocio",
+          "iluminacion_publica": 38,
+          "accesibilidad_logistica": 35,
+          "score_demanda": 4.78,
+          "justificacion_top3": [
+            "Luminosidad nocturna VIIRS: contribucion 2.4 pts al score de demanda.",
+            "Densidad poblacional: contribucion 2.0 pts al score de demanda.",
+            "Ingreso estimado (proxy): contribucion 0.4 pts al score de demanda."
+          ],
+          "score_source": "fallback",
+          "demand_tier": "BAJA"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-023",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.154,
+                19.434
+              ],
+              [
+                -99.153,
+                19.434
+              ],
+              [
+                -99.153,
+                19.435
+              ],
+              [
+                -99.154,
+                19.435
+              ],
+              [
+                -99.154,
+                19.434
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-023",
+          "nombre": "Manzana Lomas de Chapultepec",
+          "lat": 19.4345,
+          "lng": -99.1535,
+          "densidad_poblacional": 5500,
+          "actividad_economica_denue": 125,
+          "luminosidad_viirs": 195,
+          "acceso_gtfs": false,
+          "incidencia_delictiva_snsp": 12,
+          "tipo_delito_predominante": "Fraude",
+          "iluminacion_publica": 88,
+          "accesibilidad_logistica": 82,
+          "score_demanda": 22.83,
+          "justificacion_top3": [
+            "Luminosidad nocturna VIIRS: contribucion 14.8 pts al score de demanda.",
+            "Actividad economica DENUE: contribucion 4.5 pts al score de demanda.",
+            "Ingreso estimado (proxy): contribucion 3.5 pts al score de demanda."
+          ],
+          "score_source": "fallback",
+          "demand_tier": "BAJA"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-024",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.152,
+                19.435
+              ],
+              [
+                -99.151,
+                19.435
+              ],
+              [
+                -99.151,
+                19.436
+              ],
+              [
+                -99.152,
+                19.436
+              ],
+              [
+                -99.152,
+                19.435
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-024",
+          "nombre": "Manzana Santa Fe Centro",
+          "lat": 19.4355,
+          "lng": -99.1515,
+          "densidad_poblacional": 8200,
+          "actividad_economica_denue": 280,
+          "luminosidad_viirs": 215,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 18,
+          "tipo_delito_predominante": "Robo a vehículo",
+          "iluminacion_publica": 90,
+          "accesibilidad_logistica": 85,
+          "score_demanda": 59.4,
+          "justificacion_top3": [
+            "Luminosidad nocturna VIIRS: contribucion 17.0 pts al score de demanda.",
+            "Actividad economica DENUE: contribucion 16.1 pts al score de demanda.",
+            "Acceso a transporte publico GTFS: contribucion 15.0 pts al score de demanda."
+          ],
+          "score_source": "fallback",
+          "demand_tier": "MEDIA"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-025",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.15,
+                19.436
+              ],
+              [
+                -99.149,
+                19.436
+              ],
+              [
+                -99.149,
+                19.437
+              ],
+              [
+                -99.15,
+                19.437
+              ],
+              [
+                -99.15,
+                19.436
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-025",
+          "nombre": "Manzana Santa Fe Norte",
+          "lat": 19.4365,
+          "lng": -99.1495,
+          "densidad_poblacional": 7600,
+          "actividad_economica_denue": 255,
+          "luminosidad_viirs": 208,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 22,
+          "tipo_delito_predominante": "Robo a transeúnte",
+          "iluminacion_publica": 87,
+          "accesibilidad_logistica": 83,
+          "score_demanda": 55.19,
+          "justificacion_top3": [
+            "Luminosidad nocturna VIIRS: contribucion 16.3 pts al score de demanda.",
+            "Acceso a transporte publico GTFS: contribucion 15.0 pts al score de demanda.",
+            "Actividad economica DENUE: contribucion 14.3 pts al score de demanda."
+          ],
+          "score_source": "fallback",
+          "demand_tier": "MEDIA"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-026",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.148,
+                19.437
+              ],
+              [
+                -99.147,
+                19.437
+              ],
+              [
+                -99.147,
+                19.438
+              ],
+              [
+                -99.148,
+                19.438
+              ],
+              [
+                -99.148,
+                19.437
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-026",
+          "nombre": "Manzana Azcapotzalco Sur",
+          "lat": 19.4375,
+          "lng": -99.1475,
+          "densidad_poblacional": 17800,
+          "actividad_economica_denue": 188,
+          "luminosidad_viirs": 148,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 95,
+          "tipo_delito_predominante": "Robo a negocio",
+          "iluminacion_publica": 52,
+          "accesibilidad_logistica": 60,
+          "score_demanda": 56.86,
+          "justificacion_top3": [
+            "Densidad poblacional: contribucion 18.9 pts al score de demanda.",
+            "Acceso a transporte publico GTFS: contribucion 15.0 pts al score de demanda.",
+            "Luminosidad nocturna VIIRS: contribucion 9.7 pts al score de demanda."
+          ],
+          "score_source": "fallback",
+          "demand_tier": "MEDIA"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-027",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.146,
+                19.438
+              ],
+              [
+                -99.145,
+                19.438
+              ],
+              [
+                -99.145,
+                19.439
+              ],
+              [
+                -99.146,
+                19.439
+              ],
+              [
+                -99.146,
+                19.438
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-027",
+          "nombre": "Manzana Azcapotzalco Norte",
+          "lat": 19.4385,
+          "lng": -99.1455,
+          "densidad_poblacional": 16200,
+          "actividad_economica_denue": 165,
+          "luminosidad_viirs": 130,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 115,
+          "tipo_delito_predominante": "Robo con violencia",
+          "iluminacion_publica": 44,
+          "accesibilidad_logistica": 54,
+          "score_demanda": 49.92,
+          "justificacion_top3": [
+            "Densidad poblacional: contribucion 16.5 pts al score de demanda.",
+            "Acceso a transporte publico GTFS: contribucion 15.0 pts al score de demanda.",
+            "Luminosidad nocturna VIIRS: contribucion 7.7 pts al score de demanda."
+          ],
+          "score_source": "fallback",
+          "demand_tier": "MEDIA"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-028",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.144,
+                19.439
+              ],
+              [
+                -99.143,
+                19.439
+              ],
+              [
+                -99.143,
+                19.44
+              ],
+              [
+                -99.144,
+                19.44
+              ],
+              [
+                -99.144,
+                19.439
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-028",
+          "nombre": "Manzana Gustavo A. Madero Centro",
+          "lat": 19.4395,
+          "lng": -99.1435,
+          "densidad_poblacional": 22500,
+          "actividad_economica_denue": 145,
+          "luminosidad_viirs": 105,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 290,
+          "tipo_delito_predominante": "Robo con violencia",
+          "iluminacion_publica": 32,
+          "accesibilidad_logistica": 42,
+          "score_demanda": 54.53,
+          "justificacion_top3": [
+            "Densidad poblacional: contribucion 26.2 pts al score de demanda.",
+            "Acceso a transporte publico GTFS: contribucion 15.0 pts al score de demanda.",
+            "Actividad economica DENUE: contribucion 6.0 pts al score de demanda."
+          ],
+          "score_source": "fallback",
+          "demand_tier": "MEDIA"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-029",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.142,
+                19.44
+              ],
+              [
+                -99.141,
+                19.44
+              ],
+              [
+                -99.141,
+                19.441
+              ],
+              [
+                -99.142,
+                19.441
+              ],
+              [
+                -99.142,
+                19.44
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-029",
+          "nombre": "Manzana Gustavo A. Madero Norte",
+          "lat": 19.4405,
+          "lng": -99.1415,
+          "densidad_poblacional": 21000,
+          "actividad_economica_denue": 122,
+          "luminosidad_viirs": 88,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 330,
+          "tipo_delito_predominante": "Lesiones dolosas",
+          "iluminacion_publica": 25,
+          "accesibilidad_logistica": 38,
+          "score_demanda": 47.86,
+          "justificacion_top3": [
+            "Densidad poblacional: contribucion 23.8 pts al score de demanda.",
+            "Acceso a transporte publico GTFS: contribucion 15.0 pts al score de demanda.",
+            "Actividad economica DENUE: contribucion 4.3 pts al score de demanda."
+          ],
+          "score_source": "fallback",
+          "demand_tier": "MEDIA"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-030",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.14,
+                19.441
+              ],
+              [
+                -99.139,
+                19.441
+              ],
+              [
+                -99.139,
+                19.442
+              ],
+              [
+                -99.14,
+                19.442
+              ],
+              [
+                -99.14,
+                19.441
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-030",
+          "nombre": "Manzana Venustiano Carranza Centro",
+          "lat": 19.4415,
+          "lng": -99.1395,
+          "densidad_poblacional": 18000,
+          "actividad_economica_denue": 232,
+          "luminosidad_viirs": 170,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 88,
+          "tipo_delito_predominante": "Robo a transeúnte",
+          "iluminacion_publica": 62,
+          "accesibilidad_logistica": 67,
+          "score_demanda": 64.18,
+          "justificacion_top3": [
+            "Densidad poblacional: contribucion 19.2 pts al score de demanda.",
+            "Acceso a transporte publico GTFS: contribucion 15.0 pts al score de demanda.",
+            "Actividad economica DENUE: contribucion 12.5 pts al score de demanda."
+          ],
+          "score_source": "fallback",
+          "demand_tier": "MEDIA"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-031",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.138,
+                19.442
+              ],
+              [
+                -99.137,
+                19.442
+              ],
+              [
+                -99.137,
+                19.443
+              ],
+              [
+                -99.138,
+                19.443
+              ],
+              [
+                -99.138,
+                19.442
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-031",
+          "nombre": "Manzana Pensil Norte",
+          "lat": 19.4425,
+          "lng": -99.1375,
+          "densidad_poblacional": 14900,
+          "actividad_economica_denue": 205,
+          "luminosidad_viirs": 168,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 62,
+          "tipo_delito_predominante": "Robo a vehículo",
+          "iluminacion_publica": 68,
+          "accesibilidad_logistica": 72,
+          "score_demanda": 56.56,
+          "justificacion_top3": [
+            "Acceso a transporte publico GTFS: contribucion 15.0 pts al score de demanda.",
+            "Densidad poblacional: contribucion 14.5 pts al score de demanda.",
+            "Luminosidad nocturna VIIRS: contribucion 11.9 pts al score de demanda."
+          ],
+          "score_source": "fallback",
+          "demand_tier": "MEDIA"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-032",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.136,
+                19.443
+              ],
+              [
+                -99.135,
+                19.443
+              ],
+              [
+                -99.135,
+                19.444
+              ],
+              [
+                -99.136,
+                19.444
+              ],
+              [
+                -99.136,
+                19.443
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-032",
+          "nombre": "Manzana Tacuba Centro",
+          "lat": 19.4435,
+          "lng": -99.1355,
+          "densidad_poblacional": 16800,
+          "actividad_economica_denue": 178,
+          "luminosidad_viirs": 145,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 105,
+          "tipo_delito_predominante": "Robo a negocio",
+          "iluminacion_publica": 50,
+          "accesibilidad_logistica": 58,
+          "score_demanda": 53.99,
+          "justificacion_top3": [
+            "Densidad poblacional: contribucion 17.4 pts al score de demanda.",
+            "Acceso a transporte publico GTFS: contribucion 15.0 pts al score de demanda.",
+            "Luminosidad nocturna VIIRS: contribucion 9.3 pts al score de demanda."
+          ],
+          "score_source": "fallback",
+          "demand_tier": "MEDIA"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-033",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.134,
+                19.444
+              ],
+              [
+                -99.133,
+                19.444
+              ],
+              [
+                -99.133,
+                19.445
+              ],
+              [
+                -99.134,
+                19.445
+              ],
+              [
+                -99.134,
+                19.444
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-033",
+          "nombre": "Manzana Tlatelolco Oriente",
+          "lat": 19.4445,
+          "lng": -99.1335,
+          "densidad_poblacional": 19500,
+          "actividad_economica_denue": 265,
+          "luminosidad_viirs": 200,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 58,
+          "tipo_delito_predominante": "Robo a transeúnte",
+          "iluminacion_publica": 76,
+          "accesibilidad_logistica": 80,
+          "score_demanda": 73.45,
+          "justificacion_top3": [
+            "Densidad poblacional: contribucion 21.5 pts al score de demanda.",
+            "Luminosidad nocturna VIIRS: contribucion 15.4 pts al score de demanda.",
+            "Actividad economica DENUE: contribucion 15.0 pts al score de demanda."
+          ],
+          "score_source": "fallback",
+          "demand_tier": "ALTA"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-034",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.132,
+                19.445
+              ],
+              [
+                -99.131,
+                19.445
+              ],
+              [
+                -99.131,
+                19.446
+              ],
+              [
+                -99.132,
+                19.446
+              ],
+              [
+                -99.132,
+                19.445
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-034",
+          "nombre": "Manzana Garibaldi Norte",
+          "lat": 19.4455,
+          "lng": -99.1315,
+          "densidad_poblacional": 17200,
+          "actividad_economica_denue": 320,
+          "luminosidad_viirs": 222,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 142,
+          "tipo_delito_predominante": "Robo a transeúnte",
+          "iluminacion_publica": 55,
+          "accesibilidad_logistica": 70,
+          "score_demanda": 77.98,
+          "justificacion_top3": [
+            "Actividad economica DENUE: contribucion 19.1 pts al score de demanda.",
+            "Densidad poblacional: contribucion 18.0 pts al score de demanda.",
+            "Luminosidad nocturna VIIRS: contribucion 17.8 pts al score de demanda."
+          ],
+          "score_source": "fallback",
+          "demand_tier": "ALTA"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-035",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.13,
+                19.446
+              ],
+              [
+                -99.129,
+                19.446
+              ],
+              [
+                -99.129,
+                19.447
+              ],
+              [
+                -99.13,
+                19.447
+              ],
+              [
+                -99.13,
+                19.446
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-035",
+          "nombre": "Manzana Centro Histórico Poniente",
+          "lat": 19.4465,
+          "lng": -99.1295,
+          "densidad_poblacional": 20800,
+          "actividad_economica_denue": 398,
+          "luminosidad_viirs": 238,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 175,
+          "tipo_delito_predominante": "Carterismo",
+          "iluminacion_publica": 72,
+          "accesibilidad_logistica": 82,
+          "score_demanda": 93.03,
+          "justificacion_top3": [
+            "Actividad economica DENUE: contribucion 25.0 pts al score de demanda.",
+            "Densidad poblacional: contribucion 23.5 pts al score de demanda.",
+            "Luminosidad nocturna VIIRS: contribucion 19.6 pts al score de demanda."
+          ],
+          "score_source": "fallback",
+          "demand_tier": "ALTA"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-036",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.128,
+                19.447
+              ],
+              [
+                -99.127,
+                19.447
+              ],
+              [
+                -99.127,
+                19.448
+              ],
+              [
+                -99.128,
+                19.448
+              ],
+              [
+                -99.128,
+                19.447
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-036",
+          "nombre": "Manzana Centro Histórico Zócalo",
+          "lat": 19.4475,
+          "lng": -99.1275,
+          "densidad_poblacional": 19000,
+          "actividad_economica_denue": 390,
+          "luminosidad_viirs": 242,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 160,
+          "tipo_delito_predominante": "Carterismo",
+          "iluminacion_publica": 80,
+          "accesibilidad_logistica": 85,
+          "score_demanda": 90.0,
+          "justificacion_top3": [
+            "Actividad economica DENUE: contribucion 24.4 pts al score de demanda.",
+            "Densidad poblacional: contribucion 20.8 pts al score de demanda.",
+            "Luminosidad nocturna VIIRS: contribucion 20.0 pts al score de demanda."
+          ],
+          "score_source": "fallback",
+          "demand_tier": "ALTA"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-037",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.126,
+                19.448
+              ],
+              [
+                -99.125,
+                19.448
+              ],
+              [
+                -99.125,
+                19.449
+              ],
+              [
+                -99.126,
+                19.449
+              ],
+              [
+                -99.126,
+                19.448
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-037",
+          "nombre": "Manzana La Merced Norte",
+          "lat": 19.4485,
+          "lng": -99.1255,
+          "densidad_poblacional": 22800,
+          "actividad_economica_denue": 248,
+          "luminosidad_viirs": 128,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 350,
+          "tipo_delito_predominante": "Robo con violencia",
+          "iluminacion_publica": 35,
+          "accesibilidad_logistica": 48,
+          "score_demanda": 67.79,
+          "justificacion_top3": [
+            "Densidad poblacional: contribucion 26.6 pts al score de demanda.",
+            "Acceso a transporte publico GTFS: contribucion 15.0 pts al score de demanda.",
+            "Actividad economica DENUE: contribucion 13.7 pts al score de demanda."
+          ],
+          "score_source": "fallback",
+          "demand_tier": "MEDIA"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-038",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.124,
+                19.449
+              ],
+              [
+                -99.123,
+                19.449
+              ],
+              [
+                -99.123,
+                19.45
+              ],
+              [
+                -99.124,
+                19.45
+              ],
+              [
+                -99.124,
+                19.449
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-038",
+          "nombre": "Manzana Morelos Sur",
+          "lat": 19.4495,
+          "lng": -99.1235,
+          "densidad_poblacional": 23500,
+          "actividad_economica_denue": 135,
+          "luminosidad_viirs": 88,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 410,
+          "tipo_delito_predominante": "Homicidio doloso",
+          "iluminacion_publica": 18,
+          "accesibilidad_logistica": 32,
+          "score_demanda": 52.96,
+          "justificacion_top3": [
+            "Densidad poblacional: contribucion 27.7 pts al score de demanda.",
+            "Acceso a transporte publico GTFS: contribucion 15.0 pts al score de demanda.",
+            "Actividad economica DENUE: contribucion 5.3 pts al score de demanda."
+          ],
+          "score_source": "fallback",
+          "demand_tier": "MEDIA"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-039",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.122,
+                19.45
+              ],
+              [
+                -99.121,
+                19.45
+              ],
+              [
+                -99.121,
+                19.451
+              ],
+              [
+                -99.122,
+                19.451
+              ],
+              [
+                -99.122,
+                19.45
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-039",
+          "nombre": "Manzana Bondojito Centro",
+          "lat": 19.4505,
+          "lng": -99.1215,
+          "densidad_poblacional": 21200,
+          "actividad_economica_denue": 98,
+          "luminosidad_viirs": 70,
+          "acceso_gtfs": false,
+          "incidencia_delictiva_snsp": 385,
+          "tipo_delito_predominante": "Robo con violencia",
+          "iluminacion_publica": 12,
+          "accesibilidad_logistica": 22,
+          "score_demanda": 28.59,
+          "justificacion_top3": [
+            "Densidad poblacional: contribucion 24.2 pts al score de demanda.",
+            "Actividad economica DENUE: contribucion 2.5 pts al score de demanda.",
+            "Luminosidad nocturna VIIRS: contribucion 1.1 pts al score de demanda."
+          ],
+          "score_source": "fallback",
+          "demand_tier": "BAJA"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-040",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.12,
+                19.451
+              ],
+              [
+                -99.119,
+                19.451
+              ],
+              [
+                -99.119,
+                19.452
+              ],
+              [
+                -99.12,
+                19.452
+              ],
+              [
+                -99.12,
+                19.451
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-040",
+          "nombre": "Manzana Peralvillo Oriente",
+          "lat": 19.4515,
+          "lng": -99.1195,
+          "densidad_poblacional": 20500,
+          "actividad_economica_denue": 108,
+          "luminosidad_viirs": 80,
+          "acceso_gtfs": false,
+          "incidencia_delictiva_snsp": 368,
+          "tipo_delito_predominante": "Lesiones dolosas",
+          "iluminacion_publica": 20,
+          "accesibilidad_logistica": 28,
+          "score_demanda": 29.74,
+          "justificacion_top3": [
+            "Densidad poblacional: contribucion 23.1 pts al score de demanda.",
+            "Actividad economica DENUE: contribucion 3.2 pts al score de demanda.",
+            "Luminosidad nocturna VIIRS: contribucion 2.2 pts al score de demanda."
+          ],
+          "score_source": "fallback",
+          "demand_tier": "BAJA"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-041",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.156,
+                19.426
+              ],
+              [
+                -99.155,
+                19.426
+              ],
+              [
+                -99.155,
+                19.427
+              ],
+              [
+                -99.156,
+                19.427
+              ],
+              [
+                -99.156,
+                19.426
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-041",
+          "nombre": "Manzana Miguel Hidalgo Sur",
+          "lat": 19.4265,
+          "lng": -99.1555,
+          "densidad_poblacional": 12500,
+          "actividad_economica_denue": 215,
+          "luminosidad_viirs": 185,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 40,
+          "tipo_delito_predominante": "Robo a vehículo",
+          "iluminacion_publica": 80,
+          "accesibilidad_logistica": 78,
+          "score_demanda": 55.98,
+          "justificacion_top3": [
+            "Acceso a transporte publico GTFS: contribucion 15.0 pts al score de demanda.",
+            "Luminosidad nocturna VIIRS: contribucion 13.7 pts al score de demanda.",
+            "Actividad economica DENUE: contribucion 11.3 pts al score de demanda."
+          ],
+          "score_source": "fallback",
+          "demand_tier": "MEDIA"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-042",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.157,
+                19.425
+              ],
+              [
+                -99.156,
+                19.425
+              ],
+              [
+                -99.156,
+                19.426
+              ],
+              [
+                -99.157,
+                19.426
+              ],
+              [
+                -99.157,
+                19.425
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-042",
+          "nombre": "Manzana Chapultepec Oriente",
+          "lat": 19.4255,
+          "lng": -99.1565,
+          "densidad_poblacional": 8900,
+          "actividad_economica_denue": 178,
+          "luminosidad_viirs": 172,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 26,
+          "tipo_delito_predominante": "Fraude",
+          "iluminacion_publica": 82,
+          "accesibilidad_logistica": 79,
+          "score_demanda": 45.24,
+          "justificacion_top3": [
+            "Acceso a transporte publico GTFS: contribucion 15.0 pts al score de demanda.",
+            "Luminosidad nocturna VIIRS: contribucion 12.3 pts al score de demanda.",
+            "Actividad economica DENUE: contribucion 8.5 pts al score de demanda."
+          ],
+          "score_source": "fallback",
+          "demand_tier": "MEDIA"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-043",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.158,
+                19.424
+              ],
+              [
+                -99.157,
+                19.424
+              ],
+              [
+                -99.157,
+                19.425
+              ],
+              [
+                -99.158,
+                19.425
+              ],
+              [
+                -99.158,
+                19.424
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-043",
+          "nombre": "Manzana Observatorio Centro",
+          "lat": 19.4245,
+          "lng": -99.1575,
+          "densidad_poblacional": 10800,
+          "actividad_economica_denue": 148,
+          "luminosidad_viirs": 155,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 45,
+          "tipo_delito_predominante": "Robo a transeúnte",
+          "iluminacion_publica": 70,
+          "accesibilidad_logistica": 65,
+          "score_demanda": 43.14,
+          "justificacion_top3": [
+            "Acceso a transporte publico GTFS: contribucion 15.0 pts al score de demanda.",
+            "Luminosidad nocturna VIIRS: contribucion 10.4 pts al score de demanda.",
+            "Densidad poblacional: contribucion 8.2 pts al score de demanda."
+          ],
+          "score_source": "fallback",
+          "demand_tier": "BAJA"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-044",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.159,
+                19.423
+              ],
+              [
+                -99.158,
+                19.423
+              ],
+              [
+                -99.158,
+                19.424
+              ],
+              [
+                -99.159,
+                19.424
+              ],
+              [
+                -99.159,
+                19.423
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-044",
+          "nombre": "Manzana Popo–Álvaro Obregón",
+          "lat": 19.4235,
+          "lng": -99.1585,
+          "densidad_poblacional": 14200,
+          "actividad_economica_denue": 192,
+          "luminosidad_viirs": 162,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 72,
+          "tipo_delito_predominante": "Robo a negocio",
+          "iluminacion_publica": 62,
+          "accesibilidad_logistica": 60,
+          "score_demanda": 53.48,
+          "justificacion_top3": [
+            "Acceso a transporte publico GTFS: contribucion 15.0 pts al score de demanda.",
+            "Densidad poblacional: contribucion 13.4 pts al score de demanda.",
+            "Luminosidad nocturna VIIRS: contribucion 11.2 pts al score de demanda."
+          ],
+          "score_source": "fallback",
+          "demand_tier": "MEDIA"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-045",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.16,
+                19.422
+              ],
+              [
+                -99.159,
+                19.422
+              ],
+              [
+                -99.159,
+                19.423
+              ],
+              [
+                -99.16,
+                19.423
+              ],
+              [
+                -99.16,
+                19.422
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-045",
+          "nombre": "Manzana Mixcoac Poniente",
+          "lat": 19.4225,
+          "lng": -99.1595,
+          "densidad_poblacional": 13600,
+          "actividad_economica_denue": 210,
+          "luminosidad_viirs": 175,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 48,
+          "tipo_delito_predominante": "Robo a vehículo",
+          "iluminacion_publica": 74,
+          "accesibilidad_logistica": 73,
+          "score_demanda": 55.93,
+          "justificacion_top3": [
+            "Acceso a transporte publico GTFS: contribucion 15.0 pts al score de demanda.",
+            "Luminosidad nocturna VIIRS: contribucion 12.6 pts al score de demanda.",
+            "Densidad poblacional: contribucion 12.5 pts al score de demanda."
+          ],
+          "score_source": "fallback",
+          "demand_tier": "MEDIA"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-046",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.161,
+                19.421
+              ],
+              [
+                -99.16,
+                19.421
+              ],
+              [
+                -99.16,
+                19.422
+              ],
+              [
+                -99.161,
+                19.422
+              ],
+              [
+                -99.161,
+                19.421
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-046",
+          "nombre": "Manzana Insurgentes Sur Norte",
+          "lat": 19.4215,
+          "lng": -99.1605,
+          "densidad_poblacional": 16500,
+          "actividad_economica_denue": 305,
+          "luminosidad_viirs": 215,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 35,
+          "tipo_delito_predominante": "Fraude",
+          "iluminacion_publica": 85,
+          "accesibilidad_logistica": 88,
+          "score_demanda": 74.57,
+          "justificacion_top3": [
+            "Actividad economica DENUE: contribucion 18.0 pts al score de demanda.",
+            "Luminosidad nocturna VIIRS: contribucion 17.0 pts al score de demanda.",
+            "Densidad poblacional: contribucion 16.9 pts al score de demanda."
+          ],
+          "score_source": "fallback",
+          "demand_tier": "ALTA"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-047",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.162,
+                19.42
+              ],
+              [
+                -99.161,
+                19.42
+              ],
+              [
+                -99.161,
+                19.421
+              ],
+              [
+                -99.162,
+                19.421
+              ],
+              [
+                -99.162,
+                19.42
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-047",
+          "nombre": "Manzana WTC–Insurgentes",
+          "lat": 19.4205,
+          "lng": -99.1615,
+          "densidad_poblacional": 13800,
+          "actividad_economica_denue": 335,
+          "luminosidad_viirs": 225,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 28,
+          "tipo_delito_predominante": "Robo a transeúnte",
+          "iluminacion_publica": 90,
+          "accesibilidad_logistica": 92,
+          "score_demanda": 74.57,
+          "justificacion_top3": [
+            "Actividad economica DENUE: contribucion 20.3 pts al score de demanda.",
+            "Luminosidad nocturna VIIRS: contribucion 18.1 pts al score de demanda.",
+            "Acceso a transporte publico GTFS: contribucion 15.0 pts al score de demanda."
+          ],
+          "score_source": "fallback",
+          "demand_tier": "ALTA"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-048",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.163,
+                19.419
+              ],
+              [
+                -99.162,
+                19.419
+              ],
+              [
+                -99.162,
+                19.42
+              ],
+              [
+                -99.163,
+                19.42
+              ],
+              [
+                -99.163,
+                19.419
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-048",
+          "nombre": "Manzana Perisur Centro",
+          "lat": 19.4195,
+          "lng": -99.1625,
+          "densidad_poblacional": 9200,
+          "actividad_economica_denue": 295,
+          "luminosidad_viirs": 205,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 16,
+          "tipo_delito_predominante": "Robo a vehículo",
+          "iluminacion_publica": 88,
+          "accesibilidad_logistica": 86,
+          "score_demanda": 61.12,
+          "justificacion_top3": [
+            "Actividad economica DENUE: contribucion 17.3 pts al score de demanda.",
+            "Luminosidad nocturna VIIRS: contribucion 15.9 pts al score de demanda.",
+            "Acceso a transporte publico GTFS: contribucion 15.0 pts al score de demanda."
+          ],
+          "score_source": "fallback",
+          "demand_tier": "MEDIA"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-049",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.164,
+                19.418
+              ],
+              [
+                -99.163,
+                19.418
+              ],
+              [
+                -99.163,
+                19.419
+              ],
+              [
+                -99.164,
+                19.419
+              ],
+              [
+                -99.164,
+                19.418
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-049",
+          "nombre": "Manzana Pedregal de San Ángel",
+          "lat": 19.4185,
+          "lng": -99.1635,
+          "densidad_poblacional": 6500,
+          "actividad_economica_denue": 112,
+          "luminosidad_viirs": 148,
+          "acceso_gtfs": false,
+          "incidencia_delictiva_snsp": 10,
+          "tipo_delito_predominante": "Fraude",
+          "iluminacion_publica": 82,
+          "accesibilidad_logistica": 70,
+          "score_demanda": 17.18,
+          "justificacion_top3": [
+            "Luminosidad nocturna VIIRS: contribucion 9.7 pts al score de demanda.",
+            "Actividad economica DENUE: contribucion 3.5 pts al score de demanda.",
+            "Ingreso estimado (proxy): contribucion 2.4 pts al score de demanda."
+          ],
+          "score_source": "fallback",
+          "demand_tier": "BAJA"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-050",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.165,
+                19.417
+              ],
+              [
+                -99.164,
+                19.417
+              ],
+              [
+                -99.164,
+                19.418
+              ],
+              [
+                -99.165,
+                19.418
+              ],
+              [
+                -99.165,
+                19.417
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-050",
+          "nombre": "Manzana Tecnológico–UNAM Norte",
+          "lat": 19.4175,
+          "lng": -99.1645,
+          "densidad_poblacional": 11800,
+          "actividad_economica_denue": 225,
+          "luminosidad_viirs": 188,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 20,
+          "tipo_delito_predominante": "Robo a transeúnte",
+          "iluminacion_publica": 84,
+          "accesibilidad_logistica": 82,
+          "score_demanda": 56.24,
+          "justificacion_top3": [
+            "Acceso a transporte publico GTFS: contribucion 15.0 pts al score de demanda.",
+            "Luminosidad nocturna VIIRS: contribucion 14.1 pts al score de demanda.",
+            "Actividad economica DENUE: contribucion 12.0 pts al score de demanda."
+          ],
+          "score_source": "fallback",
+          "demand_tier": "MEDIA"
+        }
+      }
+    ]
+  },
+  "risk_geojson": {
+    "type": "FeatureCollection",
+    "name": "zona_piloto_cdmx",
+    "crs": {
+      "type": "name",
+      "properties": {
+        "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+      }
+    },
+    "features": [
+      {
+        "type": "Feature",
+        "id": "MZ-001",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.15,
+                19.432
+              ],
+              [
+                -99.149,
+                19.432
+              ],
+              [
+                -99.149,
+                19.433
+              ],
+              [
+                -99.15,
+                19.433
+              ],
+              [
+                -99.15,
+                19.432
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-001",
+          "nombre": "Manzana Reforma Norte",
+          "lat": 19.4325,
+          "lng": -99.1495,
+          "densidad_poblacional": 22000,
+          "actividad_economica_denue": 385,
+          "luminosidad_viirs": 240,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 28,
+          "tipo_delito_predominante": "Robo a transeúnte",
+          "iluminacion_publica": 95,
+          "accesibilidad_logistica": 92,
+          "score_riesgo": 1.84,
+          "clasificacion": "VERDE",
+          "color_leaflet": "#22c55e",
+          "factores_riesgo": [
+            {
+              "factor": "Incidencia delictiva: 28.0 delitos/ano",
+              "peso_relativo": "50%"
+            },
+            {
+              "factor": "Deficit de iluminacion: 0% sin cobertura",
+              "peso_relativo": "25%"
+            },
+            {
+              "factor": "Accesibilidad logistica inversa: 92.0/100",
+              "peso_relativo": "25%"
+            }
+          ],
+          "recomendaciones_mitigacion": [],
+          "razon_descarte": "",
+          "score_source": "fallback"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-002",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.148,
+                19.431
+              ],
+              [
+                -99.147,
+                19.431
+              ],
+              [
+                -99.147,
+                19.432
+              ],
+              [
+                -99.148,
+                19.432
+              ],
+              [
+                -99.148,
+                19.431
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-002",
+          "nombre": "Manzana Polanco Centro",
+          "lat": 19.4315,
+          "lng": -99.1475,
+          "densidad_poblacional": 18500,
+          "actividad_economica_denue": 342,
+          "luminosidad_viirs": 225,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 21,
+          "tipo_delito_predominante": "Fraude",
+          "iluminacion_publica": 90,
+          "accesibilidad_logistica": 88,
+          "score_riesgo": 4.03,
+          "clasificacion": "VERDE",
+          "color_leaflet": "#22c55e",
+          "factores_riesgo": [
+            {
+              "factor": "Incidencia delictiva: 21.0 delitos/ano",
+              "peso_relativo": "50%"
+            },
+            {
+              "factor": "Deficit de iluminacion: 6% sin cobertura",
+              "peso_relativo": "25%"
+            },
+            {
+              "factor": "Accesibilidad logistica inversa: 88.0/100",
+              "peso_relativo": "25%"
+            }
+          ],
+          "recomendaciones_mitigacion": [],
+          "razon_descarte": "",
+          "score_source": "fallback"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-003",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.146,
+                19.43
+              ],
+              [
+                -99.145,
+                19.43
+              ],
+              [
+                -99.145,
+                19.431
+              ],
+              [
+                -99.146,
+                19.431
+              ],
+              [
+                -99.146,
+                19.43
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-003",
+          "nombre": "Manzana Anzures Oriente",
+          "lat": 19.4305,
+          "lng": -99.1455,
+          "densidad_poblacional": 15200,
+          "actividad_economica_denue": 298,
+          "luminosidad_viirs": 210,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 35,
+          "tipo_delito_predominante": "Robo a vehículo",
+          "iluminacion_publica": 82,
+          "accesibilidad_logistica": 80,
+          "score_riesgo": 10.67,
+          "clasificacion": "VERDE",
+          "color_leaflet": "#22c55e",
+          "factores_riesgo": [
+            {
+              "factor": "Incidencia delictiva: 35.0 delitos/ano",
+              "peso_relativo": "50%"
+            },
+            {
+              "factor": "Deficit de iluminacion: 15% sin cobertura",
+              "peso_relativo": "25%"
+            },
+            {
+              "factor": "Accesibilidad logistica inversa: 80.0/100",
+              "peso_relativo": "25%"
+            }
+          ],
+          "recomendaciones_mitigacion": [],
+          "razon_descarte": "",
+          "score_source": "fallback"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-004",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.144,
+                19.429
+              ],
+              [
+                -99.143,
+                19.429
+              ],
+              [
+                -99.143,
+                19.43
+              ],
+              [
+                -99.144,
+                19.43
+              ],
+              [
+                -99.144,
+                19.429
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-004",
+          "nombre": "Manzana Cuauhtémoc Sur",
+          "lat": 19.4295,
+          "lng": -99.1435,
+          "densidad_poblacional": 19800,
+          "actividad_economica_denue": 361,
+          "luminosidad_viirs": 232,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 45,
+          "tipo_delito_predominante": "Robo a transeúnte",
+          "iluminacion_publica": 78,
+          "accesibilidad_logistica": 85,
+          "score_riesgo": 11.09,
+          "clasificacion": "VERDE",
+          "color_leaflet": "#22c55e",
+          "factores_riesgo": [
+            {
+              "factor": "Incidencia delictiva: 45.0 delitos/ano",
+              "peso_relativo": "50%"
+            },
+            {
+              "factor": "Deficit de iluminacion: 20% sin cobertura",
+              "peso_relativo": "25%"
+            },
+            {
+              "factor": "Accesibilidad logistica inversa: 85.0/100",
+              "peso_relativo": "25%"
+            }
+          ],
+          "recomendaciones_mitigacion": [],
+          "razon_descarte": "",
+          "score_source": "fallback"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-005",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.142,
+                19.428
+              ],
+              [
+                -99.141,
+                19.428
+              ],
+              [
+                -99.141,
+                19.429
+              ],
+              [
+                -99.142,
+                19.429
+              ],
+              [
+                -99.142,
+                19.428
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-005",
+          "nombre": "Manzana Doctores Poniente",
+          "lat": 19.4285,
+          "lng": -99.1415,
+          "densidad_poblacional": 21500,
+          "actividad_economica_denue": 310,
+          "luminosidad_viirs": 185,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 180,
+          "tipo_delito_predominante": "Robo con violencia",
+          "iluminacion_publica": 45,
+          "accesibilidad_logistica": 62,
+          "score_riesgo": 42.84,
+          "clasificacion": "CAUTELA",
+          "color_leaflet": "#f59e0b",
+          "factores_riesgo": [
+            {
+              "factor": "Incidencia delictiva: 180.0 delitos/ano",
+              "peso_relativo": "50%"
+            },
+            {
+              "factor": "Deficit de iluminacion: 59% sin cobertura",
+              "peso_relativo": "25%"
+            },
+            {
+              "factor": "Accesibilidad logistica inversa: 62.0/100",
+              "peso_relativo": "25%"
+            }
+          ],
+          "recomendaciones_mitigacion": [
+            "Evaluar mejora de iluminacion publica con programa LED municipal.",
+            "Contratar seguridad privada compartida con negocios colindantes."
+          ],
+          "razon_descarte": "",
+          "score_source": "fallback"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-006",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.14,
+                19.427
+              ],
+              [
+                -99.139,
+                19.427
+              ],
+              [
+                -99.139,
+                19.428
+              ],
+              [
+                -99.14,
+                19.428
+              ],
+              [
+                -99.14,
+                19.427
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-006",
+          "nombre": "Manzana Tepito Norte",
+          "lat": 19.4275,
+          "lng": -99.1395,
+          "densidad_poblacional": 24500,
+          "actividad_economica_denue": 220,
+          "luminosidad_viirs": 95,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 420,
+          "tipo_delito_predominante": "Robo con violencia",
+          "iluminacion_publica": 20,
+          "accesibilidad_logistica": 40,
+          "score_riesgo": 82.64,
+          "clasificacion": "DESCARTE",
+          "color_leaflet": "#ef4444",
+          "factores_riesgo": [
+            {
+              "factor": "Incidencia delictiva: 420.0 delitos/ano",
+              "peso_relativo": "50%"
+            },
+            {
+              "factor": "Deficit de iluminacion: 88% sin cobertura",
+              "peso_relativo": "25%"
+            },
+            {
+              "factor": "Accesibilidad logistica inversa: 40.0/100",
+              "peso_relativo": "25%"
+            }
+          ],
+          "recomendaciones_mitigacion": [],
+          "razon_descarte": "Score de riesgo 82.6/100 en zona DESCARTE. Delito predominante: Robo con violencia. Incidencia de 420.0 delitos anuales combinada con iluminacion del 20% y acceso logistico limitado (40/100). Se recomienda no invertir hasta que condiciones estructurales mejoren.",
+          "score_source": "fallback"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-007",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.138,
+                19.426
+              ],
+              [
+                -99.137,
+                19.426
+              ],
+              [
+                -99.137,
+                19.427
+              ],
+              [
+                -99.138,
+                19.427
+              ],
+              [
+                -99.138,
+                19.426
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-007",
+          "nombre": "Manzana Guerrero Centro",
+          "lat": 19.4265,
+          "lng": -99.1375,
+          "densidad_poblacional": 20100,
+          "actividad_economica_denue": 195,
+          "luminosidad_viirs": 110,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 380,
+          "tipo_delito_predominante": "Lesiones dolosas",
+          "iluminacion_publica": 28,
+          "accesibilidad_logistica": 45,
+          "score_riesgo": 74.4,
+          "clasificacion": "DESCARTE",
+          "color_leaflet": "#ef4444",
+          "factores_riesgo": [
+            {
+              "factor": "Incidencia delictiva: 380.0 delitos/ano",
+              "peso_relativo": "50%"
+            },
+            {
+              "factor": "Deficit de iluminacion: 79% sin cobertura",
+              "peso_relativo": "25%"
+            },
+            {
+              "factor": "Accesibilidad logistica inversa: 45.0/100",
+              "peso_relativo": "25%"
+            }
+          ],
+          "recomendaciones_mitigacion": [],
+          "razon_descarte": "Score de riesgo 74.4/100 en zona DESCARTE. Delito predominante: Lesiones dolosas. Incidencia de 380.0 delitos anuales combinada con iluminacion del 28% y acceso logistico limitado (45/100). Se recomienda no invertir hasta que condiciones estructurales mejoren.",
+          "score_source": "fallback"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-008",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.136,
+                19.425
+              ],
+              [
+                -99.135,
+                19.425
+              ],
+              [
+                -99.135,
+                19.426
+              ],
+              [
+                -99.136,
+                19.426
+              ],
+              [
+                -99.136,
+                19.425
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-008",
+          "nombre": "Manzana Santa María la Ribera",
+          "lat": 19.4255,
+          "lng": -99.1355,
+          "densidad_poblacional": 13400,
+          "actividad_economica_denue": 175,
+          "luminosidad_viirs": 155,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 92,
+          "tipo_delito_predominante": "Robo a transeúnte",
+          "iluminacion_publica": 60,
+          "accesibilidad_logistica": 66,
+          "score_riesgo": 27.98,
+          "clasificacion": "VERDE",
+          "color_leaflet": "#22c55e",
+          "factores_riesgo": [
+            {
+              "factor": "Incidencia delictiva: 92.0 delitos/ano",
+              "peso_relativo": "50%"
+            },
+            {
+              "factor": "Deficit de iluminacion: 41% sin cobertura",
+              "peso_relativo": "25%"
+            },
+            {
+              "factor": "Accesibilidad logistica inversa: 66.0/100",
+              "peso_relativo": "25%"
+            }
+          ],
+          "recomendaciones_mitigacion": [],
+          "razon_descarte": "",
+          "score_source": "fallback"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-009",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.134,
+                19.424
+              ],
+              [
+                -99.133,
+                19.424
+              ],
+              [
+                -99.133,
+                19.425
+              ],
+              [
+                -99.134,
+                19.425
+              ],
+              [
+                -99.134,
+                19.424
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-009",
+          "nombre": "Manzana San Rafael Sur",
+          "lat": 19.4245,
+          "lng": -99.1335,
+          "densidad_poblacional": 11200,
+          "actividad_economica_denue": 142,
+          "luminosidad_viirs": 140,
+          "acceso_gtfs": false,
+          "incidencia_delictiva_snsp": 68,
+          "tipo_delito_predominante": "Robo a negocio",
+          "iluminacion_publica": 55,
+          "accesibilidad_logistica": 50,
+          "score_riesgo": 32.71,
+          "clasificacion": "CAUTELA",
+          "color_leaflet": "#f59e0b",
+          "factores_riesgo": [
+            {
+              "factor": "Incidencia delictiva: 68.0 delitos/ano",
+              "peso_relativo": "50%"
+            },
+            {
+              "factor": "Deficit de iluminacion: 47% sin cobertura",
+              "peso_relativo": "25%"
+            },
+            {
+              "factor": "Accesibilidad logistica inversa: 50.0/100",
+              "peso_relativo": "25%"
+            }
+          ],
+          "recomendaciones_mitigacion": [
+            "Evaluar mejora de iluminacion publica con programa LED municipal.",
+            "Contratar seguridad privada compartida con negocios colindantes."
+          ],
+          "razon_descarte": "",
+          "score_source": "fallback"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-010",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.132,
+                19.423
+              ],
+              [
+                -99.131,
+                19.423
+              ],
+              [
+                -99.131,
+                19.424
+              ],
+              [
+                -99.132,
+                19.424
+              ],
+              [
+                -99.132,
+                19.423
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-010",
+          "nombre": "Manzana Escandón Oriente",
+          "lat": 19.4235,
+          "lng": -99.1315,
+          "densidad_poblacional": 16300,
+          "actividad_economica_denue": 267,
+          "luminosidad_viirs": 198,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 52,
+          "tipo_delito_predominante": "Fraude",
+          "iluminacion_publica": 75,
+          "accesibilidad_logistica": 78,
+          "score_riesgo": 15.19,
+          "clasificacion": "VERDE",
+          "color_leaflet": "#22c55e",
+          "factores_riesgo": [
+            {
+              "factor": "Incidencia delictiva: 52.0 delitos/ano",
+              "peso_relativo": "50%"
+            },
+            {
+              "factor": "Deficit de iluminacion: 24% sin cobertura",
+              "peso_relativo": "25%"
+            },
+            {
+              "factor": "Accesibilidad logistica inversa: 78.0/100",
+              "peso_relativo": "25%"
+            }
+          ],
+          "recomendaciones_mitigacion": [],
+          "razon_descarte": "",
+          "score_source": "fallback"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-011",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.13,
+                19.422
+              ],
+              [
+                -99.129,
+                19.422
+              ],
+              [
+                -99.129,
+                19.423
+              ],
+              [
+                -99.13,
+                19.423
+              ],
+              [
+                -99.13,
+                19.422
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-011",
+          "nombre": "Manzana Condesa Norte",
+          "lat": 19.4225,
+          "lng": -99.1295,
+          "densidad_poblacional": 17100,
+          "actividad_economica_denue": 318,
+          "luminosidad_viirs": 218,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 30,
+          "tipo_delito_predominante": "Robo a vehículo",
+          "iluminacion_publica": 88,
+          "accesibilidad_logistica": 86,
+          "score_riesgo": 6.25,
+          "clasificacion": "VERDE",
+          "color_leaflet": "#22c55e",
+          "factores_riesgo": [
+            {
+              "factor": "Incidencia delictiva: 30.0 delitos/ano",
+              "peso_relativo": "50%"
+            },
+            {
+              "factor": "Deficit de iluminacion: 8% sin cobertura",
+              "peso_relativo": "25%"
+            },
+            {
+              "factor": "Accesibilidad logistica inversa: 86.0/100",
+              "peso_relativo": "25%"
+            }
+          ],
+          "recomendaciones_mitigacion": [],
+          "razon_descarte": "",
+          "score_source": "fallback"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-012",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.128,
+                19.421
+              ],
+              [
+                -99.127,
+                19.421
+              ],
+              [
+                -99.127,
+                19.422
+              ],
+              [
+                -99.128,
+                19.422
+              ],
+              [
+                -99.128,
+                19.421
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-012",
+          "nombre": "Manzana Roma Norte Poniente",
+          "lat": 19.4215,
+          "lng": -99.1275,
+          "densidad_poblacional": 18900,
+          "actividad_economica_denue": 355,
+          "luminosidad_viirs": 228,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 24,
+          "tipo_delito_predominante": "Robo a transeúnte",
+          "iluminacion_publica": 92,
+          "accesibilidad_logistica": 90,
+          "score_riesgo": 3.03,
+          "clasificacion": "VERDE",
+          "color_leaflet": "#22c55e",
+          "factores_riesgo": [
+            {
+              "factor": "Incidencia delictiva: 24.0 delitos/ano",
+              "peso_relativo": "50%"
+            },
+            {
+              "factor": "Deficit de iluminacion: 4% sin cobertura",
+              "peso_relativo": "25%"
+            },
+            {
+              "factor": "Accesibilidad logistica inversa: 90.0/100",
+              "peso_relativo": "25%"
+            }
+          ],
+          "recomendaciones_mitigacion": [],
+          "razon_descarte": "",
+          "score_source": "fallback"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-013",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.126,
+                19.42
+              ],
+              [
+                -99.125,
+                19.42
+              ],
+              [
+                -99.125,
+                19.421
+              ],
+              [
+                -99.126,
+                19.421
+              ],
+              [
+                -99.126,
+                19.42
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-013",
+          "nombre": "Manzana Roma Sur Centro",
+          "lat": 19.4205,
+          "lng": -99.1255,
+          "densidad_poblacional": 14500,
+          "actividad_economica_denue": 248,
+          "luminosidad_viirs": 190,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 48,
+          "tipo_delito_predominante": "Robo a negocio",
+          "iluminacion_publica": 70,
+          "accesibilidad_logistica": 72,
+          "score_riesgo": 18.39,
+          "clasificacion": "VERDE",
+          "color_leaflet": "#22c55e",
+          "factores_riesgo": [
+            {
+              "factor": "Incidencia delictiva: 48.0 delitos/ano",
+              "peso_relativo": "50%"
+            },
+            {
+              "factor": "Deficit de iluminacion: 29% sin cobertura",
+              "peso_relativo": "25%"
+            },
+            {
+              "factor": "Accesibilidad logistica inversa: 72.0/100",
+              "peso_relativo": "25%"
+            }
+          ],
+          "recomendaciones_mitigacion": [],
+          "razon_descarte": "",
+          "score_source": "fallback"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-014",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.124,
+                19.419
+              ],
+              [
+                -99.123,
+                19.419
+              ],
+              [
+                -99.123,
+                19.42
+              ],
+              [
+                -99.124,
+                19.42
+              ],
+              [
+                -99.124,
+                19.419
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-014",
+          "nombre": "Manzana Narvarte Norte",
+          "lat": 19.4195,
+          "lng": -99.1235,
+          "densidad_poblacional": 12800,
+          "actividad_economica_denue": 210,
+          "luminosidad_viirs": 175,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 38,
+          "tipo_delito_predominante": "Robo a transeúnte",
+          "iluminacion_publica": 72,
+          "accesibilidad_logistica": 70,
+          "score_riesgo": 17.49,
+          "clasificacion": "VERDE",
+          "color_leaflet": "#22c55e",
+          "factores_riesgo": [
+            {
+              "factor": "Incidencia delictiva: 38.0 delitos/ano",
+              "peso_relativo": "50%"
+            },
+            {
+              "factor": "Deficit de iluminacion: 27% sin cobertura",
+              "peso_relativo": "25%"
+            },
+            {
+              "factor": "Accesibilidad logistica inversa: 70.0/100",
+              "peso_relativo": "25%"
+            }
+          ],
+          "recomendaciones_mitigacion": [],
+          "razon_descarte": "",
+          "score_source": "fallback"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-015",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.122,
+                19.418
+              ],
+              [
+                -99.121,
+                19.418
+              ],
+              [
+                -99.121,
+                19.419
+              ],
+              [
+                -99.122,
+                19.419
+              ],
+              [
+                -99.122,
+                19.418
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-015",
+          "nombre": "Manzana Del Valle Oriente",
+          "lat": 19.4185,
+          "lng": -99.1215,
+          "densidad_poblacional": 11500,
+          "actividad_economica_denue": 185,
+          "luminosidad_viirs": 162,
+          "acceso_gtfs": false,
+          "incidencia_delictiva_snsp": 29,
+          "tipo_delito_predominante": "Fraude",
+          "iluminacion_publica": 68,
+          "accesibilidad_logistica": 63,
+          "score_riesgo": 20.25,
+          "clasificacion": "VERDE",
+          "color_leaflet": "#22c55e",
+          "factores_riesgo": [
+            {
+              "factor": "Incidencia delictiva: 29.0 delitos/ano",
+              "peso_relativo": "50%"
+            },
+            {
+              "factor": "Deficit de iluminacion: 32% sin cobertura",
+              "peso_relativo": "25%"
+            },
+            {
+              "factor": "Accesibilidad logistica inversa: 63.0/100",
+              "peso_relativo": "25%"
+            }
+          ],
+          "recomendaciones_mitigacion": [],
+          "razon_descarte": "",
+          "score_source": "fallback"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-016",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.12,
+                19.417
+              ],
+              [
+                -99.119,
+                19.417
+              ],
+              [
+                -99.119,
+                19.418
+              ],
+              [
+                -99.12,
+                19.418
+              ],
+              [
+                -99.12,
+                19.417
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-016",
+          "nombre": "Manzana Benito Juárez Sur",
+          "lat": 19.4175,
+          "lng": -99.1195,
+          "densidad_poblacional": 9800,
+          "actividad_economica_denue": 155,
+          "luminosidad_viirs": 145,
+          "acceso_gtfs": false,
+          "incidencia_delictiva_snsp": 22,
+          "tipo_delito_predominante": "Robo a vehículo",
+          "iluminacion_publica": 65,
+          "accesibilidad_logistica": 58,
+          "score_riesgo": 22.2,
+          "clasificacion": "VERDE",
+          "color_leaflet": "#22c55e",
+          "factores_riesgo": [
+            {
+              "factor": "Incidencia delictiva: 22.0 delitos/ano",
+              "peso_relativo": "50%"
+            },
+            {
+              "factor": "Deficit de iluminacion: 35% sin cobertura",
+              "peso_relativo": "25%"
+            },
+            {
+              "factor": "Accesibilidad logistica inversa: 58.0/100",
+              "peso_relativo": "25%"
+            }
+          ],
+          "recomendaciones_mitigacion": [],
+          "razon_descarte": "",
+          "score_source": "fallback"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-017",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.118,
+                19.416
+              ],
+              [
+                -99.117,
+                19.416
+              ],
+              [
+                -99.117,
+                19.417
+              ],
+              [
+                -99.118,
+                19.417
+              ],
+              [
+                -99.118,
+                19.416
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-017",
+          "nombre": "Manzana Iztapalapa Noroeste",
+          "lat": 19.4165,
+          "lng": -99.1175,
+          "densidad_poblacional": 25000,
+          "actividad_economica_denue": 130,
+          "luminosidad_viirs": 75,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 460,
+          "tipo_delito_predominante": "Robo con violencia",
+          "iluminacion_publica": 15,
+          "accesibilidad_logistica": 30,
+          "score_riesgo": 91.78,
+          "clasificacion": "DESCARTE",
+          "color_leaflet": "#ef4444",
+          "factores_riesgo": [
+            {
+              "factor": "Incidencia delictiva: 460.0 delitos/ano",
+              "peso_relativo": "50%"
+            },
+            {
+              "factor": "Deficit de iluminacion: 94% sin cobertura",
+              "peso_relativo": "25%"
+            },
+            {
+              "factor": "Accesibilidad logistica inversa: 30.0/100",
+              "peso_relativo": "25%"
+            }
+          ],
+          "recomendaciones_mitigacion": [],
+          "razon_descarte": "Score de riesgo 91.8/100 en zona DESCARTE. Delito predominante: Robo con violencia. Incidencia de 460.0 delitos anuales combinada con iluminacion del 15% y acceso logistico limitado (30/100). Se recomienda no invertir hasta que condiciones estructurales mejoren.",
+          "score_source": "fallback"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-018",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.116,
+                19.415
+              ],
+              [
+                -99.115,
+                19.415
+              ],
+              [
+                -99.115,
+                19.416
+              ],
+              [
+                -99.116,
+                19.416
+              ],
+              [
+                -99.116,
+                19.415
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-018",
+          "nombre": "Manzana Iztapalapa Centro",
+          "lat": 19.4155,
+          "lng": -99.1155,
+          "densidad_poblacional": 23800,
+          "actividad_economica_denue": 112,
+          "luminosidad_viirs": 60,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 498,
+          "tipo_delito_predominante": "Homicidio doloso",
+          "iluminacion_publica": 10,
+          "accesibilidad_logistica": 25,
+          "score_riesgo": 98.93,
+          "clasificacion": "DESCARTE",
+          "color_leaflet": "#ef4444",
+          "factores_riesgo": [
+            {
+              "factor": "Incidencia delictiva: 498.0 delitos/ano",
+              "peso_relativo": "50%"
+            },
+            {
+              "factor": "Deficit de iluminacion: 100% sin cobertura",
+              "peso_relativo": "25%"
+            },
+            {
+              "factor": "Accesibilidad logistica inversa: 25.0/100",
+              "peso_relativo": "25%"
+            }
+          ],
+          "recomendaciones_mitigacion": [],
+          "razon_descarte": "Score de riesgo 98.9/100 en zona DESCARTE. Delito predominante: Homicidio doloso. Incidencia de 498.0 delitos anuales combinada con iluminacion del 10% y acceso logistico limitado (25/100). Se recomienda no invertir hasta que condiciones estructurales mejoren.",
+          "score_source": "fallback"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-019",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.114,
+                19.414
+              ],
+              [
+                -99.113,
+                19.414
+              ],
+              [
+                -99.113,
+                19.415
+              ],
+              [
+                -99.114,
+                19.415
+              ],
+              [
+                -99.114,
+                19.414
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-019",
+          "nombre": "Manzana Coyoacán Norte",
+          "lat": 19.4145,
+          "lng": -99.1135,
+          "densidad_poblacional": 10200,
+          "actividad_economica_denue": 198,
+          "luminosidad_viirs": 180,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 32,
+          "tipo_delito_predominante": "Robo a transeúnte",
+          "iluminacion_publica": 80,
+          "accesibilidad_logistica": 76,
+          "score_riesgo": 12.38,
+          "clasificacion": "VERDE",
+          "color_leaflet": "#22c55e",
+          "factores_riesgo": [
+            {
+              "factor": "Incidencia delictiva: 32.0 delitos/ano",
+              "peso_relativo": "50%"
+            },
+            {
+              "factor": "Deficit de iluminacion: 18% sin cobertura",
+              "peso_relativo": "25%"
+            },
+            {
+              "factor": "Accesibilidad logistica inversa: 76.0/100",
+              "peso_relativo": "25%"
+            }
+          ],
+          "recomendaciones_mitigacion": [],
+          "razon_descarte": "",
+          "score_source": "fallback"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-020",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.112,
+                19.413
+              ],
+              [
+                -99.111,
+                19.413
+              ],
+              [
+                -99.111,
+                19.414
+              ],
+              [
+                -99.112,
+                19.414
+              ],
+              [
+                -99.112,
+                19.413
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-020",
+          "nombre": "Manzana Coyoacán Sur",
+          "lat": 19.4135,
+          "lng": -99.1115,
+          "densidad_poblacional": 9500,
+          "actividad_economica_denue": 172,
+          "luminosidad_viirs": 165,
+          "acceso_gtfs": false,
+          "incidencia_delictiva_snsp": 18,
+          "tipo_delito_predominante": "Fraude",
+          "iluminacion_publica": 78,
+          "accesibilidad_logistica": 71,
+          "score_riesgo": 13.32,
+          "clasificacion": "VERDE",
+          "color_leaflet": "#22c55e",
+          "factores_riesgo": [
+            {
+              "factor": "Incidencia delictiva: 18.0 delitos/ano",
+              "peso_relativo": "50%"
+            },
+            {
+              "factor": "Deficit de iluminacion: 20% sin cobertura",
+              "peso_relativo": "25%"
+            },
+            {
+              "factor": "Accesibilidad logistica inversa: 71.0/100",
+              "peso_relativo": "25%"
+            }
+          ],
+          "recomendaciones_mitigacion": [],
+          "razon_descarte": "",
+          "score_source": "fallback"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-021",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.11,
+                19.412
+              ],
+              [
+                -99.109,
+                19.412
+              ],
+              [
+                -99.109,
+                19.413
+              ],
+              [
+                -99.11,
+                19.413
+              ],
+              [
+                -99.11,
+                19.412
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-021",
+          "nombre": "Manzana Pedregal Poniente",
+          "lat": 19.4125,
+          "lng": -99.1095,
+          "densidad_poblacional": 7200,
+          "actividad_economica_denue": 88,
+          "luminosidad_viirs": 120,
+          "acceso_gtfs": false,
+          "incidencia_delictiva_snsp": 15,
+          "tipo_delito_predominante": "Robo a vehículo",
+          "iluminacion_publica": 60,
+          "accesibilidad_logistica": 48,
+          "score_riesgo": 26.52,
+          "clasificacion": "VERDE",
+          "color_leaflet": "#22c55e",
+          "factores_riesgo": [
+            {
+              "factor": "Incidencia delictiva: 15.0 delitos/ano",
+              "peso_relativo": "50%"
+            },
+            {
+              "factor": "Deficit de iluminacion: 41% sin cobertura",
+              "peso_relativo": "25%"
+            },
+            {
+              "factor": "Accesibilidad logistica inversa: 48.0/100",
+              "peso_relativo": "25%"
+            }
+          ],
+          "recomendaciones_mitigacion": [],
+          "razon_descarte": "",
+          "score_source": "fallback"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-022",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.108,
+                19.411
+              ],
+              [
+                -99.107,
+                19.411
+              ],
+              [
+                -99.107,
+                19.412
+              ],
+              [
+                -99.108,
+                19.412
+              ],
+              [
+                -99.108,
+                19.411
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-022",
+          "nombre": "Manzana Xochimilco Norte",
+          "lat": 19.4115,
+          "lng": -99.1075,
+          "densidad_poblacional": 6800,
+          "actividad_economica_denue": 65,
+          "luminosidad_viirs": 82,
+          "acceso_gtfs": false,
+          "incidencia_delictiva_snsp": 55,
+          "tipo_delito_predominante": "Robo a negocio",
+          "iluminacion_publica": 38,
+          "accesibilidad_logistica": 35,
+          "score_riesgo": 41.73,
+          "clasificacion": "CAUTELA",
+          "color_leaflet": "#f59e0b",
+          "factores_riesgo": [
+            {
+              "factor": "Incidencia delictiva: 55.0 delitos/ano",
+              "peso_relativo": "50%"
+            },
+            {
+              "factor": "Deficit de iluminacion: 67% sin cobertura",
+              "peso_relativo": "25%"
+            },
+            {
+              "factor": "Accesibilidad logistica inversa: 35.0/100",
+              "peso_relativo": "25%"
+            }
+          ],
+          "recomendaciones_mitigacion": [
+            "Evaluar mejora de iluminacion publica con programa LED municipal.",
+            "Contratar seguridad privada compartida con negocios colindantes."
+          ],
+          "razon_descarte": "",
+          "score_source": "fallback"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-023",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.154,
+                19.434
+              ],
+              [
+                -99.153,
+                19.434
+              ],
+              [
+                -99.153,
+                19.435
+              ],
+              [
+                -99.154,
+                19.435
+              ],
+              [
+                -99.154,
+                19.434
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-023",
+          "nombre": "Manzana Lomas de Chapultepec",
+          "lat": 19.4345,
+          "lng": -99.1535,
+          "densidad_poblacional": 5500,
+          "actividad_economica_denue": 125,
+          "luminosidad_viirs": 195,
+          "acceso_gtfs": false,
+          "incidencia_delictiva_snsp": 12,
+          "tipo_delito_predominante": "Fraude",
+          "iluminacion_publica": 88,
+          "accesibilidad_logistica": 82,
+          "score_riesgo": 5.84,
+          "clasificacion": "VERDE",
+          "color_leaflet": "#22c55e",
+          "factores_riesgo": [
+            {
+              "factor": "Incidencia delictiva: 12.0 delitos/ano",
+              "peso_relativo": "50%"
+            },
+            {
+              "factor": "Deficit de iluminacion: 8% sin cobertura",
+              "peso_relativo": "25%"
+            },
+            {
+              "factor": "Accesibilidad logistica inversa: 82.0/100",
+              "peso_relativo": "25%"
+            }
+          ],
+          "recomendaciones_mitigacion": [],
+          "razon_descarte": "",
+          "score_source": "fallback"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-024",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.152,
+                19.435
+              ],
+              [
+                -99.151,
+                19.435
+              ],
+              [
+                -99.151,
+                19.436
+              ],
+              [
+                -99.152,
+                19.436
+              ],
+              [
+                -99.152,
+                19.435
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-024",
+          "nombre": "Manzana Santa Fe Centro",
+          "lat": 19.4355,
+          "lng": -99.1515,
+          "densidad_poblacional": 8200,
+          "actividad_economica_denue": 280,
+          "luminosidad_viirs": 215,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 18,
+          "tipo_delito_predominante": "Robo a vehículo",
+          "iluminacion_publica": 90,
+          "accesibilidad_logistica": 85,
+          "score_riesgo": 4.79,
+          "clasificacion": "VERDE",
+          "color_leaflet": "#22c55e",
+          "factores_riesgo": [
+            {
+              "factor": "Incidencia delictiva: 18.0 delitos/ano",
+              "peso_relativo": "50%"
+            },
+            {
+              "factor": "Deficit de iluminacion: 6% sin cobertura",
+              "peso_relativo": "25%"
+            },
+            {
+              "factor": "Accesibilidad logistica inversa: 85.0/100",
+              "peso_relativo": "25%"
+            }
+          ],
+          "recomendaciones_mitigacion": [],
+          "razon_descarte": "",
+          "score_source": "fallback"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-025",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.15,
+                19.436
+              ],
+              [
+                -99.149,
+                19.436
+              ],
+              [
+                -99.149,
+                19.437
+              ],
+              [
+                -99.15,
+                19.437
+              ],
+              [
+                -99.15,
+                19.436
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-025",
+          "nombre": "Manzana Santa Fe Norte",
+          "lat": 19.4365,
+          "lng": -99.1495,
+          "densidad_poblacional": 7600,
+          "actividad_economica_denue": 255,
+          "luminosidad_viirs": 208,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 22,
+          "tipo_delito_predominante": "Robo a transeúnte",
+          "iluminacion_publica": 87,
+          "accesibilidad_logistica": 83,
+          "score_riesgo": 6.8,
+          "clasificacion": "VERDE",
+          "color_leaflet": "#22c55e",
+          "factores_riesgo": [
+            {
+              "factor": "Incidencia delictiva: 22.0 delitos/ano",
+              "peso_relativo": "50%"
+            },
+            {
+              "factor": "Deficit de iluminacion: 9% sin cobertura",
+              "peso_relativo": "25%"
+            },
+            {
+              "factor": "Accesibilidad logistica inversa: 83.0/100",
+              "peso_relativo": "25%"
+            }
+          ],
+          "recomendaciones_mitigacion": [],
+          "razon_descarte": "",
+          "score_source": "fallback"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-026",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.148,
+                19.437
+              ],
+              [
+                -99.147,
+                19.437
+              ],
+              [
+                -99.147,
+                19.438
+              ],
+              [
+                -99.148,
+                19.438
+              ],
+              [
+                -99.148,
+                19.437
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-026",
+          "nombre": "Manzana Azcapotzalco Sur",
+          "lat": 19.4375,
+          "lng": -99.1475,
+          "densidad_poblacional": 17800,
+          "actividad_economica_denue": 188,
+          "luminosidad_viirs": 148,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 95,
+          "tipo_delito_predominante": "Robo a negocio",
+          "iluminacion_publica": 52,
+          "accesibilidad_logistica": 60,
+          "score_riesgo": 32.78,
+          "clasificacion": "CAUTELA",
+          "color_leaflet": "#f59e0b",
+          "factores_riesgo": [
+            {
+              "factor": "Incidencia delictiva: 95.0 delitos/ano",
+              "peso_relativo": "50%"
+            },
+            {
+              "factor": "Deficit de iluminacion: 51% sin cobertura",
+              "peso_relativo": "25%"
+            },
+            {
+              "factor": "Accesibilidad logistica inversa: 60.0/100",
+              "peso_relativo": "25%"
+            }
+          ],
+          "recomendaciones_mitigacion": [
+            "Evaluar mejora de iluminacion publica con programa LED municipal.",
+            "Contratar seguridad privada compartida con negocios colindantes."
+          ],
+          "razon_descarte": "",
+          "score_source": "fallback"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-027",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.146,
+                19.438
+              ],
+              [
+                -99.145,
+                19.438
+              ],
+              [
+                -99.145,
+                19.439
+              ],
+              [
+                -99.146,
+                19.439
+              ],
+              [
+                -99.146,
+                19.438
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-027",
+          "nombre": "Manzana Azcapotzalco Norte",
+          "lat": 19.4385,
+          "lng": -99.1455,
+          "densidad_poblacional": 16200,
+          "actividad_economica_denue": 165,
+          "luminosidad_viirs": 130,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 115,
+          "tipo_delito_predominante": "Robo con violencia",
+          "iluminacion_publica": 44,
+          "accesibilidad_logistica": 54,
+          "score_riesgo": 39.33,
+          "clasificacion": "CAUTELA",
+          "color_leaflet": "#f59e0b",
+          "factores_riesgo": [
+            {
+              "factor": "Incidencia delictiva: 115.0 delitos/ano",
+              "peso_relativo": "50%"
+            },
+            {
+              "factor": "Deficit de iluminacion: 60% sin cobertura",
+              "peso_relativo": "25%"
+            },
+            {
+              "factor": "Accesibilidad logistica inversa: 54.0/100",
+              "peso_relativo": "25%"
+            }
+          ],
+          "recomendaciones_mitigacion": [
+            "Evaluar mejora de iluminacion publica con programa LED municipal.",
+            "Contratar seguridad privada compartida con negocios colindantes."
+          ],
+          "razon_descarte": "",
+          "score_source": "fallback"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-028",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.144,
+                19.439
+              ],
+              [
+                -99.143,
+                19.439
+              ],
+              [
+                -99.143,
+                19.44
+              ],
+              [
+                -99.144,
+                19.44
+              ],
+              [
+                -99.144,
+                19.439
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-028",
+          "nombre": "Manzana Gustavo A. Madero Centro",
+          "lat": 19.4395,
+          "lng": -99.1435,
+          "densidad_poblacional": 22500,
+          "actividad_economica_denue": 145,
+          "luminosidad_viirs": 105,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 290,
+          "tipo_delito_predominante": "Robo con violencia",
+          "iluminacion_publica": 32,
+          "accesibilidad_logistica": 42,
+          "score_riesgo": 65.08,
+          "clasificacion": "DESCARTE",
+          "color_leaflet": "#ef4444",
+          "factores_riesgo": [
+            {
+              "factor": "Incidencia delictiva: 290.0 delitos/ano",
+              "peso_relativo": "50%"
+            },
+            {
+              "factor": "Deficit de iluminacion: 74% sin cobertura",
+              "peso_relativo": "25%"
+            },
+            {
+              "factor": "Accesibilidad logistica inversa: 42.0/100",
+              "peso_relativo": "25%"
+            }
+          ],
+          "recomendaciones_mitigacion": [],
+          "razon_descarte": "Score de riesgo 65.1/100 en zona DESCARTE. Delito predominante: Robo con violencia. Incidencia de 290.0 delitos anuales combinada con iluminacion del 32% y acceso logistico limitado (42/100). Se recomienda no invertir hasta que condiciones estructurales mejoren.",
+          "score_source": "fallback"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-029",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.142,
+                19.44
+              ],
+              [
+                -99.141,
+                19.44
+              ],
+              [
+                -99.141,
+                19.441
+              ],
+              [
+                -99.142,
+                19.441
+              ],
+              [
+                -99.142,
+                19.44
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-029",
+          "nombre": "Manzana Gustavo A. Madero Norte",
+          "lat": 19.4405,
+          "lng": -99.1415,
+          "densidad_poblacional": 21000,
+          "actividad_economica_denue": 122,
+          "luminosidad_viirs": 88,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 330,
+          "tipo_delito_predominante": "Lesiones dolosas",
+          "iluminacion_publica": 25,
+          "accesibilidad_logistica": 38,
+          "score_riesgo": 72.66,
+          "clasificacion": "DESCARTE",
+          "color_leaflet": "#ef4444",
+          "factores_riesgo": [
+            {
+              "factor": "Incidencia delictiva: 330.0 delitos/ano",
+              "peso_relativo": "50%"
+            },
+            {
+              "factor": "Deficit de iluminacion: 82% sin cobertura",
+              "peso_relativo": "25%"
+            },
+            {
+              "factor": "Accesibilidad logistica inversa: 38.0/100",
+              "peso_relativo": "25%"
+            }
+          ],
+          "recomendaciones_mitigacion": [],
+          "razon_descarte": "Score de riesgo 72.7/100 en zona DESCARTE. Delito predominante: Lesiones dolosas. Incidencia de 330.0 delitos anuales combinada con iluminacion del 25% y acceso logistico limitado (38/100). Se recomienda no invertir hasta que condiciones estructurales mejoren.",
+          "score_source": "fallback"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-030",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.14,
+                19.441
+              ],
+              [
+                -99.139,
+                19.441
+              ],
+              [
+                -99.139,
+                19.442
+              ],
+              [
+                -99.14,
+                19.442
+              ],
+              [
+                -99.14,
+                19.441
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-030",
+          "nombre": "Manzana Venustiano Carranza Centro",
+          "lat": 19.4415,
+          "lng": -99.1395,
+          "densidad_poblacional": 18000,
+          "actividad_economica_denue": 232,
+          "luminosidad_viirs": 170,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 88,
+          "tipo_delito_predominante": "Robo a transeúnte",
+          "iluminacion_publica": 62,
+          "accesibilidad_logistica": 67,
+          "score_riesgo": 26.63,
+          "clasificacion": "VERDE",
+          "color_leaflet": "#22c55e",
+          "factores_riesgo": [
+            {
+              "factor": "Incidencia delictiva: 88.0 delitos/ano",
+              "peso_relativo": "50%"
+            },
+            {
+              "factor": "Deficit de iluminacion: 39% sin cobertura",
+              "peso_relativo": "25%"
+            },
+            {
+              "factor": "Accesibilidad logistica inversa: 67.0/100",
+              "peso_relativo": "25%"
+            }
+          ],
+          "recomendaciones_mitigacion": [],
+          "razon_descarte": "",
+          "score_source": "fallback"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-031",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.138,
+                19.442
+              ],
+              [
+                -99.137,
+                19.442
+              ],
+              [
+                -99.137,
+                19.443
+              ],
+              [
+                -99.138,
+                19.443
+              ],
+              [
+                -99.138,
+                19.442
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-031",
+          "nombre": "Manzana Pensil Norte",
+          "lat": 19.4425,
+          "lng": -99.1375,
+          "densidad_poblacional": 14900,
+          "actividad_economica_denue": 205,
+          "luminosidad_viirs": 168,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 62,
+          "tipo_delito_predominante": "Robo a vehículo",
+          "iluminacion_publica": 68,
+          "accesibilidad_logistica": 72,
+          "score_riesgo": 20.41,
+          "clasificacion": "VERDE",
+          "color_leaflet": "#22c55e",
+          "factores_riesgo": [
+            {
+              "factor": "Incidencia delictiva: 62.0 delitos/ano",
+              "peso_relativo": "50%"
+            },
+            {
+              "factor": "Deficit de iluminacion: 32% sin cobertura",
+              "peso_relativo": "25%"
+            },
+            {
+              "factor": "Accesibilidad logistica inversa: 72.0/100",
+              "peso_relativo": "25%"
+            }
+          ],
+          "recomendaciones_mitigacion": [],
+          "razon_descarte": "",
+          "score_source": "fallback"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-032",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.136,
+                19.443
+              ],
+              [
+                -99.135,
+                19.443
+              ],
+              [
+                -99.135,
+                19.444
+              ],
+              [
+                -99.136,
+                19.444
+              ],
+              [
+                -99.136,
+                19.443
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-032",
+          "nombre": "Manzana Tacuba Centro",
+          "lat": 19.4435,
+          "lng": -99.1355,
+          "densidad_poblacional": 16800,
+          "actividad_economica_denue": 178,
+          "luminosidad_viirs": 145,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 105,
+          "tipo_delito_predominante": "Robo a negocio",
+          "iluminacion_publica": 50,
+          "accesibilidad_logistica": 58,
+          "score_riesgo": 35.11,
+          "clasificacion": "CAUTELA",
+          "color_leaflet": "#f59e0b",
+          "factores_riesgo": [
+            {
+              "factor": "Incidencia delictiva: 105.0 delitos/ano",
+              "peso_relativo": "50%"
+            },
+            {
+              "factor": "Deficit de iluminacion: 53% sin cobertura",
+              "peso_relativo": "25%"
+            },
+            {
+              "factor": "Accesibilidad logistica inversa: 58.0/100",
+              "peso_relativo": "25%"
+            }
+          ],
+          "recomendaciones_mitigacion": [
+            "Evaluar mejora de iluminacion publica con programa LED municipal.",
+            "Contratar seguridad privada compartida con negocios colindantes."
+          ],
+          "razon_descarte": "",
+          "score_source": "fallback"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-033",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.134,
+                19.444
+              ],
+              [
+                -99.133,
+                19.444
+              ],
+              [
+                -99.133,
+                19.445
+              ],
+              [
+                -99.134,
+                19.445
+              ],
+              [
+                -99.134,
+                19.444
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-033",
+          "nombre": "Manzana Tlatelolco Oriente",
+          "lat": 19.4445,
+          "lng": -99.1335,
+          "densidad_poblacional": 19500,
+          "actividad_economica_denue": 265,
+          "luminosidad_viirs": 200,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 58,
+          "tipo_delito_predominante": "Robo a transeúnte",
+          "iluminacion_publica": 76,
+          "accesibilidad_logistica": 80,
+          "score_riesgo": 14.79,
+          "clasificacion": "VERDE",
+          "color_leaflet": "#22c55e",
+          "factores_riesgo": [
+            {
+              "factor": "Incidencia delictiva: 58.0 delitos/ano",
+              "peso_relativo": "50%"
+            },
+            {
+              "factor": "Deficit de iluminacion: 22% sin cobertura",
+              "peso_relativo": "25%"
+            },
+            {
+              "factor": "Accesibilidad logistica inversa: 80.0/100",
+              "peso_relativo": "25%"
+            }
+          ],
+          "recomendaciones_mitigacion": [],
+          "razon_descarte": "",
+          "score_source": "fallback"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-034",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.132,
+                19.445
+              ],
+              [
+                -99.131,
+                19.445
+              ],
+              [
+                -99.131,
+                19.446
+              ],
+              [
+                -99.132,
+                19.446
+              ],
+              [
+                -99.132,
+                19.445
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-034",
+          "nombre": "Manzana Garibaldi Norte",
+          "lat": 19.4455,
+          "lng": -99.1315,
+          "densidad_poblacional": 17200,
+          "actividad_economica_denue": 320,
+          "luminosidad_viirs": 222,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 142,
+          "tipo_delito_predominante": "Robo a transeúnte",
+          "iluminacion_publica": 55,
+          "accesibilidad_logistica": 70,
+          "score_riesgo": 33.15,
+          "clasificacion": "CAUTELA",
+          "color_leaflet": "#f59e0b",
+          "factores_riesgo": [
+            {
+              "factor": "Incidencia delictiva: 142.0 delitos/ano",
+              "peso_relativo": "50%"
+            },
+            {
+              "factor": "Deficit de iluminacion: 47% sin cobertura",
+              "peso_relativo": "25%"
+            },
+            {
+              "factor": "Accesibilidad logistica inversa: 70.0/100",
+              "peso_relativo": "25%"
+            }
+          ],
+          "recomendaciones_mitigacion": [
+            "Evaluar mejora de iluminacion publica con programa LED municipal.",
+            "Contratar seguridad privada compartida con negocios colindantes."
+          ],
+          "razon_descarte": "",
+          "score_source": "fallback"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-035",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.13,
+                19.446
+              ],
+              [
+                -99.129,
+                19.446
+              ],
+              [
+                -99.129,
+                19.447
+              ],
+              [
+                -99.13,
+                19.447
+              ],
+              [
+                -99.13,
+                19.446
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-035",
+          "nombre": "Manzana Centro Histórico Poniente",
+          "lat": 19.4465,
+          "lng": -99.1295,
+          "densidad_poblacional": 20800,
+          "actividad_economica_denue": 398,
+          "luminosidad_viirs": 238,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 175,
+          "tipo_delito_predominante": "Carterismo",
+          "iluminacion_publica": 72,
+          "accesibilidad_logistica": 82,
+          "score_riesgo": 27.24,
+          "clasificacion": "VERDE",
+          "color_leaflet": "#22c55e",
+          "factores_riesgo": [
+            {
+              "factor": "Incidencia delictiva: 175.0 delitos/ano",
+              "peso_relativo": "50%"
+            },
+            {
+              "factor": "Deficit de iluminacion: 27% sin cobertura",
+              "peso_relativo": "25%"
+            },
+            {
+              "factor": "Accesibilidad logistica inversa: 82.0/100",
+              "peso_relativo": "25%"
+            }
+          ],
+          "recomendaciones_mitigacion": [],
+          "razon_descarte": "",
+          "score_source": "fallback"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-036",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.128,
+                19.447
+              ],
+              [
+                -99.127,
+                19.447
+              ],
+              [
+                -99.127,
+                19.448
+              ],
+              [
+                -99.128,
+                19.448
+              ],
+              [
+                -99.128,
+                19.447
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-036",
+          "nombre": "Manzana Centro Histórico Zócalo",
+          "lat": 19.4475,
+          "lng": -99.1275,
+          "densidad_poblacional": 19000,
+          "actividad_economica_denue": 390,
+          "luminosidad_viirs": 242,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 160,
+          "tipo_delito_predominante": "Carterismo",
+          "iluminacion_publica": 80,
+          "accesibilidad_logistica": 85,
+          "score_riesgo": 22.28,
+          "clasificacion": "VERDE",
+          "color_leaflet": "#22c55e",
+          "factores_riesgo": [
+            {
+              "factor": "Incidencia delictiva: 160.0 delitos/ano",
+              "peso_relativo": "50%"
+            },
+            {
+              "factor": "Deficit de iluminacion: 18% sin cobertura",
+              "peso_relativo": "25%"
+            },
+            {
+              "factor": "Accesibilidad logistica inversa: 85.0/100",
+              "peso_relativo": "25%"
+            }
+          ],
+          "recomendaciones_mitigacion": [],
+          "razon_descarte": "",
+          "score_source": "fallback"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-037",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.126,
+                19.448
+              ],
+              [
+                -99.125,
+                19.448
+              ],
+              [
+                -99.125,
+                19.449
+              ],
+              [
+                -99.126,
+                19.449
+              ],
+              [
+                -99.126,
+                19.448
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-037",
+          "nombre": "Manzana La Merced Norte",
+          "lat": 19.4485,
+          "lng": -99.1255,
+          "densidad_poblacional": 22800,
+          "actividad_economica_denue": 248,
+          "luminosidad_viirs": 128,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 350,
+          "tipo_delito_predominante": "Robo con violencia",
+          "iluminacion_publica": 35,
+          "accesibilidad_logistica": 48,
+          "score_riesgo": 68.2,
+          "clasificacion": "DESCARTE",
+          "color_leaflet": "#ef4444",
+          "factores_riesgo": [
+            {
+              "factor": "Incidencia delictiva: 350.0 delitos/ano",
+              "peso_relativo": "50%"
+            },
+            {
+              "factor": "Deficit de iluminacion: 71% sin cobertura",
+              "peso_relativo": "25%"
+            },
+            {
+              "factor": "Accesibilidad logistica inversa: 48.0/100",
+              "peso_relativo": "25%"
+            }
+          ],
+          "recomendaciones_mitigacion": [],
+          "razon_descarte": "Score de riesgo 68.2/100 en zona DESCARTE. Delito predominante: Robo con violencia. Incidencia de 350.0 delitos anuales combinada con iluminacion del 35% y acceso logistico limitado (48/100). Se recomienda no invertir hasta que condiciones estructurales mejoren.",
+          "score_source": "fallback"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-038",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.124,
+                19.449
+              ],
+              [
+                -99.123,
+                19.449
+              ],
+              [
+                -99.123,
+                19.45
+              ],
+              [
+                -99.124,
+                19.45
+              ],
+              [
+                -99.124,
+                19.449
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-038",
+          "nombre": "Manzana Morelos Sur",
+          "lat": 19.4495,
+          "lng": -99.1235,
+          "densidad_poblacional": 23500,
+          "actividad_economica_denue": 135,
+          "luminosidad_viirs": 88,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 410,
+          "tipo_delito_predominante": "Homicidio doloso",
+          "iluminacion_publica": 18,
+          "accesibilidad_logistica": 32,
+          "score_riesgo": 85.06,
+          "clasificacion": "DESCARTE",
+          "color_leaflet": "#ef4444",
+          "factores_riesgo": [
+            {
+              "factor": "Incidencia delictiva: 410.0 delitos/ano",
+              "peso_relativo": "50%"
+            },
+            {
+              "factor": "Deficit de iluminacion: 91% sin cobertura",
+              "peso_relativo": "25%"
+            },
+            {
+              "factor": "Accesibilidad logistica inversa: 32.0/100",
+              "peso_relativo": "25%"
+            }
+          ],
+          "recomendaciones_mitigacion": [],
+          "razon_descarte": "Score de riesgo 85.1/100 en zona DESCARTE. Delito predominante: Homicidio doloso. Incidencia de 410.0 delitos anuales combinada con iluminacion del 18% y acceso logistico limitado (32/100). Se recomienda no invertir hasta que condiciones estructurales mejoren.",
+          "score_source": "fallback"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-039",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.122,
+                19.45
+              ],
+              [
+                -99.121,
+                19.45
+              ],
+              [
+                -99.121,
+                19.451
+              ],
+              [
+                -99.122,
+                19.451
+              ],
+              [
+                -99.122,
+                19.45
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-039",
+          "nombre": "Manzana Bondojito Centro",
+          "lat": 19.4505,
+          "lng": -99.1215,
+          "densidad_poblacional": 21200,
+          "actividad_economica_denue": 98,
+          "luminosidad_viirs": 70,
+          "acceso_gtfs": false,
+          "incidencia_delictiva_snsp": 385,
+          "tipo_delito_predominante": "Robo con violencia",
+          "iluminacion_publica": 12,
+          "accesibilidad_logistica": 22,
+          "score_riesgo": 87.83,
+          "clasificacion": "DESCARTE",
+          "color_leaflet": "#ef4444",
+          "factores_riesgo": [
+            {
+              "factor": "Incidencia delictiva: 385.0 delitos/ano",
+              "peso_relativo": "50%"
+            },
+            {
+              "factor": "Deficit de iluminacion: 98% sin cobertura",
+              "peso_relativo": "25%"
+            },
+            {
+              "factor": "Accesibilidad logistica inversa: 22.0/100",
+              "peso_relativo": "25%"
+            }
+          ],
+          "recomendaciones_mitigacion": [],
+          "razon_descarte": "Score de riesgo 87.8/100 en zona DESCARTE. Delito predominante: Robo con violencia. Incidencia de 385.0 delitos anuales combinada con iluminacion del 12% y acceso logistico limitado (22/100). Se recomienda no invertir hasta que condiciones estructurales mejoren.",
+          "score_source": "fallback"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-040",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.12,
+                19.451
+              ],
+              [
+                -99.119,
+                19.451
+              ],
+              [
+                -99.119,
+                19.452
+              ],
+              [
+                -99.12,
+                19.452
+              ],
+              [
+                -99.12,
+                19.451
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-040",
+          "nombre": "Manzana Peralvillo Oriente",
+          "lat": 19.4515,
+          "lng": -99.1195,
+          "densidad_poblacional": 20500,
+          "actividad_economica_denue": 108,
+          "luminosidad_viirs": 80,
+          "acceso_gtfs": false,
+          "incidencia_delictiva_snsp": 368,
+          "tipo_delito_predominante": "Lesiones dolosas",
+          "iluminacion_publica": 20,
+          "accesibilidad_logistica": 28,
+          "score_riesgo": 81.6,
+          "clasificacion": "DESCARTE",
+          "color_leaflet": "#ef4444",
+          "factores_riesgo": [
+            {
+              "factor": "Incidencia delictiva: 368.0 delitos/ano",
+              "peso_relativo": "50%"
+            },
+            {
+              "factor": "Deficit de iluminacion: 88% sin cobertura",
+              "peso_relativo": "25%"
+            },
+            {
+              "factor": "Accesibilidad logistica inversa: 28.0/100",
+              "peso_relativo": "25%"
+            }
+          ],
+          "recomendaciones_mitigacion": [],
+          "razon_descarte": "Score de riesgo 81.6/100 en zona DESCARTE. Delito predominante: Lesiones dolosas. Incidencia de 368.0 delitos anuales combinada con iluminacion del 20% y acceso logistico limitado (28/100). Se recomienda no invertir hasta que condiciones estructurales mejoren.",
+          "score_source": "fallback"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-041",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.156,
+                19.426
+              ],
+              [
+                -99.155,
+                19.426
+              ],
+              [
+                -99.155,
+                19.427
+              ],
+              [
+                -99.156,
+                19.427
+              ],
+              [
+                -99.156,
+                19.426
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-041",
+          "nombre": "Manzana Miguel Hidalgo Sur",
+          "lat": 19.4265,
+          "lng": -99.1555,
+          "densidad_poblacional": 12500,
+          "actividad_economica_denue": 215,
+          "luminosidad_viirs": 185,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 40,
+          "tipo_delito_predominante": "Robo a vehículo",
+          "iluminacion_publica": 80,
+          "accesibilidad_logistica": 78,
+          "score_riesgo": 12.49,
+          "clasificacion": "VERDE",
+          "color_leaflet": "#22c55e",
+          "factores_riesgo": [
+            {
+              "factor": "Incidencia delictiva: 40.0 delitos/ano",
+              "peso_relativo": "50%"
+            },
+            {
+              "factor": "Deficit de iluminacion: 18% sin cobertura",
+              "peso_relativo": "25%"
+            },
+            {
+              "factor": "Accesibilidad logistica inversa: 78.0/100",
+              "peso_relativo": "25%"
+            }
+          ],
+          "recomendaciones_mitigacion": [],
+          "razon_descarte": "",
+          "score_source": "fallback"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-042",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.157,
+                19.425
+              ],
+              [
+                -99.156,
+                19.425
+              ],
+              [
+                -99.156,
+                19.426
+              ],
+              [
+                -99.157,
+                19.426
+              ],
+              [
+                -99.157,
+                19.425
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-042",
+          "nombre": "Manzana Chapultepec Oriente",
+          "lat": 19.4255,
+          "lng": -99.1565,
+          "densidad_poblacional": 8900,
+          "actividad_economica_denue": 178,
+          "luminosidad_viirs": 172,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 26,
+          "tipo_delito_predominante": "Fraude",
+          "iluminacion_publica": 82,
+          "accesibilidad_logistica": 79,
+          "score_riesgo": 10.11,
+          "clasificacion": "VERDE",
+          "color_leaflet": "#22c55e",
+          "factores_riesgo": [
+            {
+              "factor": "Incidencia delictiva: 26.0 delitos/ano",
+              "peso_relativo": "50%"
+            },
+            {
+              "factor": "Deficit de iluminacion: 15% sin cobertura",
+              "peso_relativo": "25%"
+            },
+            {
+              "factor": "Accesibilidad logistica inversa: 79.0/100",
+              "peso_relativo": "25%"
+            }
+          ],
+          "recomendaciones_mitigacion": [],
+          "razon_descarte": "",
+          "score_source": "fallback"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-043",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.158,
+                19.424
+              ],
+              [
+                -99.157,
+                19.424
+              ],
+              [
+                -99.157,
+                19.425
+              ],
+              [
+                -99.158,
+                19.425
+              ],
+              [
+                -99.158,
+                19.424
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-043",
+          "nombre": "Manzana Observatorio Centro",
+          "lat": 19.4245,
+          "lng": -99.1575,
+          "densidad_poblacional": 10800,
+          "actividad_economica_denue": 148,
+          "luminosidad_viirs": 155,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 45,
+          "tipo_delito_predominante": "Robo a transeúnte",
+          "iluminacion_publica": 70,
+          "accesibilidad_logistica": 65,
+          "score_riesgo": 20.58,
+          "clasificacion": "VERDE",
+          "color_leaflet": "#22c55e",
+          "factores_riesgo": [
+            {
+              "factor": "Incidencia delictiva: 45.0 delitos/ano",
+              "peso_relativo": "50%"
+            },
+            {
+              "factor": "Deficit de iluminacion: 29% sin cobertura",
+              "peso_relativo": "25%"
+            },
+            {
+              "factor": "Accesibilidad logistica inversa: 65.0/100",
+              "peso_relativo": "25%"
+            }
+          ],
+          "recomendaciones_mitigacion": [],
+          "razon_descarte": "",
+          "score_source": "fallback"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-044",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.159,
+                19.423
+              ],
+              [
+                -99.158,
+                19.423
+              ],
+              [
+                -99.158,
+                19.424
+              ],
+              [
+                -99.159,
+                19.424
+              ],
+              [
+                -99.159,
+                19.423
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-044",
+          "nombre": "Manzana Popo–Álvaro Obregón",
+          "lat": 19.4235,
+          "lng": -99.1585,
+          "densidad_poblacional": 14200,
+          "actividad_economica_denue": 192,
+          "luminosidad_viirs": 162,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 72,
+          "tipo_delito_predominante": "Robo a negocio",
+          "iluminacion_publica": 62,
+          "accesibilidad_logistica": 60,
+          "score_riesgo": 27.49,
+          "clasificacion": "VERDE",
+          "color_leaflet": "#22c55e",
+          "factores_riesgo": [
+            {
+              "factor": "Incidencia delictiva: 72.0 delitos/ano",
+              "peso_relativo": "50%"
+            },
+            {
+              "factor": "Deficit de iluminacion: 39% sin cobertura",
+              "peso_relativo": "25%"
+            },
+            {
+              "factor": "Accesibilidad logistica inversa: 60.0/100",
+              "peso_relativo": "25%"
+            }
+          ],
+          "recomendaciones_mitigacion": [],
+          "razon_descarte": "",
+          "score_source": "fallback"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-045",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.16,
+                19.422
+              ],
+              [
+                -99.159,
+                19.422
+              ],
+              [
+                -99.159,
+                19.423
+              ],
+              [
+                -99.16,
+                19.423
+              ],
+              [
+                -99.16,
+                19.422
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-045",
+          "nombre": "Manzana Mixcoac Poniente",
+          "lat": 19.4225,
+          "lng": -99.1595,
+          "densidad_poblacional": 13600,
+          "actividad_economica_denue": 210,
+          "luminosidad_viirs": 175,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 48,
+          "tipo_delito_predominante": "Robo a vehículo",
+          "iluminacion_publica": 74,
+          "accesibilidad_logistica": 73,
+          "score_riesgo": 16.86,
+          "clasificacion": "VERDE",
+          "color_leaflet": "#22c55e",
+          "factores_riesgo": [
+            {
+              "factor": "Incidencia delictiva: 48.0 delitos/ano",
+              "peso_relativo": "50%"
+            },
+            {
+              "factor": "Deficit de iluminacion: 25% sin cobertura",
+              "peso_relativo": "25%"
+            },
+            {
+              "factor": "Accesibilidad logistica inversa: 73.0/100",
+              "peso_relativo": "25%"
+            }
+          ],
+          "recomendaciones_mitigacion": [],
+          "razon_descarte": "",
+          "score_source": "fallback"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-046",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.161,
+                19.421
+              ],
+              [
+                -99.16,
+                19.421
+              ],
+              [
+                -99.16,
+                19.422
+              ],
+              [
+                -99.161,
+                19.422
+              ],
+              [
+                -99.161,
+                19.421
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-046",
+          "nombre": "Manzana Insurgentes Sur Norte",
+          "lat": 19.4215,
+          "lng": -99.1605,
+          "densidad_poblacional": 16500,
+          "actividad_economica_denue": 305,
+          "luminosidad_viirs": 215,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 35,
+          "tipo_delito_predominante": "Fraude",
+          "iluminacion_publica": 85,
+          "accesibilidad_logistica": 88,
+          "score_riesgo": 6.93,
+          "clasificacion": "VERDE",
+          "color_leaflet": "#22c55e",
+          "factores_riesgo": [
+            {
+              "factor": "Incidencia delictiva: 35.0 delitos/ano",
+              "peso_relativo": "50%"
+            },
+            {
+              "factor": "Deficit de iluminacion: 12% sin cobertura",
+              "peso_relativo": "25%"
+            },
+            {
+              "factor": "Accesibilidad logistica inversa: 88.0/100",
+              "peso_relativo": "25%"
+            }
+          ],
+          "recomendaciones_mitigacion": [],
+          "razon_descarte": "",
+          "score_source": "fallback"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-047",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.162,
+                19.42
+              ],
+              [
+                -99.161,
+                19.42
+              ],
+              [
+                -99.161,
+                19.421
+              ],
+              [
+                -99.162,
+                19.421
+              ],
+              [
+                -99.162,
+                19.42
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-047",
+          "nombre": "Manzana WTC–Insurgentes",
+          "lat": 19.4205,
+          "lng": -99.1615,
+          "densidad_poblacional": 13800,
+          "actividad_economica_denue": 335,
+          "luminosidad_viirs": 225,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 28,
+          "tipo_delito_predominante": "Robo a transeúnte",
+          "iluminacion_publica": 90,
+          "accesibilidad_logistica": 92,
+          "score_riesgo": 3.31,
+          "clasificacion": "VERDE",
+          "color_leaflet": "#22c55e",
+          "factores_riesgo": [
+            {
+              "factor": "Incidencia delictiva: 28.0 delitos/ano",
+              "peso_relativo": "50%"
+            },
+            {
+              "factor": "Deficit de iluminacion: 6% sin cobertura",
+              "peso_relativo": "25%"
+            },
+            {
+              "factor": "Accesibilidad logistica inversa: 92.0/100",
+              "peso_relativo": "25%"
+            }
+          ],
+          "recomendaciones_mitigacion": [],
+          "razon_descarte": "",
+          "score_source": "fallback"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-048",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.163,
+                19.419
+              ],
+              [
+                -99.162,
+                19.419
+              ],
+              [
+                -99.162,
+                19.42
+              ],
+              [
+                -99.163,
+                19.42
+              ],
+              [
+                -99.163,
+                19.419
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-048",
+          "nombre": "Manzana Perisur Centro",
+          "lat": 19.4195,
+          "lng": -99.1625,
+          "densidad_poblacional": 9200,
+          "actividad_economica_denue": 295,
+          "luminosidad_viirs": 205,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 16,
+          "tipo_delito_predominante": "Robo a vehículo",
+          "iluminacion_publica": 88,
+          "accesibilidad_logistica": 86,
+          "score_riesgo": 4.82,
+          "clasificacion": "VERDE",
+          "color_leaflet": "#22c55e",
+          "factores_riesgo": [
+            {
+              "factor": "Incidencia delictiva: 16.0 delitos/ano",
+              "peso_relativo": "50%"
+            },
+            {
+              "factor": "Deficit de iluminacion: 8% sin cobertura",
+              "peso_relativo": "25%"
+            },
+            {
+              "factor": "Accesibilidad logistica inversa: 86.0/100",
+              "peso_relativo": "25%"
+            }
+          ],
+          "recomendaciones_mitigacion": [],
+          "razon_descarte": "",
+          "score_source": "fallback"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-049",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.164,
+                19.418
+              ],
+              [
+                -99.163,
+                19.418
+              ],
+              [
+                -99.163,
+                19.419
+              ],
+              [
+                -99.164,
+                19.419
+              ],
+              [
+                -99.164,
+                19.418
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-049",
+          "nombre": "Manzana Pedregal de San Ángel",
+          "lat": 19.4185,
+          "lng": -99.1635,
+          "densidad_poblacional": 6500,
+          "actividad_economica_denue": 112,
+          "luminosidad_viirs": 148,
+          "acceso_gtfs": false,
+          "incidencia_delictiva_snsp": 10,
+          "tipo_delito_predominante": "Fraude",
+          "iluminacion_publica": 82,
+          "accesibilidad_logistica": 70,
+          "score_riesgo": 11.68,
+          "clasificacion": "VERDE",
+          "color_leaflet": "#22c55e",
+          "factores_riesgo": [
+            {
+              "factor": "Incidencia delictiva: 10.0 delitos/ano",
+              "peso_relativo": "50%"
+            },
+            {
+              "factor": "Deficit de iluminacion: 15% sin cobertura",
+              "peso_relativo": "25%"
+            },
+            {
+              "factor": "Accesibilidad logistica inversa: 70.0/100",
+              "peso_relativo": "25%"
+            }
+          ],
+          "recomendaciones_mitigacion": [],
+          "razon_descarte": "",
+          "score_source": "fallback"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "MZ-050",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.165,
+                19.417
+              ],
+              [
+                -99.164,
+                19.417
+              ],
+              [
+                -99.164,
+                19.418
+              ],
+              [
+                -99.165,
+                19.418
+              ],
+              [
+                -99.165,
+                19.417
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "MZ-050",
+          "nombre": "Manzana Tecnológico–UNAM Norte",
+          "lat": 19.4175,
+          "lng": -99.1645,
+          "densidad_poblacional": 11800,
+          "actividad_economica_denue": 225,
+          "luminosidad_viirs": 188,
+          "acceso_gtfs": true,
+          "incidencia_delictiva_snsp": 20,
+          "tipo_delito_predominante": "Robo a transeúnte",
+          "iluminacion_publica": 84,
+          "accesibilidad_logistica": 82,
+          "score_riesgo": 7.83,
+          "clasificacion": "VERDE",
+          "color_leaflet": "#22c55e",
+          "factores_riesgo": [
+            {
+              "factor": "Incidencia delictiva: 20.0 delitos/ano",
+              "peso_relativo": "50%"
+            },
+            {
+              "factor": "Deficit de iluminacion: 13% sin cobertura",
+              "peso_relativo": "25%"
+            },
+            {
+              "factor": "Accesibilidad logistica inversa: 82.0/100",
+              "peso_relativo": "25%"
+            }
+          ],
+          "recomendaciones_mitigacion": [],
+          "razon_descarte": "",
+          "score_source": "fallback"
+        }
+      }
+    ]
+  },
+  "viability_scores": [
+    {
+      "id": "MZ-001",
+      "score_viabilidad": 55.29,
+      "clasificacion": "Viabilidad media"
+    },
+    {
+      "id": "MZ-002",
+      "score_viabilidad": 47.49,
+      "clasificacion": "Viabilidad media"
+    },
+    {
+      "id": "MZ-003",
+      "score_viabilidad": 38.2,
+      "clasificacion": "Descarte"
+    },
+    {
+      "id": "MZ-004",
+      "score_viabilidad": 46.51,
+      "clasificacion": "Viabilidad media"
+    },
+    {
+      "id": "MZ-005",
+      "score_viabilidad": 27.08,
+      "clasificacion": "Descarte"
+    },
+    {
+      "id": "MZ-006",
+      "score_viabilidad": 6.62,
+      "clasificacion": "Descarte"
+    },
+    {
+      "id": "MZ-007",
+      "score_viabilidad": 8.64,
+      "clasificacion": "Descarte"
+    },
+    {
+      "id": "MZ-008",
+      "score_viabilidad": 21.49,
+      "clasificacion": "Descarte"
+    },
+    {
+      "id": "MZ-009",
+      "score_viabilidad": 10.61,
+      "clasificacion": "Descarte"
+    },
+    {
+      "id": "MZ-010",
+      "score_viabilidad": 34.84,
+      "clasificacion": "Descarte"
+    },
+    {
+      "id": "MZ-011",
+      "score_viabilidad": 43.39,
+      "clasificacion": "Viabilidad media"
+    },
+    {
+      "id": "MZ-012",
+      "score_viabilidad": 49.29,
+      "clasificacion": "Viabilidad media"
+    },
+    {
+      "id": "MZ-013",
+      "score_viabilidad": 30.78,
+      "clasificacion": "Descarte"
+    },
+    {
+      "id": "MZ-014",
+      "score_viabilidad": 27.08,
+      "clasificacion": "Descarte"
+    },
+    {
+      "id": "MZ-015",
+      "score_viabilidad": 16.1,
+      "clasificacion": "Descarte"
+    },
+    {
+      "id": "MZ-016",
+      "score_viabilidad": 12.14,
+      "clasificacion": "Descarte"
+    },
+    {
+      "id": "MZ-017",
+      "score_viabilidad": 2.62,
+      "clasificacion": "Descarte"
+    },
+    {
+      "id": "MZ-018",
+      "score_viabilidad": 0.31,
+      "clasificacion": "Descarte"
+    },
+    {
+      "id": "MZ-019",
+      "score_viabilidad": 26.38,
+      "clasificacion": "Descarte"
+    },
+    {
+      "id": "MZ-020",
+      "score_viabilidad": 15.45,
+      "clasificacion": "Descarte"
+    },
+    {
+      "id": "MZ-021",
+      "score_viabilidad": 5.47,
+      "clasificacion": "Descarte"
+    },
+    {
+      "id": "MZ-022",
+      "score_viabilidad": 1.67,
+      "clasificacion": "Descarte"
+    },
+    {
+      "id": "MZ-023",
+      "score_viabilidad": 12.9,
+      "clasificacion": "Descarte"
+    },
+    {
+      "id": "MZ-024",
+      "score_viabilidad": 33.93,
+      "clasificacion": "Descarte"
+    },
+    {
+      "id": "MZ-025",
+      "score_viabilidad": 30.86,
+      "clasificacion": "Descarte"
+    },
+    {
+      "id": "MZ-026",
+      "score_viabilidad": 22.93,
+      "clasificacion": "Descarte"
+    },
+    {
+      "id": "MZ-027",
+      "score_viabilidad": 18.17,
+      "clasificacion": "Descarte"
+    },
+    {
+      "id": "MZ-028",
+      "score_viabilidad": 11.43,
+      "clasificacion": "Descarte"
+    },
+    {
+      "id": "MZ-029",
+      "score_viabilidad": 7.85,
+      "clasificacion": "Descarte"
+    },
+    {
+      "id": "MZ-030",
+      "score_viabilidad": 28.25,
+      "clasificacion": "Descarte"
+    },
+    {
+      "id": "MZ-031",
+      "score_viabilidad": 27.01,
+      "clasificacion": "Descarte"
+    },
+    {
+      "id": "MZ-032",
+      "score_viabilidad": 21.02,
+      "clasificacion": "Descarte"
+    },
+    {
+      "id": "MZ-033",
+      "score_viabilidad": 37.55,
+      "clasificacion": "Descarte"
+    },
+    {
+      "id": "MZ-034",
+      "score_viabilidad": 31.28,
+      "clasificacion": "Descarte"
+    },
+    {
+      "id": "MZ-035",
+      "score_viabilidad": 40.61,
+      "clasificacion": "Viabilidad media"
+    },
+    {
+      "id": "MZ-036",
+      "score_viabilidad": 41.97,
+      "clasificacion": "Viabilidad media"
+    },
+    {
+      "id": "MZ-037",
+      "score_viabilidad": 12.93,
+      "clasificacion": "Descarte"
+    },
+    {
+      "id": "MZ-038",
+      "score_viabilidad": 4.75,
+      "clasificacion": "Descarte"
+    },
+    {
+      "id": "MZ-039",
+      "score_viabilidad": 2.09,
+      "clasificacion": "Descarte"
+    },
+    {
+      "id": "MZ-040",
+      "score_viabilidad": 3.28,
+      "clasificacion": "Descarte"
+    },
+    {
+      "id": "MZ-041",
+      "score_viabilidad": 29.39,
+      "clasificacion": "Descarte"
+    },
+    {
+      "id": "MZ-042",
+      "score_viabilidad": 24.4,
+      "clasificacion": "Descarte"
+    },
+    {
+      "id": "MZ-043",
+      "score_viabilidad": 20.56,
+      "clasificacion": "Descarte"
+    },
+    {
+      "id": "MZ-044",
+      "score_viabilidad": 23.27,
+      "clasificacion": "Descarte"
+    },
+    {
+      "id": "MZ-045",
+      "score_viabilidad": 27.9,
+      "clasificacion": "Descarte"
+    },
+    {
+      "id": "MZ-046",
+      "score_viabilidad": 41.64,
+      "clasificacion": "Viabilidad media"
+    },
+    {
+      "id": "MZ-047",
+      "score_viabilidad": 43.26,
+      "clasificacion": "Viabilidad media"
+    },
+    {
+      "id": "MZ-048",
+      "score_viabilidad": 34.9,
+      "clasificacion": "Descarte"
+    },
+    {
+      "id": "MZ-049",
+      "score_viabilidad": 9.1,
+      "clasificacion": "Descarte"
+    },
+    {
+      "id": "MZ-050",
+      "score_viabilidad": 31.1,
+      "clasificacion": "Descarte"
+    }
+  ],
+  "scenarios": [
+    {
+      "nombre": "AGRESIVO",
+      "roi_estimado_5_anios": 156.9,
+      "payback_period_anios": 3.1,
+      "exposicion_max_riesgo_mxn": 2325600.0,
+      "zonas_seleccionadas": [
+        "MZ-001",
+        "MZ-012",
+        "MZ-002",
+        "MZ-004",
+        "MZ-011",
+        "MZ-047",
+        "MZ-036",
+        "MZ-046",
+        "MZ-035",
+        "MZ-003",
+        "MZ-033",
+        "MZ-048"
+      ],
+      "perdidas_evitadas_vs_aleatorio_mxn": 9674400.0
+    },
+    {
+      "nombre": "CONSERVADOR",
+      "roi_estimado_5_anios": 156.9,
+      "payback_period_anios": 3.1,
+      "exposicion_max_riesgo_mxn": 2325600.0,
+      "zonas_seleccionadas": [
+        "MZ-001",
+        "MZ-012",
+        "MZ-002",
+        "MZ-004",
+        "MZ-011",
+        "MZ-047",
+        "MZ-036",
+        "MZ-046",
+        "MZ-035",
+        "MZ-003",
+        "MZ-033",
+        "MZ-048"
+      ],
+      "perdidas_evitadas_vs_aleatorio_mxn": 9674400.0
+    },
+    {
+      "nombre": "EQUILIBRADO",
+      "roi_estimado_5_anios": 134.1,
+      "payback_period_anios": 3.4,
+      "exposicion_max_riesgo_mxn": 1427800.0,
+      "zonas_seleccionadas": [
+        "MZ-001",
+        "MZ-012",
+        "MZ-047",
+        "MZ-002",
+        "MZ-048",
+        "MZ-024",
+        "MZ-011",
+        "MZ-046",
+        "MZ-025",
+        "MZ-004",
+        "MZ-050",
+        "MZ-003"
+      ],
+      "perdidas_evitadas_vs_aleatorio_mxn": 10572200.0
+    }
+  ],
+  "executive_report": {
+    "resumen_ejecutivo": "El analisis multivariable de demanda y riesgo refleja oportunidades segmentadas. El escenario equilibrado presenta la mejor relacion riesgo-rendimiento mitigando factores operacionales colindantes.",
+    "escenarios": [
+      {
+        "nombre": "AGRESIVO",
+        "roi": 156.9,
+        "payback": 3.1,
+        "exposicion": 2.3256,
+        "recomendacion_narrativa": "Proyeccion algoritmica automatica para perfil AGRESIVO."
+      },
+      {
+        "nombre": "CONSERVADOR",
+        "roi": 156.9,
+        "payback": 3.1,
+        "exposicion": 2.3256,
+        "recomendacion_narrativa": "Proyeccion algoritmica automatica para perfil CONSERVADOR."
+      },
+      {
+        "nombre": "EQUILIBRADO",
+        "roi": 134.1,
+        "payback": 3.4,
+        "exposicion": 1.4278,
+        "recomendacion_narrativa": "Proyeccion algoritmica automatica para perfil EQUILIBRADO."
+      }
+    ],
+    "recomendacion_final": "Algoritmicamente, sugerimos el Escenario EQUILIBRADO por presentar un factor Sharpe interno superior.",
+    "advertencias": [
+      "Fallback algoritmico activo, analisis cualitativo IA no disponible.",
+      "Verificar parametros de ticket Inversion in situ."
+    ],
+    "proximos_pasos": [
+      "Validacion tecnica en campo.",
+      "Auditoria de iluminacion en zonas de descarte colindantes."
+    ],
+    "source": "fallback"
+  },
+  "metadata": {
+    "sector": "telecomunicaciones",
+    "timestamp": "2026-04-08T14:23:11.805273+00:00",
+    "n_manzanas_analizadas": 50,
+    "prod_mode": false,
+    "zone_filtered": false,
+    "demo_context": "Caso AXTEL: 12 antenas 4G/5G · CDMX · $24M MXN",
+    "parametros": {
+      "ticket_inversion_mxn": 2000000.0,
+      "vida_util_anios": 8,
+      "tasa_descuento": 0.12,
+      "n_unidades_objetivo": 12
+    }
+  }
+}

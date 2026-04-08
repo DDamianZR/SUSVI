@@ -303,7 +303,7 @@ export default function UrbaniaMap({
           />
           
           {/* Renderizado de Poligonos */}
-          {unifiedFeatures?.features.map((feat, i) => (
+          {unifiedFeatures?.features?.map((feat, i) => (
             <GeoJSON
               key={`${feat.properties.id || i}-${activeLayer}`} // Fuerza Re-Render cuando cambia layer
               data={feat}

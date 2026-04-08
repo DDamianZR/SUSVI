@@ -22,7 +22,9 @@ export default function App() {
 
   // Hook que administra la data a proyectar
   const { 
-    mapData, 
+    demandGeoJSON, 
+    riskGeoJSON,
+    viabilityScores,
     activeLayer, 
     setActiveLayer, 
     selectedZone, 
@@ -82,7 +84,7 @@ export default function App() {
   }, [analysisResult]);
 
   // Si no hay análisis, forzamos usar el base geojson en el mapa como demand
-  const effectiveDemandGeoJSON = analysisResult ? mapData.demandGeoJSON : baseGeoJSON;
+  const effectiveDemandGeoJSON = analysisResult ? demandGeoJSON : baseGeoJSON;
 
   return (
     <div className="flex flex-col h-screen w-full bg-slate-950 font-sans text-slate-200 overflow-hidden">
@@ -164,8 +166,8 @@ export default function App() {
         <main className="flex-1 relative z-0 bg-slate-900">
           <UrbaniaMap 
              demandGeoJSON={effectiveDemandGeoJSON}
-             riskGeoJSON={mapData.riskGeoJSON}
-             viabilityScores={mapData.viabilityScores}
+             riskGeoJSON={riskGeoJSON}
+             viabilityScores={viabilityScores}
              activeLayer={activeLayer}
              onLayerChange={setActiveLayer}
              selectedZone={selectedZone}
