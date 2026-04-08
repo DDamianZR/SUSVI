@@ -1,6 +1,8 @@
+const BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000';
+
 export const api = {
   analyze: async (sector, params, zonePolygon = null) => {
-    const res = await fetch('/api/v1/analyze', {
+    const res = await fetch(`${BASE_URL}/api/v1/analyze`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ sector, params, zone_polygon: zonePolygon })
@@ -15,13 +17,13 @@ export const api = {
   },
   
   getMockZone: async () => {
-    const res = await fetch('/api/v1/mock-zone');
+    const res = await fetch(`${BASE_URL}/api/v1/mock-zone`);
     if (!res.ok) throw new Error("No se pudo cargar la zona base.");
     return res.json();
   },
 
   health: async () => {
-    const res = await fetch('/api/v1/health');
+    const res = await fetch(`${BASE_URL}/api/v1/health`);
     if (!res.ok) throw new Error("API no disponible");
     return res.json();
   }
