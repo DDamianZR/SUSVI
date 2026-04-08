@@ -6,11 +6,13 @@ import SectorSelector from './components/Dashboard/SectorSelector.jsx';
 import MetricsPanel from './components/Dashboard/MetricsPanel.jsx';
 import ScenariosPanel from './components/Dashboard/ScenariosPanel.jsx';
 import ExecutiveReportPanel from './components/Dashboard/ExecutiveReportPanel.jsx';
+import DemoMode from './components/Demo/DemoMode.jsx';
 import { api } from './services/api.js';
 
 export default function App() {
   const [analysisState, setAnalysisState] = useState('idle'); // idle | loading | complete | error
   const [errorMessage, setErrorMessage] = useState('');
+  const [isRealtime, setIsRealtime] = useState(false);
   
   const [health, setHealth] = useState({ ok: false, mock_mode: true });
   const [baseGeoJSON, setBaseGeoJSON] = useState(null);
@@ -113,6 +115,15 @@ export default function App() {
 
       {/* ── CONTENEDOR PRINCIPAL: PANELS + MAPA ── */}
       <div className="flex-1 flex overflow-hidden relative">
+        <DemoMode 
+          onInstantLoad={(data) => {
+            setAnalysisResult(data);
+            setAnalysisState('complete');
+            setSelectedScenarioId('EQUILIBRADO');
+          }}
+          isRealtime={isRealtime}
+          onToggleRealtime={() => setIsRealtime(!isRealtime)}
+        />
         
         {/* PANEL IZQUIERDO FIJO */}
         <aside className="w-[400px] shrink-0 bg-slate-950 border-r border-slate-800 flex flex-col z-[500] shadow-2xl overflow-y-auto overflow-x-hidden">

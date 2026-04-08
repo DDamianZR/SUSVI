@@ -12,6 +12,7 @@ import logging
 import os
 import time
 import uuid
+import json
 from collections import OrderedDict
 from datetime import datetime, timezone
 from typing import Any, Dict, List, Optional
@@ -216,6 +217,22 @@ def get_mock_zone():
     except Exception as e:
         logger.error(f"Error leyendo mock_fixture: {e}")
         raise HTTPException(status_code=500, detail="El archivo base (fixture) no existe en la carpeta requerida.")
+
+@app.get("/api/v1/demo-result", summary="Obtener Cache de Demo Seed")
+def get_demo_result():
+    """Retorna el resultado pre-calculado del demo seed instantáneamente."""
+    try:
+        data_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
+        demo_path = os.path.join(data_dir, "demo_result.json")
+        if not os.path.exists(demo_path):
+             raise HTTPException(status_code=404, detail="Cache no generado. Ejecutar demo_seed.py.")
+        with open(demo_path, "r", encoding="utf-8") as f:
+             return json.load(f)
+    except HTTPException:
+        raise
+    except Exception as e:
+        logger.error(f"Error leyendo demo_result: {e}")
+        raise HTTPException(status_code=500, detail="Error de lectura de cache local.")
 
 
 @app.get("/api/v1/health", summary="Status API Check incl. conectividad Watsonx")
