@@ -1,0 +1,1 @@
+# Solo python nativo para diccionarios y fusion. No se requiere pandas ni geopandas
