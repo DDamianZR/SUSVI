@@ -1,0 +1,960 @@
+{
+  "type": "FeatureCollection",
+  "name": "zona_piloto_cdmx",
+  "crs": {
+    "type": "name",
+    "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "MZ-001",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-99.1500, 19.4320], [-99.1490, 19.4320],
+          [-99.1490, 19.4330], [-99.1500, 19.4330], [-99.1500, 19.4320]
+        ]]
+      },
+      "properties": {
+        "id": "MZ-001", "nombre": "Manzana Reforma Norte",
+        "lat": 19.4325, "lng": -99.1495,
+        "densidad_poblacional": 22000, "actividad_economica_denue": 385,
+        "luminosidad_viirs": 240, "acceso_gtfs": true,
+        "incidencia_delictiva_snsp": 28, "tipo_delito_predominante": "Robo a transeúnte",
+        "iluminacion_publica": 95, "accesibilidad_logistica": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "MZ-002",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-99.1480, 19.4310], [-99.1470, 19.4310],
+          [-99.1470, 19.4320], [-99.1480, 19.4320], [-99.1480, 19.4310]
+        ]]
+      },
+      "properties": {
+        "id": "MZ-002", "nombre": "Manzana Polanco Centro",
+        "lat": 19.4315, "lng": -99.1475,
+        "densidad_poblacional": 18500, "actividad_economica_denue": 342,
+        "luminosidad_viirs": 225, "acceso_gtfs": true,
+        "incidencia_delictiva_snsp": 21, "tipo_delito_predominante": "Fraude",
+        "iluminacion_publica": 90, "accesibilidad_logistica": 88
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "MZ-003",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-99.1460, 19.4300], [-99.1450, 19.4300],
+          [-99.1450, 19.4310], [-99.1460, 19.4310], [-99.1460, 19.4300]
+        ]]
+      },
+      "properties": {
+        "id": "MZ-003", "nombre": "Manzana Anzures Oriente",
+        "lat": 19.4305, "lng": -99.1455,
+        "densidad_poblacional": 15200, "actividad_economica_denue": 298,
+        "luminosidad_viirs": 210, "acceso_gtfs": true,
+        "incidencia_delictiva_snsp": 35, "tipo_delito_predominante": "Robo a vehículo",
+        "iluminacion_publica": 82, "accesibilidad_logistica": 80
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "MZ-004",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-99.1440, 19.4290], [-99.1430, 19.4290],
+          [-99.1430, 19.4300], [-99.1440, 19.4300], [-99.1440, 19.4290]
+        ]]
+      },
+      "properties": {
+        "id": "MZ-004", "nombre": "Manzana Cuauhtémoc Sur",
+        "lat": 19.4295, "lng": -99.1435,
+        "densidad_poblacional": 19800, "actividad_economica_denue": 361,
+        "luminosidad_viirs": 232, "acceso_gtfs": true,
+        "incidencia_delictiva_snsp": 45, "tipo_delito_predominante": "Robo a transeúnte",
+        "iluminacion_publica": 78, "accesibilidad_logistica": 85
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "MZ-005",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-99.1420, 19.4280], [-99.1410, 19.4280],
+          [-99.1410, 19.4290], [-99.1420, 19.4290], [-99.1420, 19.4280]
+        ]]
+      },
+      "properties": {
+        "id": "MZ-005", "nombre": "Manzana Doctores Poniente",
+        "lat": 19.4285, "lng": -99.1415,
+        "densidad_poblacional": 21500, "actividad_economica_denue": 310,
+        "luminosidad_viirs": 185, "acceso_gtfs": true,
+        "incidencia_delictiva_snsp": 180, "tipo_delito_predominante": "Robo con violencia",
+        "iluminacion_publica": 45, "accesibilidad_logistica": 62
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "MZ-006",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-99.1400, 19.4270], [-99.1390, 19.4270],
+          [-99.1390, 19.4280], [-99.1400, 19.4280], [-99.1400, 19.4270]
+        ]]
+      },
+      "properties": {
+        "id": "MZ-006", "nombre": "Manzana Tepito Norte",
+        "lat": 19.4275, "lng": -99.1395,
+        "densidad_poblacional": 24500, "actividad_economica_denue": 220,
+        "luminosidad_viirs": 95, "acceso_gtfs": true,
+        "incidencia_delictiva_snsp": 420, "tipo_delito_predominante": "Robo con violencia",
+        "iluminacion_publica": 20, "accesibilidad_logistica": 40
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "MZ-007",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-99.1380, 19.4260], [-99.1370, 19.4260],
+          [-99.1370, 19.4270], [-99.1380, 19.4270], [-99.1380, 19.4260]
+        ]]
+      },
+      "properties": {
+        "id": "MZ-007", "nombre": "Manzana Guerrero Centro",
+        "lat": 19.4265, "lng": -99.1375,
+        "densidad_poblacional": 20100, "actividad_economica_denue": 195,
+        "luminosidad_viirs": 110, "acceso_gtfs": true,
+        "incidencia_delictiva_snsp": 380, "tipo_delito_predominante": "Lesiones dolosas",
+        "iluminacion_publica": 28, "accesibilidad_logistica": 45
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "MZ-008",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-99.1360, 19.4250], [-99.1350, 19.4250],
+          [-99.1350, 19.4260], [-99.1360, 19.4260], [-99.1360, 19.4250]
+        ]]
+      },
+      "properties": {
+        "id": "MZ-008", "nombre": "Manzana Santa María la Ribera",
+        "lat": 19.4255, "lng": -99.1355,
+        "densidad_poblacional": 13400, "actividad_economica_denue": 175,
+        "luminosidad_viirs": 155, "acceso_gtfs": true,
+        "incidencia_delictiva_snsp": 92, "tipo_delito_predominante": "Robo a transeúnte",
+        "iluminacion_publica": 60, "accesibilidad_logistica": 66
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "MZ-009",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-99.1340, 19.4240], [-99.1330, 19.4240],
+          [-99.1330, 19.4250], [-99.1340, 19.4250], [-99.1340, 19.4240]
+        ]]
+      },
+      "properties": {
+        "id": "MZ-009", "nombre": "Manzana San Rafael Sur",
+        "lat": 19.4245, "lng": -99.1335,
+        "densidad_poblacional": 11200, "actividad_economica_denue": 142,
+        "luminosidad_viirs": 140, "acceso_gtfs": false,
+        "incidencia_delictiva_snsp": 68, "tipo_delito_predominante": "Robo a negocio",
+        "iluminacion_publica": 55, "accesibilidad_logistica": 50
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "MZ-010",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-99.1320, 19.4230], [-99.1310, 19.4230],
+          [-99.1310, 19.4240], [-99.1320, 19.4240], [-99.1320, 19.4230]
+        ]]
+      },
+      "properties": {
+        "id": "MZ-010", "nombre": "Manzana Escandón Oriente",
+        "lat": 19.4235, "lng": -99.1315,
+        "densidad_poblacional": 16300, "actividad_economica_denue": 267,
+        "luminosidad_viirs": 198, "acceso_gtfs": true,
+        "incidencia_delictiva_snsp": 52, "tipo_delito_predominante": "Fraude",
+        "iluminacion_publica": 75, "accesibilidad_logistica": 78
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "MZ-011",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-99.1300, 19.4220], [-99.1290, 19.4220],
+          [-99.1290, 19.4230], [-99.1300, 19.4230], [-99.1300, 19.4220]
+        ]]
+      },
+      "properties": {
+        "id": "MZ-011", "nombre": "Manzana Condesa Norte",
+        "lat": 19.4225, "lng": -99.1295,
+        "densidad_poblacional": 17100, "actividad_economica_denue": 318,
+        "luminosidad_viirs": 218, "acceso_gtfs": true,
+        "incidencia_delictiva_snsp": 30, "tipo_delito_predominante": "Robo a vehículo",
+        "iluminacion_publica": 88, "accesibilidad_logistica": 86
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "MZ-012",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-99.1280, 19.4210], [-99.1270, 19.4210],
+          [-99.1270, 19.4220], [-99.1280, 19.4220], [-99.1280, 19.4210]
+        ]]
+      },
+      "properties": {
+        "id": "MZ-012", "nombre": "Manzana Roma Norte Poniente",
+        "lat": 19.4215, "lng": -99.1275,
+        "densidad_poblacional": 18900, "actividad_economica_denue": 355,
+        "luminosidad_viirs": 228, "acceso_gtfs": true,
+        "incidencia_delictiva_snsp": 24, "tipo_delito_predominante": "Robo a transeúnte",
+        "iluminacion_publica": 92, "accesibilidad_logistica": 90
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "MZ-013",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-99.1260, 19.4200], [-99.1250, 19.4200],
+          [-99.1250, 19.4210], [-99.1260, 19.4210], [-99.1260, 19.4200]
+        ]]
+      },
+      "properties": {
+        "id": "MZ-013", "nombre": "Manzana Roma Sur Centro",
+        "lat": 19.4205, "lng": -99.1255,
+        "densidad_poblacional": 14500, "actividad_economica_denue": 248,
+        "luminosidad_viirs": 190, "acceso_gtfs": true,
+        "incidencia_delictiva_snsp": 48, "tipo_delito_predominante": "Robo a negocio",
+        "iluminacion_publica": 70, "accesibilidad_logistica": 72
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "MZ-014",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-99.1240, 19.4190], [-99.1230, 19.4190],
+          [-99.1230, 19.4200], [-99.1240, 19.4200], [-99.1240, 19.4190]
+        ]]
+      },
+      "properties": {
+        "id": "MZ-014", "nombre": "Manzana Narvarte Norte",
+        "lat": 19.4195, "lng": -99.1235,
+        "densidad_poblacional": 12800, "actividad_economica_denue": 210,
+        "luminosidad_viirs": 175, "acceso_gtfs": true,
+        "incidencia_delictiva_snsp": 38, "tipo_delito_predominante": "Robo a transeúnte",
+        "iluminacion_publica": 72, "accesibilidad_logistica": 70
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "MZ-015",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-99.1220, 19.4180], [-99.1210, 19.4180],
+          [-99.1210, 19.4190], [-99.1220, 19.4190], [-99.1220, 19.4180]
+        ]]
+      },
+      "properties": {
+        "id": "MZ-015", "nombre": "Manzana Del Valle Oriente",
+        "lat": 19.4185, "lng": -99.1215,
+        "densidad_poblacional": 11500, "actividad_economica_denue": 185,
+        "luminosidad_viirs": 162, "acceso_gtfs": false,
+        "incidencia_delictiva_snsp": 29, "tipo_delito_predominante": "Fraude",
+        "iluminacion_publica": 68, "accesibilidad_logistica": 63
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "MZ-016",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-99.1200, 19.4170], [-99.1190, 19.4170],
+          [-99.1190, 19.4180], [-99.1200, 19.4180], [-99.1200, 19.4170]
+        ]]
+      },
+      "properties": {
+        "id": "MZ-016", "nombre": "Manzana Benito Juárez Sur",
+        "lat": 19.4175, "lng": -99.1195,
+        "densidad_poblacional": 9800, "actividad_economica_denue": 155,
+        "luminosidad_viirs": 145, "acceso_gtfs": false,
+        "incidencia_delictiva_snsp": 22, "tipo_delito_predominante": "Robo a vehículo",
+        "iluminacion_publica": 65, "accesibilidad_logistica": 58
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "MZ-017",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-99.1180, 19.4160], [-99.1170, 19.4160],
+          [-99.1170, 19.4170], [-99.1180, 19.4170], [-99.1180, 19.4160]
+        ]]
+      },
+      "properties": {
+        "id": "MZ-017", "nombre": "Manzana Iztapalapa Noroeste",
+        "lat": 19.4165, "lng": -99.1175,
+        "densidad_poblacional": 25000, "actividad_economica_denue": 130,
+        "luminosidad_viirs": 75, "acceso_gtfs": true,
+        "incidencia_delictiva_snsp": 460, "tipo_delito_predominante": "Robo con violencia",
+        "iluminacion_publica": 15, "accesibilidad_logistica": 30
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "MZ-018",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-99.1160, 19.4150], [-99.1150, 19.4150],
+          [-99.1150, 19.4160], [-99.1160, 19.4160], [-99.1160, 19.4150]
+        ]]
+      },
+      "properties": {
+        "id": "MZ-018", "nombre": "Manzana Iztapalapa Centro",
+        "lat": 19.4155, "lng": -99.1155,
+        "densidad_poblacional": 23800, "actividad_economica_denue": 112,
+        "luminosidad_viirs": 60, "acceso_gtfs": true,
+        "incidencia_delictiva_snsp": 498, "tipo_delito_predominante": "Homicidio doloso",
+        "iluminacion_publica": 10, "accesibilidad_logistica": 25
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "MZ-019",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-99.1140, 19.4140], [-99.1130, 19.4140],
+          [-99.1130, 19.4150], [-99.1140, 19.4150], [-99.1140, 19.4140]
+        ]]
+      },
+      "properties": {
+        "id": "MZ-019", "nombre": "Manzana Coyoacán Norte",
+        "lat": 19.4145, "lng": -99.1135,
+        "densidad_poblacional": 10200, "actividad_economica_denue": 198,
+        "luminosidad_viirs": 180, "acceso_gtfs": true,
+        "incidencia_delictiva_snsp": 32, "tipo_delito_predominante": "Robo a transeúnte",
+        "iluminacion_publica": 80, "accesibilidad_logistica": 76
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "MZ-020",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-99.1120, 19.4130], [-99.1110, 19.4130],
+          [-99.1110, 19.4140], [-99.1120, 19.4140], [-99.1120, 19.4130]
+        ]]
+      },
+      "properties": {
+        "id": "MZ-020", "nombre": "Manzana Coyoacán Sur",
+        "lat": 19.4135, "lng": -99.1115,
+        "densidad_poblacional": 9500, "actividad_economica_denue": 172,
+        "luminosidad_viirs": 165, "acceso_gtfs": false,
+        "incidencia_delictiva_snsp": 18, "tipo_delito_predominante": "Fraude",
+        "iluminacion_publica": 78, "accesibilidad_logistica": 71
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "MZ-021",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-99.1100, 19.4120], [-99.1090, 19.4120],
+          [-99.1090, 19.4130], [-99.1100, 19.4130], [-99.1100, 19.4120]
+        ]]
+      },
+      "properties": {
+        "id": "MZ-021", "nombre": "Manzana Pedregal Poniente",
+        "lat": 19.4125, "lng": -99.1095,
+        "densidad_poblacional": 7200, "actividad_economica_denue": 88,
+        "luminosidad_viirs": 120, "acceso_gtfs": false,
+        "incidencia_delictiva_snsp": 15, "tipo_delito_predominante": "Robo a vehículo",
+        "iluminacion_publica": 60, "accesibilidad_logistica": 48
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "MZ-022",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-99.1080, 19.4110], [-99.1070, 19.4110],
+          [-99.1070, 19.4120], [-99.1080, 19.4120], [-99.1080, 19.4110]
+        ]]
+      },
+      "properties": {
+        "id": "MZ-022", "nombre": "Manzana Xochimilco Norte",
+        "lat": 19.4115, "lng": -99.1075,
+        "densidad_poblacional": 6800, "actividad_economica_denue": 65,
+        "luminosidad_viirs": 82, "acceso_gtfs": false,
+        "incidencia_delictiva_snsp": 55, "tipo_delito_predominante": "Robo a negocio",
+        "iluminacion_publica": 38, "accesibilidad_logistica": 35
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "MZ-023",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-99.1540, 19.4340], [-99.1530, 19.4340],
+          [-99.1530, 19.4350], [-99.1540, 19.4350], [-99.1540, 19.4340]
+        ]]
+      },
+      "properties": {
+        "id": "MZ-023", "nombre": "Manzana Lomas de Chapultepec",
+        "lat": 19.4345, "lng": -99.1535,
+        "densidad_poblacional": 5500, "actividad_economica_denue": 125,
+        "luminosidad_viirs": 195, "acceso_gtfs": false,
+        "incidencia_delictiva_snsp": 12, "tipo_delito_predominante": "Fraude",
+        "iluminacion_publica": 88, "accesibilidad_logistica": 82
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "MZ-024",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-99.1520, 19.4350], [-99.1510, 19.4350],
+          [-99.1510, 19.4360], [-99.1520, 19.4360], [-99.1520, 19.4350]
+        ]]
+      },
+      "properties": {
+        "id": "MZ-024", "nombre": "Manzana Santa Fe Centro",
+        "lat": 19.4355, "lng": -99.1515,
+        "densidad_poblacional": 8200, "actividad_economica_denue": 280,
+        "luminosidad_viirs": 215, "acceso_gtfs": true,
+        "incidencia_delictiva_snsp": 18, "tipo_delito_predominante": "Robo a vehículo",
+        "iluminacion_publica": 90, "accesibilidad_logistica": 85
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "MZ-025",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-99.1500, 19.4360], [-99.1490, 19.4360],
+          [-99.1490, 19.4370], [-99.1500, 19.4370], [-99.1500, 19.4360]
+        ]]
+      },
+      "properties": {
+        "id": "MZ-025", "nombre": "Manzana Santa Fe Norte",
+        "lat": 19.4365, "lng": -99.1495,
+        "densidad_poblacional": 7600, "actividad_economica_denue": 255,
+        "luminosidad_viirs": 208, "acceso_gtfs": true,
+        "incidencia_delictiva_snsp": 22, "tipo_delito_predominante": "Robo a transeúnte",
+        "iluminacion_publica": 87, "accesibilidad_logistica": 83
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "MZ-026",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-99.1480, 19.4370], [-99.1470, 19.4370],
+          [-99.1470, 19.4380], [-99.1480, 19.4380], [-99.1480, 19.4370]
+        ]]
+      },
+      "properties": {
+        "id": "MZ-026", "nombre": "Manzana Azcapotzalco Sur",
+        "lat": 19.4375, "lng": -99.1475,
+        "densidad_poblacional": 17800, "actividad_economica_denue": 188,
+        "luminosidad_viirs": 148, "acceso_gtfs": true,
+        "incidencia_delictiva_snsp": 95, "tipo_delito_predominante": "Robo a negocio",
+        "iluminacion_publica": 52, "accesibilidad_logistica": 60
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "MZ-027",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-99.1460, 19.4380], [-99.1450, 19.4380],
+          [-99.1450, 19.4390], [-99.1460, 19.4390], [-99.1460, 19.4380]
+        ]]
+      },
+      "properties": {
+        "id": "MZ-027", "nombre": "Manzana Azcapotzalco Norte",
+        "lat": 19.4385, "lng": -99.1455,
+        "densidad_poblacional": 16200, "actividad_economica_denue": 165,
+        "luminosidad_viirs": 130, "acceso_gtfs": true,
+        "incidencia_delictiva_snsp": 115, "tipo_delito_predominante": "Robo con violencia",
+        "iluminacion_publica": 44, "accesibilidad_logistica": 54
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "MZ-028",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-99.1440, 19.4390], [-99.1430, 19.4390],
+          [-99.1430, 19.4400], [-99.1440, 19.4400], [-99.1440, 19.4390]
+        ]]
+      },
+      "properties": {
+        "id": "MZ-028", "nombre": "Manzana Gustavo A. Madero Centro",
+        "lat": 19.4395, "lng": -99.1435,
+        "densidad_poblacional": 22500, "actividad_economica_denue": 145,
+        "luminosidad_viirs": 105, "acceso_gtfs": true,
+        "incidencia_delictiva_snsp": 290, "tipo_delito_predominante": "Robo con violencia",
+        "iluminacion_publica": 32, "accesibilidad_logistica": 42
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "MZ-029",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-99.1420, 19.4400], [-99.1410, 19.4400],
+          [-99.1410, 19.4410], [-99.1420, 19.4410], [-99.1420, 19.4400]
+        ]]
+      },
+      "properties": {
+        "id": "MZ-029", "nombre": "Manzana Gustavo A. Madero Norte",
+        "lat": 19.4405, "lng": -99.1415,
+        "densidad_poblacional": 21000, "actividad_economica_denue": 122,
+        "luminosidad_viirs": 88, "acceso_gtfs": true,
+        "incidencia_delictiva_snsp": 330, "tipo_delito_predominante": "Lesiones dolosas",
+        "iluminacion_publica": 25, "accesibilidad_logistica": 38
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "MZ-030",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-99.1400, 19.4410], [-99.1390, 19.4410],
+          [-99.1390, 19.4420], [-99.1400, 19.4420], [-99.1400, 19.4410]
+        ]]
+      },
+      "properties": {
+        "id": "MZ-030", "nombre": "Manzana Venustiano Carranza Centro",
+        "lat": 19.4415, "lng": -99.1395,
+        "densidad_poblacional": 18000, "actividad_economica_denue": 232,
+        "luminosidad_viirs": 170, "acceso_gtfs": true,
+        "incidencia_delictiva_snsp": 88, "tipo_delito_predominante": "Robo a transeúnte",
+        "iluminacion_publica": 62, "accesibilidad_logistica": 67
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "MZ-031",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-99.1380, 19.4420], [-99.1370, 19.4420],
+          [-99.1370, 19.4430], [-99.1380, 19.4430], [-99.1380, 19.4420]
+        ]]
+      },
+      "properties": {
+        "id": "MZ-031", "nombre": "Manzana Pensil Norte",
+        "lat": 19.4425, "lng": -99.1375,
+        "densidad_poblacional": 14900, "actividad_economica_denue": 205,
+        "luminosidad_viirs": 168, "acceso_gtfs": true,
+        "incidencia_delictiva_snsp": 62, "tipo_delito_predominante": "Robo a vehículo",
+        "iluminacion_publica": 68, "accesibilidad_logistica": 72
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "MZ-032",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-99.1360, 19.4430], [-99.1350, 19.4430],
+          [-99.1350, 19.4440], [-99.1360, 19.4440], [-99.1360, 19.4430]
+        ]]
+      },
+      "properties": {
+        "id": "MZ-032", "nombre": "Manzana Tacuba Centro",
+        "lat": 19.4435, "lng": -99.1355,
+        "densidad_poblacional": 16800, "actividad_economica_denue": 178,
+        "luminosidad_viirs": 145, "acceso_gtfs": true,
+        "incidencia_delictiva_snsp": 105, "tipo_delito_predominante": "Robo a negocio",
+        "iluminacion_publica": 50, "accesibilidad_logistica": 58
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "MZ-033",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-99.1340, 19.4440], [-99.1330, 19.4440],
+          [-99.1330, 19.4450], [-99.1340, 19.4450], [-99.1340, 19.4440]
+        ]]
+      },
+      "properties": {
+        "id": "MZ-033", "nombre": "Manzana Tlatelolco Oriente",
+        "lat": 19.4445, "lng": -99.1335,
+        "densidad_poblacional": 19500, "actividad_economica_denue": 265,
+        "luminosidad_viirs": 200, "acceso_gtfs": true,
+        "incidencia_delictiva_snsp": 58, "tipo_delito_predominante": "Robo a transeúnte",
+        "iluminacion_publica": 76, "accesibilidad_logistica": 80
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "MZ-034",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-99.1320, 19.4450], [-99.1310, 19.4450],
+          [-99.1310, 19.4460], [-99.1320, 19.4460], [-99.1320, 19.4450]
+        ]]
+      },
+      "properties": {
+        "id": "MZ-034", "nombre": "Manzana Garibaldi Norte",
+        "lat": 19.4455, "lng": -99.1315,
+        "densidad_poblacional": 17200, "actividad_economica_denue": 320,
+        "luminosidad_viirs": 222, "acceso_gtfs": true,
+        "incidencia_delictiva_snsp": 142, "tipo_delito_predominante": "Robo a transeúnte",
+        "iluminacion_publica": 55, "accesibilidad_logistica": 70
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "MZ-035",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-99.1300, 19.4460], [-99.1290, 19.4460],
+          [-99.1290, 19.4470], [-99.1300, 19.4470], [-99.1300, 19.4460]
+        ]]
+      },
+      "properties": {
+        "id": "MZ-035", "nombre": "Manzana Centro Histórico Poniente",
+        "lat": 19.4465, "lng": -99.1295,
+        "densidad_poblacional": 20800, "actividad_economica_denue": 398,
+        "luminosidad_viirs": 238, "acceso_gtfs": true,
+        "incidencia_delictiva_snsp": 175, "tipo_delito_predominante": "Carterismo",
+        "iluminacion_publica": 72, "accesibilidad_logistica": 82
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "MZ-036",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-99.1280, 19.4470], [-99.1270, 19.4470],
+          [-99.1270, 19.4480], [-99.1280, 19.4480], [-99.1280, 19.4470]
+        ]]
+      },
+      "properties": {
+        "id": "MZ-036", "nombre": "Manzana Centro Histórico Zócalo",
+        "lat": 19.4475, "lng": -99.1275,
+        "densidad_poblacional": 19000, "actividad_economica_denue": 390,
+        "luminosidad_viirs": 242, "acceso_gtfs": true,
+        "incidencia_delictiva_snsp": 160, "tipo_delito_predominante": "Carterismo",
+        "iluminacion_publica": 80, "accesibilidad_logistica": 85
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "MZ-037",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-99.1260, 19.4480], [-99.1250, 19.4480],
+          [-99.1250, 19.4490], [-99.1260, 19.4490], [-99.1260, 19.4480]
+        ]]
+      },
+      "properties": {
+        "id": "MZ-037", "nombre": "Manzana La Merced Norte",
+        "lat": 19.4485, "lng": -99.1255,
+        "densidad_poblacional": 22800, "actividad_economica_denue": 248,
+        "luminosidad_viirs": 128, "acceso_gtfs": true,
+        "incidencia_delictiva_snsp": 350, "tipo_delito_predominante": "Robo con violencia",
+        "iluminacion_publica": 35, "accesibilidad_logistica": 48
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "MZ-038",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-99.1240, 19.4490], [-99.1230, 19.4490],
+          [-99.1230, 19.4500], [-99.1240, 19.4500], [-99.1240, 19.4490]
+        ]]
+      },
+      "properties": {
+        "id": "MZ-038", "nombre": "Manzana Morelos Sur",
+        "lat": 19.4495, "lng": -99.1235,
+        "densidad_poblacional": 23500, "actividad_economica_denue": 135,
+        "luminosidad_viirs": 88, "acceso_gtfs": true,
+        "incidencia_delictiva_snsp": 410, "tipo_delito_predominante": "Homicidio doloso",
+        "iluminacion_publica": 18, "accesibilidad_logistica": 32
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "MZ-039",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-99.1220, 19.4500], [-99.1210, 19.4500],
+          [-99.1210, 19.4510], [-99.1220, 19.4510], [-99.1220, 19.4500]
+        ]]
+      },
+      "properties": {
+        "id": "MZ-039", "nombre": "Manzana Bondojito Centro",
+        "lat": 19.4505, "lng": -99.1215,
+        "densidad_poblacional": 21200, "actividad_economica_denue": 98,
+        "luminosidad_viirs": 70, "acceso_gtfs": false,
+        "incidencia_delictiva_snsp": 385, "tipo_delito_predominante": "Robo con violencia",
+        "iluminacion_publica": 12, "accesibilidad_logistica": 22
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "MZ-040",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-99.1200, 19.4510], [-99.1190, 19.4510],
+          [-99.1190, 19.4520], [-99.1200, 19.4520], [-99.1200, 19.4510]
+        ]]
+      },
+      "properties": {
+        "id": "MZ-040", "nombre": "Manzana Peralvillo Oriente",
+        "lat": 19.4515, "lng": -99.1195,
+        "densidad_poblacional": 20500, "actividad_economica_denue": 108,
+        "luminosidad_viirs": 80, "acceso_gtfs": false,
+        "incidencia_delictiva_snsp": 368, "tipo_delito_predominante": "Lesiones dolosas",
+        "iluminacion_publica": 20, "accesibilidad_logistica": 28
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "MZ-041",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-99.1560, 19.4260], [-99.1550, 19.4260],
+          [-99.1550, 19.4270], [-99.1560, 19.4270], [-99.1560, 19.4260]
+        ]]
+      },
+      "properties": {
+        "id": "MZ-041", "nombre": "Manzana Miguel Hidalgo Sur",
+        "lat": 19.4265, "lng": -99.1555,
+        "densidad_poblacional": 12500, "actividad_economica_denue": 215,
+        "luminosidad_viirs": 185, "acceso_gtfs": true,
+        "incidencia_delictiva_snsp": 40, "tipo_delito_predominante": "Robo a vehículo",
+        "iluminacion_publica": 80, "accesibilidad_logistica": 78
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "MZ-042",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-99.1570, 19.4250], [-99.1560, 19.4250],
+          [-99.1560, 19.4260], [-99.1570, 19.4260], [-99.1570, 19.4250]
+        ]]
+      },
+      "properties": {
+        "id": "MZ-042", "nombre": "Manzana Chapultepec Oriente",
+        "lat": 19.4255, "lng": -99.1565,
+        "densidad_poblacional": 8900, "actividad_economica_denue": 178,
+        "luminosidad_viirs": 172, "acceso_gtfs": true,
+        "incidencia_delictiva_snsp": 26, "tipo_delito_predominante": "Fraude",
+        "iluminacion_publica": 82, "accesibilidad_logistica": 79
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "MZ-043",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-99.1580, 19.4240], [-99.1570, 19.4240],
+          [-99.1570, 19.4250], [-99.1580, 19.4250], [-99.1580, 19.4240]
+        ]]
+      },
+      "properties": {
+        "id": "MZ-043", "nombre": "Manzana Observatorio Centro",
+        "lat": 19.4245, "lng": -99.1575,
+        "densidad_poblacional": 10800, "actividad_economica_denue": 148,
+        "luminosidad_viirs": 155, "acceso_gtfs": true,
+        "incidencia_delictiva_snsp": 45, "tipo_delito_predominante": "Robo a transeúnte",
+        "iluminacion_publica": 70, "accesibilidad_logistica": 65
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "MZ-044",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-99.1590, 19.4230], [-99.1580, 19.4230],
+          [-99.1580, 19.4240], [-99.1590, 19.4240], [-99.1590, 19.4230]
+        ]]
+      },
+      "properties": {
+        "id": "MZ-044", "nombre": "Manzana Popo–Álvaro Obregón",
+        "lat": 19.4235, "lng": -99.1585,
+        "densidad_poblacional": 14200, "actividad_economica_denue": 192,
+        "luminosidad_viirs": 162, "acceso_gtfs": true,
+        "incidencia_delictiva_snsp": 72, "tipo_delito_predominante": "Robo a negocio",
+        "iluminacion_publica": 62, "accesibilidad_logistica": 60
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "MZ-045",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-99.1600, 19.4220], [-99.1590, 19.4220],
+          [-99.1590, 19.4230], [-99.1600, 19.4230], [-99.1600, 19.4220]
+        ]]
+      },
+      "properties": {
+        "id": "MZ-045", "nombre": "Manzana Mixcoac Poniente",
+        "lat": 19.4225, "lng": -99.1595,
+        "densidad_poblacional": 13600, "actividad_economica_denue": 210,
+        "luminosidad_viirs": 175, "acceso_gtfs": true,
+        "incidencia_delictiva_snsp": 48, "tipo_delito_predominante": "Robo a vehículo",
+        "iluminacion_publica": 74, "accesibilidad_logistica": 73
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "MZ-046",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-99.1610, 19.4210], [-99.1600, 19.4210],
+          [-99.1600, 19.4220], [-99.1610, 19.4220], [-99.1610, 19.4210]
+        ]]
+      },
+      "properties": {
+        "id": "MZ-046", "nombre": "Manzana Insurgentes Sur Norte",
+        "lat": 19.4215, "lng": -99.1605,
+        "densidad_poblacional": 16500, "actividad_economica_denue": 305,
+        "luminosidad_viirs": 215, "acceso_gtfs": true,
+        "incidencia_delictiva_snsp": 35, "tipo_delito_predominante": "Fraude",
+        "iluminacion_publica": 85, "accesibilidad_logistica": 88
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "MZ-047",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-99.1620, 19.4200], [-99.1610, 19.4200],
+          [-99.1610, 19.4210], [-99.1620, 19.4210], [-99.1620, 19.4200]
+        ]]
+      },
+      "properties": {
+        "id": "MZ-047", "nombre": "Manzana WTC–Insurgentes",
+        "lat": 19.4205, "lng": -99.1615,
+        "densidad_poblacional": 13800, "actividad_economica_denue": 335,
+        "luminosidad_viirs": 225, "acceso_gtfs": true,
+        "incidencia_delictiva_snsp": 28, "tipo_delito_predominante": "Robo a transeúnte",
+        "iluminacion_publica": 90, "accesibilidad_logistica": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "MZ-048",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-99.1630, 19.4190], [-99.1620, 19.4190],
+          [-99.1620, 19.4200], [-99.1630, 19.4200], [-99.1630, 19.4190]
+        ]]
+      },
+      "properties": {
+        "id": "MZ-048", "nombre": "Manzana Perisur Centro",
+        "lat": 19.4195, "lng": -99.1625,
+        "densidad_poblacional": 9200, "actividad_economica_denue": 295,
+        "luminosidad_viirs": 205, "acceso_gtfs": true,
+        "incidencia_delictiva_snsp": 16, "tipo_delito_predominante": "Robo a vehículo",
+        "iluminacion_publica": 88, "accesibilidad_logistica": 86
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "MZ-049",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-99.1640, 19.4180], [-99.1630, 19.4180],
+          [-99.1630, 19.4190], [-99.1640, 19.4190], [-99.1640, 19.4180]
+        ]]
+      },
+      "properties": {
+        "id": "MZ-049", "nombre": "Manzana Pedregal de San Ángel",
+        "lat": 19.4185, "lng": -99.1635,
+        "densidad_poblacional": 6500, "actividad_economica_denue": 112,
+        "luminosidad_viirs": 148, "acceso_gtfs": false,
+        "incidencia_delictiva_snsp": 10, "tipo_delito_predominante": "Fraude",
+        "iluminacion_publica": 82, "accesibilidad_logistica": 70
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "MZ-050",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-99.1650, 19.4170], [-99.1640, 19.4170],
+          [-99.1640, 19.4180], [-99.1650, 19.4180], [-99.1650, 19.4170]
+        ]]
+      },
+      "properties": {
+        "id": "MZ-050", "nombre": "Manzana Tecnológico–UNAM Norte",
+        "lat": 19.4175, "lng": -99.1645,
+        "densidad_poblacional": 11800, "actividad_economica_denue": 225,
+        "luminosidad_viirs": 188, "acceso_gtfs": true,
+        "incidencia_delictiva_snsp": 20, "tipo_delito_predominante": "Robo a transeúnte",
+        "iluminacion_publica": 84, "accesibilidad_logistica": 82
+      }
+    }
+  ]
+}

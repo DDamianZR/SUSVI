@@ -1,0 +1,976 @@
+\documentclass[12pt,a4paper]{article}
+
+% ===================== PAQUETES =====================
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{setspace}
+\usepackage{parskip}
+\usepackage{mdframed}
+\usepackage{array}
+\usepackage{colortbl}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins, breakable}
+
+% ===================== GEOMETRÍA =====================
+\geometry{
+  top=2.5cm, bottom=2.5cm,
+  left=2.5cm, right=2.5cm
+}
+\setstretch{1.15}
+
+% ===================== COLORES =====================
+\definecolor{negro}{HTML}{1A1A1A}
+\definecolor{grisoscuro}{HTML}{333333}
+\definecolor{grismedio}{HTML}{555555}
+\definecolor{gristexto}{HTML}{666666}
+\definecolor{grisclaro}{HTML}{F5F5F5}
+\definecolor{bordetabla}{HTML}{CCCCCC}
+\definecolor{fondofila}{HTML}{F9F9F9}
+\definecolor{fondocaja}{HTML}{F7F7F7}
+\definecolor{bordecaja}{HTML}{999999}
+
+% ===================== HYPERREF =====================
+\hypersetup{
+  colorlinks=true,
+  linkcolor=negro,
+  urlcolor=grisoscuro,
+  citecolor=negro,
+  pdftitle={URBANIA — Documento de Ideación Fase 1},
+  pdfauthor={XOLUM}
+}
+
+% ===================== TÍTULOS =====================
+\titleformat{\section}
+  {\Large\bfseries\color{negro}}{}{0em}{}
+  [\vspace{2pt}{\color{grisoscuro}\hrule height 0.8pt}\vspace{4pt}]
+
+\titleformat{\subsection}
+  {\large\bfseries\color{negro}}{}{0em}{}
+
+\titleformat{\subsubsection}
+  {\normalsize\bfseries\color{grisoscuro}}{}{0em}{}
+
+\titlespacing*{\section}{0pt}{24pt}{10pt}
+\titlespacing*{\subsection}{0pt}{18pt}{8pt}
+\titlespacing*{\subsubsection}{0pt}{12pt}{6pt}
+
+% ===================== ENCABEZADO Y PIE =====================
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\color{gristexto} URBANIA — Plataforma de Inteligencia Urbana para Infraestructura}
+\fancyhead[R]{\small\color{gristexto} XOLUM}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+% ===================== CAJAS PERSONALIZADAS =====================
+\tcbset{
+  cajaprincipal/.style={
+    enhanced, breakable,
+    colback=fondocaja, colframe=bordecaja,
+    boxrule=0.5pt, left=10pt, right=10pt,
+    top=10pt, bottom=10pt, arc=2pt,
+    fonttitle=\bfseries\color{negro},
+    before skip=12pt, after skip=12pt
+  }
+}
+
+\tcbset{
+  cajasecundaria/.style={
+    enhanced, breakable,
+    colback=white, colframe=bordetabla,
+    boxrule=0.5pt, left=10pt, right=10pt,
+    top=10pt, bottom=10pt, arc=2pt,
+    fonttitle=\bfseries\color{negro},
+    before skip=12pt, after skip=12pt
+  }
+}
+
+\tcbset{
+  cajanarrativa/.style={
+    enhanced, breakable,
+    colback=grisclaro, colframe=bordetabla,
+    boxrule=0.5pt, left=10pt, right=10pt,
+    top=10pt, bottom=10pt, arc=2pt,
+    before skip=12pt, after skip=12pt
+  }
+}
+
+\newmdenv[
+  backgroundcolor=grisclaro,
+  linecolor=grisoscuro,
+  linewidth=1.5pt,
+  topline=false, bottomline=false,
+  rightline=false, leftline=true,
+  innerleftmargin=14pt, innerrightmargin=12pt,
+  innertopmargin=10pt, innerbottommargin=10pt,
+  skipabove=14pt, skipbelow=14pt
+]{tagline}
+
+% ===================== COMANDOS ÚTILES =====================
+\newcommand{\capamvp}[2]{%
+  \noindent\textbf{\color{negro}#1}\quad #2\par\vspace{4pt}%
+}
+
+\newcommand{\capafutura}[2]{%
+  \noindent\textbf{\color{gristexto}#1}\quad\textit{\color{gristexto}#2}\par\vspace{4pt}%
+}
+
+\newcommand{\theadrow}{\rowcolor{grisoscuro}}
+\newcommand{\taltrow}{\rowcolor{fondofila}}
+
+% ===================== DOCUMENTO =====================
+\begin{document}
+
+
+% ==================== ÍNDICE ====================
+\tableofcontents
+\newpage
+
+% ==================== 0. RESUMEN EJECUTIVO ====================
+\section{Resumen Ejecutivo}
+
+\begin{tcolorbox}[cajaprincipal]
+Las empresas que despliegan infraestructura urbana —telecomunicaciones, videovigilancia e iluminación— pierden millones de pesos al año en proyectos mal ubicados, con riesgo operativo subestimado y sin datos integrados de demanda real. \textbf{URBANIA resuelve exactamente eso} y lo convierte en una ventaja competitiva para el sector privado.
+
+\medskip
+\textbf{Plataforma SaaS B2B:} URBANIA opera como un servicio de suscripción dirigido a operadores de telecomunicaciones, empresas de seguridad y desarrolladoras inmobiliarias que necesitan tomar decisiones de inversión territorial basadas en datos, no en intuición. Los \textit{scores} de demanda, riesgo y viabilidad generados por URBANIA son activos analíticos con valor financiero directo.
+
+\medskip
+\textbf{MVP demostrable en 48 horas:} Ingesta de datos abiertos geolocalizados + modelo de puntuación multidimensional con IBM Watsonx AI + mapas inteligentes con capas de oportunidad y riesgo + panel ejecutivo de visualización. Todo sobre \textbf{datos simulados (mock)} para garantizar estabilidad en demo.
+
+\medskip
+\textbf{Impacto directo:} Una operadora de telecomunicaciones o una empresa de videovigilancia puede ingresar las coordenadas de cualquier zona y recibir en minutos un análisis de viabilidad con \textit{score} de demanda, índice de riesgo operativo y proyección de retorno — algo que hoy requiere entre 3 y 6 meses de estudios de mercado y consultoría especializada, con costos de \$300{,}000 a \$1{,}500{,}000 MXN por zona.
+
+\medskip
+\textbf{Diferenciador clave:} URBANIA no solo indica \textit{dónde invertir}: identifica explícitamente \textit{dónde no hacerlo}, cuantificando el riesgo operativo por robo, vandalismo y complejidad logística. Esta función protege a los clientes de inversiones destruyentes de valor antes de que ocurran.
+\end{tcolorbox}
+
+% ==================== 1. INFORMACIÓN GENERAL ====================
+\section{Información General del Proyecto}
+
+\begin{table}[H]
+\centering
+\renewcommand{\arraystretch}{1.3}
+\begin{tabularx}{\textwidth}{>{\bfseries\color{negro}}r X}
+\toprule
+Nombre del proyecto: & URBANIA — Plataforma de Inteligencia Urbana para Inversión en Infraestructura \\
+\midrule
+Track: & Ciudades Resilientes: IA Generativa para Diseñar Ciudades más Inteligentes y Sostenibles \\
+\midrule
+Equipo: & XOLUM \\
+\midrule
+Modelo de negocio: & SaaS B2B — Suscripción mensual/anual + Reportes Premium + Success Fee opcional \\
+\midrule
+Clientes objetivo: & Operadoras de telecomunicaciones · Empresas de seguridad · Desarrolladoras inmobiliarias \\
+\midrule
+Tecnología base: & IBM Watsonx AI, IBM Cloud Functions, Python, React.js, Leaflet.js, GeoPandas \\
+\midrule
+Fuentes de datos: & INEGI (DENUE, ENOE) · SNSP · OpenStreetMap · VIIRS (NASA) · GTFS \\
+\midrule
+ODS principal: & ODS 9 — Industria, Innovación e Infraestructura · ODS 11 — Ciudades Sostenibles \\
+\midrule
+\textbf{Módulos del MVP:} & \textbf{1) Score de demanda \quad 2) Score de riesgo operativo \quad 3) Score de viabilidad} \\
+\midrule
+Módulos futuros: & 4) Simulador de inversión · 5) Monitoreo IoT post-despliegue · 6) API para terceros \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+
+% ==================== 2. PROBLEMÁTICA ====================
+\newpage
+\section{Descripción de la Problemática}
+
+\subsection{Contexto general}
+
+El despliegue de infraestructura urbana —antenas de telecomunicaciones, sistemas de videovigilancia, iluminación pública y privada, y desarrollos inmobiliarios— representa una de las decisiones de inversión de mayor impacto y menor reversibilidad en el sector privado. Una vez instalada la infraestructura, los costos de reubicación pueden superar 3 veces el costo original. Sin embargo, las decisiones de ubicación siguen tomándose con información fragmentada, desactualizada y no integrada.
+
+En México, esta brecha entre la información disponible y la información realmente utilizada genera pérdidas económicas cuantificables, proyectos ineficientemente ubicados y una distribución territorial de servicios que no refleja la demanda real de las comunidades.
+
+\subsection{El problema en cifras}
+
+\begin{table}[H]
+\centering
+\small
+\renewcommand{\arraystretch}{1.3}
+\begin{tabularx}{\textwidth}{>{\bfseries}l l X l}
+\toprule
+\rowcolor{grisoscuro}
+\color{white}\textbf{Sector} & \color{white}\textbf{Indicador} & \color{white}\textbf{Dato clave} & \color{white}\textbf{Fuente} \\
+\midrule
+Telecomunicaciones & Cobertura & 23\% de zonas urbanas sin cobertura 4G/5G a pesar de tener densidad suficiente & IFT 2024 \\
+\rowcolor{fondofila}
+Videovigilancia & Eficiencia & 40\% de cámaras instaladas tienen cobertura redundante mientras persisten puntos ciegos críticos & Diagnóstico C4/C5 \\
+Iluminación & Pérdidas & 30–50\% de déficit en zonas urbanas; decisiones de instalación sin criterio técnico preventivo & NOM-013-ENER \\
+\rowcolor{fondofila}
+Inmobiliario & Riesgo & Proyectos en zonas de alta incidencia delictiva reducen valor de activos hasta 35\% & BBVA Research \\
+Infraestructura & Pérdidas & Vandalismo y robo de infraestructura urbana: pérdidas estimadas en \$8{,}000 millones MXN anuales & CMIC 2023 \\
+\rowcolor{fondofila}
+Decisión & Velocidad & 3–6 meses promedio para análisis de viabilidad territorial en proyectos de infraestructura & Diagnóstico sectorial \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{El problema de fondo: decisiones sin inteligencia integrada}
+
+Las empresas disponen de datos fragmentados en silos: INEGI publica estadísticas demográficas, el SNSP publica incidencia delictiva, las imágenes satelitales registran expansión urbana e iluminación nocturna. Pero ninguna herramienta comercial disponible en México integra estas fuentes en un modelo de decisión único, calibrado por sector y actualizable en tiempo cuasi-real.
+
+\begin{tagline}
+\textbf{El problema no es la falta de datos: es la ausencia de inteligencia que los integre.} Las empresas de infraestructura urbana toman decisiones de inversión multimillonarias con análisis que tardan meses, cuestan cientos de miles de pesos y no contemplan el riesgo operativo como variable cuantificable.
+\end{tagline}
+
+\subsection{Consecuencias directas para cada sector}
+
+\begin{table}[H]
+\centering
+\small
+\renewcommand{\arraystretch}{1.3}
+\begin{tabularx}{\textwidth}{>{\bfseries}l X X}
+\toprule
+\rowcolor{grisoscuro}
+\color{white}\textbf{Sector} & \color{white}\textbf{Consecuencia de decidir sin inteligencia} & \color{white}\textbf{Costo estimado del error} \\
+\midrule
+Telecomunicaciones & Antenas instaladas en zonas de baja adopción; saturación en zonas de alta demanda no planificada & \$2M–\$8M MXN por sitio mal ubicado \\
+\rowcolor{fondofila}
+Videovigilancia & Cámaras con cobertura redundante, puntos ciegos no detectados, robo de equipo en zonas no evaluadas & \$500K–\$2M MXN por proyecto \\
+Iluminación & Luminarias instaladas sin criterio de demanda o riesgo; mantenimiento reactivo en lugar de preventivo & \$300K–\$1.5M MXN por zona \\
+\rowcolor{fondofila}
+Inmobiliario & Desarrollos en zonas con tendencia de deterioro; activos que pierden valor antes de entregarse & \$5M–\$50M MXN por proyecto \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+
+% ==================== 3. SOLUCIÓN ====================
+\newpage
+\section{Descripción de la Solución Propuesta}
+
+\subsection{¿Qué es URBANIA?}
+
+URBANIA es una plataforma SaaS B2B de inteligencia territorial que, a partir de datos urbanos abiertos en estándares industriales (GeoJSON, GTFS, CSV) procesados con IA generativa en IBM Watsonx, genera tres \textit{scores} accionables para cualquier zona de análisis:
+
+\begin{itemize}[leftmargin=1.5cm, itemsep=4pt]
+  \item \textbf{Score de Demanda} — ¿dónde hay oportunidad real no satisfecha?
+  \item \textbf{Score de Riesgo Operativo} — ¿dónde existe mayor exposición a robo, vandalismo o complejidad logística?
+  \item \textbf{Score de Viabilidad} — ¿la rentabilidad ajustada por riesgo justifica la inversión en esta zona?
+\end{itemize}
+
+Sus reportes están diseñados para dos audiencias simultáneas: analistas de datos que necesitan información granular geolocalizada, y tomadores de decisiones —directores de expansión, CFOs, comités de inversión— que necesitan recomendaciones ejecutivas accionables.
+
+\subsection{Clientes objetivo y propuesta de valor}
+
+\begin{table}[H]
+\centering
+\small
+\renewcommand{\arraystretch}{1.3}
+\begin{tabularx}{\textwidth}{>{\bfseries}l X X}
+\toprule
+\rowcolor{grisoscuro}
+\color{white}\textbf{Segmento} & \color{white}\textbf{Problema que resuelve URBANIA} & \color{white}\textbf{Valor comercial} \\
+\midrule
+Operadoras de telecomunicaciones & Identificación de zonas con alta demanda insatisfecha de conectividad y baja penetración de competidores & Reducción de tiempo de análisis de sitio de 6 meses a minutos; priorización técnica del rollout nacional. \\
+\rowcolor{fondofila}
+Empresas de videovigilancia & Ubicación óptima de cámaras con análisis de riesgo real; evitar zonas de alto vandalismo sin cobertura de seguro & Maximización de cobertura efectiva; reducción de reposición de equipo robado o vandalizad. \\
+Desarrolladoras inmobiliarias & Selección de zonas con tendencia de valorización positiva; acreditación de viabilidad ante fondos de inversión & Portafolio de activos con menor riesgo de devaluación; soporte analítico para due diligence de inversores. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{MVP demostrable en 48 horas}
+
+El prototipo entregable al término del hackathon se concentra en los \textbf{tres módulos de mayor impacto y mayor viabilidad técnica en 48 horas}:
+
+\begin{tcolorbox}[cajasecundaria, title=Módulos del MVP — Completamente Funcionales en Demo]
+\capamvp{Módulo 1 — Score de Demanda:}{Análisis multivariable de indicadores de demanda por zona: densidad poblacional (INEGI ENOE), actividad económica (DENUE), flujos de movilidad (GTFS), y nivel de luminosidad nocturna como proxy de actividad (NASA VIIRS). El score se genera en escala 0–100 por manzana o colonia, representado como mapa de calor interactivo en Leaflet.js. Output en GeoJSON estándar para integración con SIG de terceros (ArcGIS, QGIS).}
+
+\smallskip
+\capamvp{Módulo 2 — Score de Riesgo Operativo:}{Análisis de exposición territorial al riesgo: incidencia delictiva del SNSP (robo a transeúnte, robo de vehículo, vandalismo), zonas sin cobertura de alumbrado público (proxy de riesgo nocturno), y accesibilidad logística para mantenimiento de infraestructura. El score de riesgo se superpone sobre el mapa de demanda, permitiendo identificar zonas de alta oportunidad y bajo riesgo (``zona verde de inversión'') y zonas de alta demanda pero alto riesgo (``zona de cautela'').}
+
+\smallskip
+\capamvp{Módulo 3 — Score de Viabilidad:}{Watsonx AI combina los dos scores anteriores con parámetros financieros del cliente (ticket de inversión por unidad, vida útil estimada del activo, tasa de descuento) y genera el Score de Viabilidad como una rentabilidad ajustada por riesgo. Adicionalmente, el Agente de Negocios produce tres escenarios comparables — optimista, conservador y equilibrado — con proyección de ROI y payback period para presentación ejecutiva.}
+\end{tcolorbox}
+
+\subsection{Estabilidad en demo: arquitectura con datos simulados}
+
+Para garantizar una demo robusta e independiente de conectividad externa durante el hackathon:
+
+\begin{tcolorbox}[cajasecundaria, title=Estrategia de Datos para el Hackathon]
+\capamvp{Dataset mock precargado:}{Una zona urbana representativa de 50 manzanas con todos los datos necesarios (puntos de actividad económica, red vial, incidencia delictiva por mes, luminosidad nocturna, cobertura de telecomunicaciones existente) se incluye como \textit{fixture} estático en el repositorio. Los datos siguen los estándares GeoJSON y CSV para garantizar interoperabilidad.}
+
+\smallskip
+\capamvp{Sin dependencias en tiempo real:}{El sistema \textbf{NO} realiza llamadas a APIs externas durante la demo (INEGI, SNSP, VIIRS). Todas las fuentes están pre-procesadas y disponibles localmente, garantizando una demo estable en cualquier condición de red.}
+
+\smallskip
+\capamvp{Modo producción disponible:}{El pipeline de ingesta real (Overpass API, DENUE, SNSP, Google Earth Engine) está implementado pero activable mediante \textit{flag} de configuración, permitiendo escalar a datos reales sin modificar el código del MVP.}
+\end{tcolorbox}
+
+\subsection{Flujo de operación}
+
+\begin{table}[H]
+\centering
+\small
+\renewcommand{\arraystretch}{1.3}
+\begin{tabularx}{\textwidth}{c l X}
+\toprule
+\rowcolor{grisoscuro}
+\color{white}\textbf{Paso} & \color{white}\textbf{Módulo} & \color{white}\textbf{Descripción} \\
+\midrule
+1 & Definición de zona & El cliente ingresa coordenadas o polígono de interés. Selecciona el sector de análisis (telecomunicaciones, seguridad o inmobiliario) y el ticket de inversión referencial. \\
+\rowcolor{fondofila}
+2 & Ingesta de datos & Carga del dataset mock (demo) o conexión a fuentes abiertas (producción). Normalización automática a GeoJSON estándar por colonia o manzana. \\
+3 & Procesamiento con Watsonx & Tres agentes especializados (Demanda, Riesgo y Negocios) analizan la zona en paralelo y generan los tres scores cuantificados. \\
+\rowcolor{fondofila}
+4 & Visualización & Dashboard interactivo (Leaflet.js) con mapa de calor multicapa: score de demanda, score de riesgo y score de viabilidad activables/desactivables por capa. \\
+5 & Reporte ejecutivo & Panel de métricas y exportación de reporte PDF certificado con los tres escenarios comparables, ROI estimado y recomendación de inversión sectorizada. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{Outputs del MVP}
+
+El prototipo entrega los siguientes productos concretos:
+
+\begin{itemize}[leftmargin=1.5cm, itemsep=4pt]
+  \item \textbf{Mapa de inteligencia interactivo} con tres capas activables: score de demanda (mapa de calor azul), score de riesgo (mapa de calor rojo) y score de viabilidad (capa combinada verde/amarillo/rojo). Exportable en GeoJSON para integración con ArcGIS, QGIS, AutoCAD y SAP.
+  \item \textbf{Panel de métricas por zona:} score de demanda (0–100), score de riesgo operativo (0–100), score de viabilidad ajustado, número de zonas verdes (alta oportunidad + bajo riesgo), número de zonas de cautela (alta demanda + alto riesgo) y número de zonas de descarte (bajo retorno ajustado).
+  \item \textbf{3 escenarios generados por Watsonx:} inversión agresiva en zonas verdes, inversión conservadora con máxima mitigación de riesgo, y escenario equilibrado por portafolio. Cada escenario incluye ROI estimado, payback period y exposición máxima al riesgo.
+  \item \textbf{Reporte ejecutivo exportable en PDF} con el análisis completo, fundamento de datos, supuestos del modelo y recomendación de inversión sectorizada — listo para presentar a un comité de inversión o a un fondo de capital.
+\end{itemize}
+
+\subsection{Ejemplo ilustrativo: URBANIA aplicado a una zona tipo}
+
+Para ilustrar el funcionamiento del MVP, consideremos una operadora de telecomunicaciones que evalúa desplegar 12 nuevos sitios de antena en una ciudad mediana mexicana (500{,}000 habitantes). El presupuesto disponible es de \$24 millones MXN y el equipo de expansión necesita priorizar zonas en menos de una semana.
+
+\begin{tcolorbox}[cajanarrativa]
+\textbf{Input del cliente:}
+\begin{itemize}[leftmargin=0.5cm, itemsep=2pt]
+  \item Polígono: ciudad completa (32 colonias, 180 manzanas)
+  \item Sector: telecomunicaciones
+  \item Ticket por sitio: \$2{,}000{,}000 MXN (instalación + operación año 1)
+  \item Parámetros: vida útil 8 años, tasa de descuento 12\%, cobertura objetivo 4G/5G
+\end{itemize}
+
+\medskip
+\textbf{Output generado por URBANIA en 4 minutos:}
+\begin{itemize}[leftmargin=0.5cm, itemsep=2pt]
+  \item \textbf{Zonas verdes (prioridad máxima):} 8 colonias con score de demanda $>$ 75 y score de riesgo $<$ 30. ROI estimado: 34\% a 5 años. Payback: 3.2 años.
+  \item \textbf{Zonas de cautela:} 6 colonias con alta demanda pero score de riesgo $>$ 60 (robo de equipo y vandalismo frecuente). Requieren mitigación adicional: póliza de seguro especializada o custodia activa.
+  \item \textbf{Zonas de descarte:} 18 colonias con score de viabilidad $<$ 40 por baja densidad, riesgo alto o competencia saturada. \textbf{El sistema recomienda explícitamente no invertir en estas zonas.}
+  \item \textbf{Escenario recomendado:} Desplegar los 12 sitios exclusivamente en zonas verdes. ROI del portafolio: 31\% a 5 años. Ahorro vs. distribución aleatoria: \$6{,}800{,}000 MXN en pérdidas evitadas.
+\end{itemize}
+
+\medskip
+\textbf{Impacto:} Análisis que habría tomado 4 meses y \$900{,}000 MXN en consultoría completado en 4 minutos. La recomendación de no invertir en 18 zonas evita pérdidas potenciales de \$6.8M MXN — \textbf{un ROI inmediato de 30x sobre el costo de la suscripción anual}.
+\end{tcolorbox}
+
+
+% ==================== 4. SECTORES Y CASOS DE USO ====================
+\newpage
+\section{Sectores Objetivo y Casos de Uso}
+
+URBANIA está diseñada para operar de forma transversal en tres sectores de infraestructura urbana, con un modelo de análisis común pero parámetros de ponderación ajustados por sector. Esta arquitectura multi-sector reduce la dependencia de un solo cliente y diversifica el riesgo comercial desde el primer día.
+
+\subsection{Sector 1: Telecomunicaciones}
+
+\begin{table}[H]
+\centering
+\small
+\renewcommand{\arraystretch}{1.3}
+\begin{tabularx}{\textwidth}{>{\bfseries}l X}
+\toprule
+\rowcolor{grisoscuro}
+\color{white}\textbf{Dimensión} & \color{white}\textbf{Detalle} \\
+\midrule
+Problema central & 23\% de zonas urbanas densas sin cobertura 4G/5G. Operadoras no tienen herramientas para priorizar técnicamente su plan de expansión. \\
+\rowcolor{fondofila}
+Variables de demanda & Densidad poblacional, tasa de adopción de smartphone, ingreso promedio, actividad comercial (DENUE), tráfico peatonal/vehicular. \\
+Variables de riesgo & Robo de infraestructura activa, accesibilidad para mantenimiento, exposición a interferencia electromagnética, saturación de espectro. \\
+\rowcolor{fondofila}
+Output diferenciado & Ranking de sitios candidatos con cobertura estimada, tiempo de amortización y exposición al riesgo operativo por sitio. \\
+Cliente tipo & Director de Expansión de Red / Gerente de Planeación de Cobertura de operadora nacional o regional. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{Sector 2: Seguridad y Videovigilancia}
+
+\begin{table}[H]
+\centering
+\small
+\renewcommand{\arraystretch}{1.3}
+\begin{tabularx}{\textwidth}{>{\bfseries}l X}
+\toprule
+\rowcolor{grisoscuro}
+\color{white}\textbf{Dimensión} & \color{white}\textbf{Detalle} \\
+\midrule
+Problema central & 40\% de cámaras instaladas con cobertura redundante mientras zonas de alta incidencia quedan sin vigilancia. Decisiones post-incidente, no preventivas. \\
+\rowcolor{fondofila}
+Variables de demanda & Incidencia delictiva por tipo (SNSP), densidad de activos privados asegurados, concentración de comercios formales, flujos nocturnos. \\
+Variables de riesgo & Vandalismo histórico de infraestructura de vigilancia, accesibilidad de mantenimiento, zonas de sombra legal de cobertura C4/C5. \\
+\rowcolor{fondofila}
+Output diferenciado & Mapa de cobertura óptima con zonas de despliegue prioritario, estimación de reducción de incidencia proyectada y costo por punto vigilado. \\
+Cliente tipo & Director de Operaciones / Gerente de Contratos de empresa integradora de sistemas de seguridad o gobierno municipal. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{Sector 3: Desarrollo Inmobiliario}
+
+\begin{table}[H]
+\centering
+\small
+\renewcommand{\arraystretch}{1.3}
+\begin{tabularx}{\textwidth}{>{\bfseries}l X}
+\toprule
+\rowcolor{grisoscuro}
+\color{white}\textbf{Dimensión} & \color{white}\textbf{Detalle} \\
+\midrule
+Problema central & Desarrollos ubicados sin análisis de tendencias de valorización, incidencia delictiva o expansión de servicios urbanos. Activos que pierden valor antes de entregarse. \\
+\rowcolor{fondofila}
+Variables de demanda & Expansión urbana satelital (VIIRS), crecimiento de comercio formal, acceso a transporte público (GTFS), proyectos de infraestructura pública anunciados. \\
+Variables de riesgo & Tendencia de incidencia delictiva (12 meses), riesgo de inundación, saturación de suelo, complejidad de permisos por zona. \\
+\rowcolor{fondofila}
+Output diferenciado & Score de valorización a 5 años, mapa de zonas en crecimiento vs. zonas en deterioro, soporte analítico para due diligence ante fondos de inversión. \\
+Cliente tipo & Director de Adquisiciones / Comité de Inversión de desarrolladora inmobiliaria o fondo de capital privado con activos urbanos. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+
+% ==================== 5. ALTO IMPACTO ====================
+\newpage
+\section{Alto Impacto}
+
+\subsection{Relación con el track}
+
+URBANIA se alinea directamente con los ejes del track de \textit{Ciudades Resilientes}:
+
+\begin{table}[H]
+\centering
+\small
+\renewcommand{\arraystretch}{1.3}
+\begin{tabularx}{\textwidth}{>{\bfseries}l X}
+\toprule
+\rowcolor{grisoscuro}
+\color{white}\textbf{Eje del track} & \color{white}\textbf{Contribución de URBANIA} \\
+\midrule
+Planificación urbana optimizada & Genera inteligencia territorial que permite a las empresas privadas distribuir infraestructura donde la demanda real es mayor y el riesgo operativo es menor, optimizando el uso del capital privado. \\
+\rowcolor{fondofila}
+Movilidad inteligente & Los scores de demanda incorporan datos de accesibilidad peatonal y GTFS, identificando zonas con déficit de conectividad y alta dependencia del transporte público — un criterio directo para priorizar infraestructura. \\
+Uso eficiente de recursos & Al evitar inversiones en zonas de bajo retorno o alto riesgo, URBANIA reduce el desperdicio de capital privado en infraestructura mal ubicada, liberando recursos para zonas donde el impacto es máximo. \\
+\rowcolor{fondofila}
+Resiliencia urbana & Al integrar datos de riesgo operativo (vandalismo, robo, accesibilidad), URBANIA contribuye a que la infraestructura desplegada sea más duradera y sostenible en el tiempo. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{Alineación con los ODS}
+
+\begin{table}[H]
+\centering
+\small
+\renewcommand{\arraystretch}{1.3}
+\begin{tabularx}{\textwidth}{l l X l}
+\toprule
+\rowcolor{grisoscuro}
+\color{white}\textbf{ODS} & \color{white}\textbf{Nombre} & \color{white}\textbf{Contribución de URBANIA} & \color{white}\textbf{Módulo} \\
+\midrule
+ODS 9 & Infraestructura e innovación & IA para optimizar ubicación de infraestructura urbana privada & Todos \\
+\rowcolor{fondofila}
+ODS 11 & Ciudades sostenibles & Distribución más eficiente y equitativa de infraestructura de conectividad, seguridad e iluminación & Todos \\
+ODS 10 & Reducción de desigualdades & Identificación de zonas con baja cobertura de servicios a pesar de tener demanda real & Score Demanda \\
+\rowcolor{fondofila}
+ODS 16 & Paz y justicia & Priorización técnica de videovigilancia en zonas de mayor incidencia delictiva & Score Riesgo \\
+ODS 17 & Alianzas para los objetivos & Articulación de datos abiertos gubernamentales con decisiones de inversión privada & Todos \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{Población y empresas impactadas}
+
+Los beneficiarios directos e indirectos de URBANIA incluyen:
+
+\begin{itemize}[leftmargin=1.5cm, itemsep=3pt]
+  \item \textbf{Empresas de infraestructura:} reducción de pérdidas en inversión y mejora de rentabilidad operativa.
+  \item \textbf{Comunidades en zonas no cubiertas:} acceso a conectividad, iluminación y seguridad resultado de despliegues mejor dirigidos.
+  \item \textbf{Inversores y fondos de capital:} portafolio de activos urbanos con menor riesgo de devaluación y mejor soporte analítico para due diligence.
+  \item \textbf{Gobiernos locales:} datos agregados sobre brechas de infraestructura como insumo para política pública (sin ser el cliente directo).
+  \item \textbf{Grupos vulnerables:} mujeres, adultos mayores y personas con discapacidad que se benefician de una distribución más equitativa de infraestructura de seguridad e iluminación.
+\end{itemize}
+
+
+% ==================== 6. INNOVACIÓN Y CREATIVIDAD ====================
+\newpage
+\section{Innovación y Creatividad}
+
+\subsection{¿Qué hace a URBANIA novedosa?}
+
+La novedad de URBANIA no radica en analizar datos urbanos —existen herramientas de BI, plataformas GIS y consultoras especializadas—. La innovación está en la \textbf{integración de inteligencia de demanda, riesgo operativo y viabilidad financiera en un solo flujo automatizado con IA generativa}, y en convertir ese resultado en una recomendación ejecutiva accionable en minutos.
+
+Actualmente, no existe en el mercado mexicano una herramienta que:
+
+\begin{enumerate}[leftmargin=1.5cm, itemsep=3pt]
+  \item Reciba un área geográfica y parámetros sectoriales como entrada.
+  \item Integre fuentes heterogéneas (satelital, delictiva, demográfica, económica, de movilidad) automáticamente.
+  \item Genere tres scores cuantificados (demanda, riesgo y viabilidad) calibrados por sector.
+  \item Identifique explícitamente las zonas donde \textbf{no} invertir, no solo las oportunidades.
+  \item Produzca múltiples escenarios comparables con proyecciones de ROI y payback para tomadores de decisiones no técnicos.
+  \item Entregue resultados en GeoJSON estándar interoperable con los sistemas de gestión de activos existentes.
+\end{enumerate}
+
+\subsection{Diferenciadores frente a soluciones existentes}
+
+\begin{table}[H]
+\centering
+\small
+\renewcommand{\arraystretch}{1.3}
+\begin{tabularx}{\textwidth}{X X X}
+\toprule
+\rowcolor{grisoscuro}
+\color{white}\textbf{Dimensión} & \color{white}\textbf{Alternativas actuales} & \color{white}\textbf{URBANIA} \\
+\midrule
+Costo por análisis & \$300{,}000–\$1{,}500{,}000 MXN (consultoría) & Fracción operativa (suscripción SaaS) \\
+\rowcolor{fondofila}
+Tiempo de entrega & 3–6 meses & Minutos \\
+Fuentes integradas & 1–2 fuentes (manual) & 5+ fuentes heterogéneas automáticas \\
+\rowcolor{fondofila}
+Análisis de riesgo & No contemplado o separado & Integrado y cuantificado en el score \\
+Zonas de descarte & No identificadas & Explícitas y justificadas \\
+\rowcolor{fondofila}
+Actualización & Nuevo contrato & Recálculo ante nuevos datos \\
+Formato de output & PDF estático & GeoJSON + PDF ejecutivo \\
+\rowcolor{fondofila}
+Escenarios comparables & 1 propuesta & Mínimo 3 con ROI diferenciado \\
+Accesible para PYME & No (costo prohibitivo) & Sí (modelo SaaS por suscripción) \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{Uso innovador de IA generativa}
+
+URBANIA utiliza IBM Watsonx no como un chatbot de consultas, sino como un \textbf{motor de razonamiento territorial-financiero} compuesto por tres agentes especializados que operan en paralelo:
+
+\begin{table}[H]
+\centering
+\small
+\renewcommand{\arraystretch}{1.3}
+\begin{tabularx}{\textwidth}{>{\bfseries}l X X}
+\toprule
+\rowcolor{grisoscuro}
+\color{white}\textbf{Agente} & \color{white}\textbf{Función técnica} & \color{white}\textbf{Output para el cliente} \\
+\midrule
+Agente de Demanda & Integra y pondera variables demográficas, económicas, de movilidad y de luminosidad nocturna para calcular el score de demanda por zona. Aplica pesos diferenciados según el sector del cliente (telecomunicaciones, seguridad o inmobiliario). & Mapa de calor de demanda en GeoJSON. Ranking de zonas por oportunidad. Justificación narrativa de los top 5 sitios candidatos. \\
+\rowcolor{fondofila}
+Agente de Riesgo & Procesa datos del SNSP (incidencia por tipo y mes), indicadores de accesibilidad logística y análisis de luminosidad como proxy de riesgo nocturno. Genera el score de riesgo operativo e identifica las zonas de descarte con justificación cuantificada. & Mapa de riesgo superpuesto al de demanda. Lista de zonas de descarte con motivo específico. Recomendaciones de mitigación para zonas de cautela. \\
+Agente de Negocios & Combina ambos scores con los parámetros financieros del cliente (ticket, vida útil, tasa de descuento). Genera los 3 escenarios de inversión con proyecciones de ROI, payback period y exposición máxima al riesgo. Produce el reporte ejecutivo en lenguaje para directores de inversión y CFOs. & Análisis comparativo de escenarios. Dashboard ejecutivo con métricas clave. Reporte PDF listo para comité de inversión. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+
+% ==================== 7. ESCALABILIDAD ====================
+\newpage
+\section{Escalabilidad}
+
+\subsection{Escalabilidad geográfica}
+
+La plataforma no depende de datos propietarios de ninguna ciudad específica. Al alimentarse de fuentes estandarizadas en GeoJSON y datos abiertos con cobertura nacional (INEGI, SNSP, OSM, VIIRS), puede aplicarse a cualquier zona urbana de México desde el primer día y expandirse a toda América Latina con ajuste de fuentes:
+
+\begin{table}[H]
+\centering
+\small
+\renewcommand{\arraystretch}{1.3}
+\begin{tabularx}{\textwidth}{l l X l}
+\toprule
+\rowcolor{grisoscuro}
+\color{white}\textbf{Horizonte} & \color{white}\textbf{Plazo} & \color{white}\textbf{Alcance} & \color{white}\textbf{Requerimiento} \\
+\midrule
+Validación & 0–6 meses & Zonas piloto con 2–3 clientes ancla en sectores distintos & Cambiar coordenadas \\
+\rowcolor{fondofila}
+Expansión nacional & 6–18 meses & Cualquier ciudad mexicana con cobertura INEGI/SNSP & Activar pipeline real \\
+LATAM & 18–36 meses & Colombia (DANE), Brasil (IBGE), Argentina (INDEC), Chile (INE) & Mapeo de fuentes locales \\
+\rowcolor{fondofila}
+Global emergentes & Futuro & Mercados con datos abiertos de incidencia y demografía + OSM global & Configuración regional \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{Escalabilidad funcional}
+
+La arquitectura modular de los tres agentes Watsonx permite agregar nuevas fuentes de datos y nuevas variables de análisis sin rediseñar el sistema. Extensiones previstas:
+
+\begin{itemize}[leftmargin=1.5cm, itemsep=3pt]
+  \item \textbf{Simulador de inversión interactivo:} el cliente modifica parámetros (ticket, tasa, vida útil) y el score de viabilidad se recalcula en tiempo real.
+  \item \textbf{Monitoreo IoT post-despliegue:} integración con sensores instalados para actualizar el score de riesgo con datos reales de incidencias y mantenimiento.
+  \item \textbf{API para terceros:} exposición de los tres scores como endpoints REST para integración con los sistemas de gestión de activos del cliente (SAP, Salesforce, ArcGIS).
+  \item \textbf{Nuevos sectores:} salud pública (ubicación de clínicas), educación (planteles), energía (subestaciones y generación distribuida).
+  \item \textbf{Análisis predictivo:} modelos de tendencia a 3 y 5 años sobre expansión urbana, incidencia delictiva y demanda de servicios.
+\end{itemize}
+
+\subsection{Escalabilidad técnica}
+
+La arquitectura \textit{serverless} sobre IBM Cloud Functions permite escalar automáticamente según la demanda: desde el análisis de un polígono de unas pocas manzanas hasta el análisis simultáneo de múltiples ciudades para un cliente nacional, sin cambios en la infraestructura ni provisión manual de servidores.
+
+
+% ==================== 8. MODELO DE NEGOCIO ====================
+\newpage
+\section{Modelo de Negocio SaaS B2B}
+
+URBANIA opera como una plataforma de software como servicio (SaaS) con tres fuentes de ingresos complementarias, diseñadas para no depender del gobierno como cliente y para escalar desde el primer contrato privado.
+
+\subsection{Fuente 1: Suscripción SaaS — Acceso a la Plataforma}
+
+Los clientes contratan acceso mensual o anual a la plataforma con las siguientes funcionalidades:
+
+\begin{itemize}[leftmargin=1.5cm, itemsep=3pt]
+  \item Mapas inteligentes con scores de demanda, riesgo y viabilidad ilimitados dentro del plan contratado.
+  \item Panel de métricas por zona y exportación en GeoJSON.
+  \item Actualización de datos al cierre de cada mes (SNSP publica mensualmente).
+  \item Hasta 5 usuarios simultáneos por organización.
+\end{itemize}
+
+\begin{table}[H]
+\centering
+\small
+\renewcommand{\arraystretch}{1.3}
+\begin{tabularx}{\textwidth}{>{\bfseries}l X r r}
+\toprule
+\rowcolor{grisoscuro}
+\color{white}\textbf{Plan} & \color{white}\textbf{Alcance} & \color{white}\textbf{Precio mensual} & \color{white}\textbf{Precio anual} \\
+\midrule
+Starter & Hasta 10 zonas/mes, 1 sector, 1 ciudad & \$500 USD & \$5{,}000 USD \\
+\rowcolor{fondofila}
+Professional & Zonas ilimitadas, 2 sectores, hasta 5 ciudades & \$1{,}200 USD & \$12{,}000 USD \\
+Enterprise & Multi-sector, multi-ciudad, API access, SLA garantizado & \$2{,}000+ USD & A convenir \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{Fuente 2: Reportes Premium por Ciudad o Región}
+
+Análisis personalizados bajo demanda para proyectos específicos de alta envergadura. Incluyen:
+
+\begin{itemize}[leftmargin=1.5cm, itemsep=3pt]
+  \item Análisis de toda una ciudad o región con granularidad por manzana.
+  \item Escenarios de inversión personalizados con los parámetros financieros del cliente.
+  \item Presentación ejecutiva incluida (PowerPoint + PDF certificado).
+  \item Hasta 2 rondas de ajuste paramétrico post-entrega.
+\end{itemize}
+
+\begin{table}[H]
+\centering
+\small
+\renewcommand{\arraystretch}{1.3}
+\begin{tabularx}{\textwidth}{>{\bfseries}l X r}
+\toprule
+\rowcolor{grisoscuro}
+\color{white}\textbf{Tipo de reporte} & \color{white}\textbf{Alcance} & \color{white}\textbf{Precio referencial} \\
+\midrule
+Ciudad mediana & Hasta 500{,}000 habitantes, 1 sector & \$2{,}000–\$5{,}000 USD \\
+\rowcolor{fondofila}
+Ciudad grande & Más de 500{,}000 habitantes, multi-sector & \$5{,}000–\$15{,}000 USD \\
+Región / estado & Análisis territorial amplio, múltiples ciudades & \$15{,}000–\$20{,}000 USD \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{Fuente 3: Success Fee (opcional)}
+
+Para clientes que ejecutan proyectos de inversión basados directamente en las recomendaciones de URBANIA:
+
+\begin{itemize}[leftmargin=1.5cm, itemsep=3pt]
+  \item Comisión del 1–3\% sobre el valor del proyecto ejecutado, negociable por contrato.
+  \item Aplica cuando URBANIA es el instrumento analítico documentado para la decisión de inversión.
+  \item Alinea los incentivos de URBANIA con el éxito real del cliente.
+\end{itemize}
+
+\begin{tagline}
+\textbf{Ejemplo de impact financiero del Success Fee:} Una operadora de telecomunicaciones que ejecuta un rollout de \$50 millones MXN basado en URBANIA genera un ingreso adicional de \$500{,}000 a \$1{,}500{,}000 MXN para XOLUM — sin costo adicional de adquisición de cliente.
+\end{tagline}
+
+\subsection{Propuesta de valor financiera para el cliente privado}
+
+\begin{table}[H]
+\centering
+\small
+\renewcommand{\arraystretch}{1.3}
+\begin{tabularx}{\textwidth}{X r r}
+\toprule
+\rowcolor{grisoscuro}
+\color{white}\textbf{Concepto} & \color{white}\textbf{Método tradicional} & \color{white}\textbf{URBANIA SaaS} \\
+\midrule
+Costo por análisis de zona & \$300{,}000–\$1{,}500{,}000 MXN & Plan Professional: \$1{,}200 USD/mes \\
+\rowcolor{fondofila}
+Tiempo de entrega & 3–6 meses & Minutos \\
+Cobertura geográfica & Una zona por contrato & Nacional desde el primer día \\
+\rowcolor{fondofila}
+Actualización & Nuevo contrato & Mensual (incluida en suscripción) \\
+Análisis de riesgo operativo & No incluido & Integrado en el score \\
+\rowcolor{fondofila}
+Formato de entrega & PDF estático & GeoJSON + PDF ejecutivo \\
+ROI de la herramienta & Difícil de cuantificar & 30x en pérdidas evitadas (caso tipo) \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+
+% ==================== 9. VIABILIDAD ====================
+\newpage
+\section{Viabilidad}
+
+\subsection{Viabilidad tecnológica}
+
+Todas las tecnologías propuestas están disponibles, son maduras y tienen versiones gratuitas para el prototipo:
+
+\begin{table}[H]
+\centering
+\small
+\renewcommand{\arraystretch}{1.3}
+\begin{tabularx}{\textwidth}{X X X X}
+\toprule
+\rowcolor{grisoscuro}
+\color{white}\textbf{Componente} & \color{white}\textbf{Tecnología} & \color{white}\textbf{Costo} & \color{white}\textbf{Justificación} \\
+\midrule
+IA generativa & IBM Watsonx AI (Granite 13B / Llama 3.1 70B) & Tier gratuito & Requerido por el track; modelos disponibles en Prompt Lab \\
+\rowcolor{fondofila}
+Procesamiento geodatos & Python, GeoPandas, Shapely, NumPy & Gratuito & Open source; outputs en GeoJSON estándar \\
+Datos urbanos & INEGI, OSM, SNSP, NASA VIIRS & Gratuito & Datos abiertos gubernamentales / mock en demo \\
+\rowcolor{fondofila}
+Visualización de mapas & Leaflet.js, D3.js & Gratuito & Open source; mapas interactivos con capas \\
+Frontend & React.js, Tailwind CSS & Gratuito & Open source; estándar de industria \\
+\rowcolor{fondofila}
+Backend & FastAPI (Python) & Gratuito & Open source; ideal para serverless \\
+Despliegue & IBM Cloud Functions & Tier gratuito & Serverless; requerido por el track \\
+\rowcolor{fondofila}
+Almacenamiento & IBM Cloud Object Storage & Tier gratuito & Compatible con el ecosistema IBM \\
+Análisis satelital & Google Earth Engine (Landsat/VIIRS) & Gratuito académico & Proxy de actividad nocturna y expansión urbana \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{Los tres agentes Watsonx: arquitectura de IA especializada}
+
+URBANIA implementa tres agentes Watsonx independientes que operan sobre el modelo Granite 13B de IBM —con opción a Llama 3.1 70B para el Agente de Negocios—, cada uno con un system prompt y un formato de output diferenciado:
+
+\subsubsection{Agente de Demanda}
+
+Recibe el GeoJSON enriquecido con variables demográficas (densidad, ingreso), económicas (DENUE por giro), de movilidad (GTFS) y de luminosidad nocturna (VIIRS). Aplica pesos diferenciados por sector del cliente (telecomunicaciones prioriza adopción de smartphone y densidad; seguridad prioriza actividad nocturna y flujos; inmobiliario prioriza expansión urbana y valorización). Genera el score de demanda (0–100) por manzana en JSON parseado.
+
+\subsubsection{Agente de Riesgo}
+
+Recibe datos del SNSP (últimos 12 meses, por tipo de delito), indicadores de accesibilidad logística de OSM e índice de luminosidad nocturna como proxy de riesgo nocturno. Calcula el score de riesgo operativo (0–100) por zona. Clasifica las zonas en: \textit{verde} (riesgo $<$ 30), \textit{cautela} (riesgo 30–60) y \textit{descarte} (riesgo $>$ 60). Para las zonas de cautela, genera recomendaciones específicas de mitigación. Output en JSON y GeoJSON de zonas clasificadas.
+
+\subsubsection{Agente de Negocios}
+
+Recibe los outputs de los otros dos agentes más los parámetros financieros del cliente. Calcula el Score de Viabilidad:
+\[
+SV = \frac{SD \times (1 - SR/100) \times FP}{TI}
+\]
+donde $SD$ = Score de Demanda (0–100), $SR$ = Score de Riesgo (0–100), $FP$ = factor de potencial sectorial calibrado, $TI$ = ticket de inversión normalizado. Genera los tres escenarios con ROI y payback, y produce el reporte ejecutivo en lenguaje para tomadores de decisiones no técnicos. Output en JSON con sección narrativa.
+
+\subsection{Viabilidad de datos}
+
+Todas las fuentes de datos identificadas son de acceso público y gratuito, normalizadas al estándar GeoJSON:
+
+\begin{itemize}[leftmargin=1.5cm, itemsep=3pt]
+  \item DENUE del INEGI: \url{https://www.inegi.org.mx/app/descarga/} — actividad económica geolocalizada
+  \item Incidencia delictiva SNSP: publicada mensualmente por colonia y municipio
+  \item OpenStreetMap: acceso libre vía Overpass API (red vial, POIs, accesibilidad)
+  \item NASA VIIRS Nighttime Lights: proxy de actividad económica nocturna e iluminación
+  \item Google Earth Engine: análisis satelital de expansión urbana (Landsat/Sentinel)
+  \item GTFS: datos de transporte público por ciudad (estándar abierto, cobertura nacional creciente)
+\end{itemize}
+
+\subsection{Riesgos identificados y mitigación}
+
+\begin{table}[H]
+\centering
+\small
+\renewcommand{\arraystretch}{1.3}
+\begin{tabularx}{\textwidth}{X X X}
+\toprule
+\rowcolor{grisoscuro}
+\color{white}\textbf{Riesgo} & \color{white}\textbf{Impacto} & \color{white}\textbf{Mitigación} \\
+\midrule
+Datos del SNSP desagregados a nivel de manzana no disponibles & Score de riesgo menos granular & Aggregación a nivel de colonia + proxy de iluminación VIIRS como variable complementaria \\
+\rowcolor{fondofila}
+Ciclo de venta largo B2B & Primeros ingresos demorados & Piloto gratuito de 30 días para cliente ancla de cada sector; el reporte como demostración de valor tangible \\
+Watsonx no genera escenarios financieros con calidad esperada & Proyecciones incoherentes & Prompt engineering iterativo; fallback a cálculo algorítmico puro para los scores de demanda y riesgo \\
+\rowcolor{fondofila}
+Competencia de plataformas GIS establecidas (Esri, Google Maps Platform) & Presión sobre precio & Diferenciación en riesgo operativo integrado y recomendación ejecutiva accionable — no solo visualización de datos \\
+Conectividad inestable durante demo & Falla en llamadas a APIs reales & Dataset mock precargado elimina este riesgo por completo en la demo del hackathon \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{Presupuesto estimado del prototipo}
+
+\begin{table}[H]
+\centering
+\small
+\renewcommand{\arraystretch}{1.3}
+\begin{tabularx}{\textwidth}{X r l}
+\toprule
+\rowcolor{grisoscuro}
+\color{white}\textbf{Concepto} & \color{white}\textbf{Costo} & \color{white}\textbf{Nota} \\
+\midrule
+IBM Watsonx AI (tier gratuito) & \$0 & Incluye créditos para desarrollo y demo \\
+\rowcolor{fondofila}
+IBM Cloud Functions (tier gratuito) & \$0 & Hasta 5M de invocaciones/mes \\
+Datos (INEGI, OSM, SNSP, VIIRS) + datos mock & \$0 & Acceso público / fixture local \\
+\rowcolor{fondofila}
+Google Earth Engine & \$0 & Gratuito para uso académico \\
+Herramientas de desarrollo (Python, React, etc.) & \$0 & Open source \\
+\rowcolor{fondofila}
+Dominio web (opcional para demo) & \$200–\$500 MXN & Opcional \\
+\midrule
+\rowcolor{fondofila}
+\textbf{Total estimado para prototipo} & \textbf{\$0–\$500 MXN} & \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+
+% ==================== 10. MÉRITO TÉCNICO ====================
+\newpage
+\section{Mérito Técnico}
+
+\subsection{Arquitectura del sistema}
+
+URBANIA se implementa como una aplicación \textit{cloud-native} con arquitectura serverless, compuesta por cuatro módulos independientes que se comunican mediante APIs REST. Todos los datos intermedios y finales siguen el estándar GeoJSON:
+
+\begin{table}[H]
+\centering
+\small
+\renewcommand{\arraystretch}{1.3}
+\begin{tabularx}{\textwidth}{l l X}
+\toprule
+\rowcolor{grisoscuro}
+\color{white}\textbf{Módulo} & \color{white}\textbf{Tecnología} & \color{white}\textbf{Función} \\
+\midrule
+M1 — Ingesta de datos & Python, GeoPandas, Overpass API, VIIRS & ETL de datos urbanos heterogéneos desde fuentes abiertas (o mock en demo). Normalización a GeoJSON por zona. \\
+\rowcolor{fondofila}
+M2 — Scoring & IBM Watsonx AI (3 agentes) + Python & Cálculo de los tres scores (demanda, riesgo, viabilidad) por zona. Clasificación en verde/cautela/descarte. \\
+M3 — Escenarios & Watsonx Agente de Negocios & Generación de 3 escenarios comparables con ROI, payback y reporte ejecutivo en lenguaje de negocios. \\
+\rowcolor{fondofila}
+M4 — Visualización & React.js, Leaflet.js, D3.js & Dashboard interactivo con mapa multicapa, panel de métricas, comparador de escenarios y exportación PDF. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{Aprovechamiento de las herramientas IBM}
+
+\subsubsection{Watsonx.ai — Foundation Models}
+
+Se utilizará el modelo \textbf{Granite 13B} de IBM como base para los tres agentes especializados, seleccionado por su capacidad de seguir instrucciones estructuradas, soporte nativo en Watsonx y rendimiento en tareas de razonamiento. Para el Agente de Negocios —la tarea de mayor complejidad narrativa— se evaluará \textbf{Llama 3.1 70B}, también disponible en la plataforma.
+
+\subsubsection{Watsonx Agents}
+
+Se implementan tres agentes especializados con system prompts diferenciados y formatos de output estructurados en JSON:
+
+\begin{enumerate}[leftmargin=1.5cm, itemsep=4pt]
+  \item \textbf{Agente de Demanda:} Pondera variables multi-fuente según el sector del cliente. Score (0–100) por zona en GeoJSON.
+  \item \textbf{Agente de Riesgo:} Procesa incidencia delictiva, accesibilidad y luminosidad. Clasifica zonas y genera recomendaciones de mitigación.
+  \item \textbf{Agente de Negocios:} Calcula Score de Viabilidad con la fórmula parametrizada. Genera 3 escenarios con ROI, payback y reporte ejecutivo narrativo.
+\end{enumerate}
+
+\subsubsection{Prompt Lab}
+
+El diseño de prompts para los tres agentes incluye:
+
+\begin{itemize}[leftmargin=1.5cm, itemsep=3pt]
+  \item Instrucciones de sistema diferenciadas por agente: pesos sectoriales para el Agente de Demanda; umbrales de riesgo para el Agente de Riesgo; parámetros financieros para el Agente de Negocios.
+  \item Formato de salida estructurado (JSON con campos definidos) para que las respuestas sean \textit{parseables} por el backend.
+  \item Ejemplos \textit{few-shot} de análisis de zonas y reportes ejecutivos previamente validados con datos reales.
+\end{itemize}
+
+\subsubsection{IBM Cloud Functions}
+
+El pipeline completo (ingesta → scoring → escenarios → exportación) se despliega como funciones serverless en IBM Cloud Functions. Esto garantiza escalabilidad automática desde el análisis de una zona hasta el análisis simultáneo de múltiples ciudades sin modificar la infraestructura.
+
+\subsection{Cálculos técnicos integrados}
+
+\begin{itemize}[leftmargin=1.5cm, itemsep=4pt]
+  \item \textbf{Score de Demanda (Módulo 1):} Promedio ponderado de variables normalizadas (0–100 cada una) con pesos diferenciados por sector. Ejemplo para telecomunicaciones: densidad poblacional (30\%), actividad económica DENUE (25\%), luminosidad VIIRS como proxy de actividad (20\%), acceso a transporte GTFS (15\%), ingreso estimado (10\%).
+
+  \item \textbf{Score de Riesgo (Módulo 2):} Índice compuesto de incidencia delictiva (SNSP, ponderado por tipo y frecuencia, 50\%), déficit de iluminación pública como proxy nocturno (25\%) e índice de accesibilidad logística OSM (25\%). Aplicado sobre datos de los últimos 12 meses para capturar tendencias.
+
+  \item \textbf{Score de Viabilidad (Módulo 3):}
+  \[
+    SV = \frac{SD \times (1 - SR/100) \times FP}{TI}
+  \]
+  donde $SD$ = Score de Demanda, $SR$ = Score de Riesgo, $FP$ = factor de potencial sectorial (calibrado por tipo de infraestructura), $TI$ = ticket de inversión normalizado por unidad. El resultado se traduce en categorías: \textit{Alta viabilidad} ($SV > 70$), \textit{Viabilidad media} ($SV$ 40–70) y \textit{Descarte} ($SV < 40$).
+
+  \item \textbf{Proyección de ROI y Payback:} Para cada escenario, el Agente de Negocios calcula el VPN a la tasa de descuento del cliente y el período de recuperación de la inversión, con sensibilidad sobre las variables de riesgo para modelar el rango conservador–optimista.
+\end{itemize}
+
+\subsection{Documentación técnica prevista}
+
+\begin{itemize}[leftmargin=1.5cm, itemsep=3pt]
+  \item Diagrama UML de componentes: arquitectura modular con los tres agentes Watsonx y las cuatro capas de procesamiento.
+  \item Diagrama UML de secuencia: flujo desde ingesta de datos hasta generación del reporte ejecutivo.
+  \item Diagrama UML de despliegue: infraestructura serverless en IBM Cloud Functions.
+  \item Código fuente documentado y versionado en GitHub con outputs en GeoJSON estándar.
+  \item Notebook de Watsonx con los procesos de scoring, generación de escenarios y validación de prompts.
+\end{itemize}
+
+
+% ==================== 11. CONCLUSIÓN ====================
+\newpage
+\section{Conclusión}
+
+URBANIA aborda un problema real, medible y urgente en el ecosistema de infraestructura urbana mexicano: las empresas que despliegan telecomunicaciones, videovigilancia e iluminación toman decisiones de inversión multimillonarias con información fragmentada, análisis que tardan meses y sin cuantificar el riesgo operativo como variable explícita. El resultado son proyectos mal ubicados, pérdidas evitables y una distribución de infraestructura que no refleja la demanda real.
+
+\begin{tcolorbox}[cajaprincipal, title=¿Por qué URBANIA gana?]
+\begin{itemize}[leftmargin=0.5cm, itemsep=4pt]
+  \item \textbf{Propuesta comercial de alto nivel:} URBANIA es un SaaS B2B que convierte datos urbanos dispersos en inteligencia accionable — el lenguaje que hablan los directores de expansión, los CFOs y los comités de inversión de las empresas de infraestructura.
+  \item \textbf{Técnicamente sólido:} IA generativa con IBM Watsonx (3 agentes especializados) + análisis geoespacial (GeoPandas, Shapely) + datos multi-fuente integrados (INEGI, SNSP, VIIRS, OSM, GTFS). Arquitectura serverless en IBM Cloud Functions.
+  \item \textbf{Multi-sector desde el primer día:} telecomunicaciones, seguridad y desarrollo inmobiliario como clientes simultáneos. Diversificación de ingresos sin cambiar la plataforma.
+  \item \textbf{El diferenciador que ninguna competencia tiene:} URBANIA no solo identifica dónde invertir — identifica explícitamente \textit{dónde no hacerlo}, cuantificando el riesgo operativo antes de que el dinero se despliegue.
+  \item \textbf{Modelo de negocio sin dependencia gubernamental:} clientes 100\% privados con suscripción recurrente, reportes premium y success fee. Escalable y sostenible desde el primer contrato.
+  \item \textbf{Benchmark claro:} análisis de viabilidad territorial tradicionales cuestan \$300K–\$1.5M MXN y tardan 3–6 meses. URBANIA entrega el mismo resultado en minutos a una fracción del costo mediante suscripción SaaS.
+  \item \textbf{MVP claro y demostrable en 48 horas:} tres módulos completamente funcionales (demanda + riesgo + viabilidad) sobre datos mock, sin dependencias externas en demo.
+\end{itemize}
+\end{tcolorbox}
+
+URBANIA transforma datos urbanos crudos en inteligencia de inversión accionable: sabe dónde está la demanda, cuantifica el riesgo operativo, proyecta la rentabilidad ajustada e identifica explícitamente las zonas de descarte. Todo en minutos, en formato interoperable y con un reporte listo para presentar a un comité de inversión. Es la herramienta que las empresas de infraestructura urbana necesitan — y que hoy no existe en México.
+
+
+% ==================== REFERENCIAS ====================
+\newpage
+\section{Referencias}
+
+\begin{enumerate}[label={[\arabic*]}, leftmargin=1.5cm]
+  \item INEGI. \textit{Encuesta Nacional de Ocupación y Empleo (ENOE)}. \url{https://www.inegi.org.mx/programas/enoe/}
+  \item INEGI. \textit{Directorio Estadístico Nacional de Unidades Económicas (DENUE)}. \url{https://www.inegi.org.mx/app/mapa/denue/}
+  \item Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública. \textit{Incidencia delictiva del fuero común}. \url{https://www.gob.mx/sesnsp}
+  \item Instituto Federal de Telecomunicaciones. \textit{Cobertura de redes móviles en México 2024}. \url{https://www.ift.org.mx/}
+  \item NASA. \textit{VIIRS Day/Night Band Nighttime Lights}. \url{https://earthdata.nasa.gov/}
+  \item OpenStreetMap. \url{https://www.openstreetmap.org/}
+  \item IBM. \textit{Watsonx AI — Documentación oficial}. \url{https://www.ibm.com/watsonx}
+  \item IBM. \textit{Granite Foundation Models}. \url{https://www.ibm.com/granite}
+  \item IBM. \textit{Cloud Functions — Serverless computing}. \url{https://www.ibm.com/cloud/functions}
+  \item BBVA Research. \textit{Impacto de la seguridad en el mercado inmobiliario mexicano 2024}. \url{https://www.bbvaresearch.com/}
+  \item Cámara Mexicana de la Industria de la Construcción (CMIC). \textit{Pérdidas por vandalismo en infraestructura urbana 2023}. \url{https://www.cmic.org.mx/}
+  \item Google Earth Engine. \textit{Landsat/Sentinel Dataset}. \url{https://earthengine.google.com/}
+  \item Open Geospatial Consortium. \textit{GeoJSON — RFC 7946 / ISO 19168}. \url{https://geojson.org/}
+  \item Google. \textit{General Transit Feed Specification (GTFS) Reference}. \url{https://gtfs.org/}
+  \item ONU Hábitat. \textit{ODS 11: Ciudades y comunidades sostenibles}. \url{https://www.un.org/sustainabledevelopment/cities/}
+  \item GRESB. \textit{Real Estate Assessment 2024 — ESG Benchmark for Real Assets}. \url{https://www.gresb.com/}
+\end{enumerate}
+
+\end{document}

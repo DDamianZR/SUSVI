@@ -1,0 +1,49 @@
+/* ─── URBANIA – Global Stylesheet ─────────────────────────────────────────── */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+/* ── Design Tokens ── */
+:root {
+  --color-bg:          #0a0e1a;
+  --color-surface:     #111827;
+  --color-surface-2:   #1c2539;
+  --color-border:      #1e293b;
+  --color-accent:      #6366f1;
+  --color-accent-2:    #8b5cf6;
+  --color-success:     #10b981;
+  --color-warning:     #f59e0b;
+  --color-danger:      #ef4444;
+  --color-text:        #f1f5f9;
+  --color-muted:       #64748b;
+
+  --radius-sm:  6px;
+  --radius-md:  12px;
+  --radius-lg:  20px;
+
+  --shadow-card: 0 4px 24px rgba(0,0,0,.45);
+  --transition:  all .2s cubic-bezier(.4,0,.2,1);
+}
+
+/* ── Reset ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Leaflet overrides ── */
+.leaflet-container { background: #0d1117 !important; }
+.leaflet-tile { filter: brightness(.85) saturate(.9); }
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--color-surface); }
+::-webkit-scrollbar-thumb { background: var(--color-border); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--color-accent); }
