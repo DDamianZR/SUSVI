@@ -1,0 +1,84 @@
+@startuml
+!theme cerulean
+
+title URBANIA - Diagrama de Clases (Analytics Engine)
+
+package "Core Entities" {
+    class NormalizedFeature {
+        +id: str
+        +densidad_poblacional_norm: float
+        +actividad_economica_denue_norm: float
+        +luminosidad_viirs_norm: float
+        +incidencia_delictiva_snsp_norm: float
+        +acceso_gtfs_norm: float
+        +ingreso_estimado_norm: float
+    }
+    
+    class Scenario {
+        +nombre: str
+        +recomendacion_narrativa: str
+        +estrategia_despliegue: str
+        +roi: float
+        +payback: float
+        +exposicion: float
+        +ahorro_vs_aleatorio: float
+        +zonas_seleccionadas: List[str]
+    }
+}
+
+package "Agents (IBM Watsonx Wrappers)" {
+    class DemandAgent {
+        -sector: str
+        -use_fallback_only: bool
+        -sector_weights: dict
+        -token: str
+        +__init__(sector: str, use_fallback_only: bool)
+        +score(features: List[NormalizedFeature], sector: str) -> List[dict]
+        +to_geojson(scores: List[dict], base_geojson: dict) -> dict
+        -call_watsonx(prompt: str) -> str
+    }
+    
+    class RiskAgent {
+        -use_fallback_only: bool
+        -token: str
+        +__init__(use_fallback_only: bool)
+        +score(features: List[NormalizedFeature]) -> List[dict]
+        +generate_risk_geojson(scores: List[dict], base_geojson: dict) -> dict
+        -call_watsonx(prompt: str) -> str
+    }
+    
+    class BusinessAgent {
+        -use_fallback_only: bool
+        -token: str
+        +__init__(use_fallback_only: bool)
+        +generate_scenarios(demand_scores: List[dict], risk_scores: List[dict], params: dict) -> dict
+        +to_pdf_ready_dict(exec_report: dict) -> dict
+        -call_watsonx(prompt: str) -> str
+    }
+}
+
+package "Utilities & Data" {
+    class DataIngester <<module>> {
+        +load_mock_fixture(path: str) -> dict
+        +normalize_features(geojson: dict) -> List[NormalizedFeature]
+        +run_ingestion(zone_polygon: dict, sector: str) -> List[NormalizedFeature]
+        +flag_production_sources() -> bool
+    }
+    
+    class URBANIAReportGenerator {
+        -colors: dict
+        -styles: StyleSheet
+        +__init__()
+        +generate(report_data: dict, output_path: str) -> str
+    }
+}
+
+' Relaciones
+DemandAgent "1" -- "many" NormalizedFeature : "Process"
+RiskAgent "1" -- "many" NormalizedFeature : "Process"
+BusinessAgent "1" -- "many" Scenario : "Creates"
+BusinessAgent ..> URBANIAReportGenerator : "Suministra Contexto"
+
+DataIngester ..> NormalizedFeature : "Instantiates"
+
+@enduml

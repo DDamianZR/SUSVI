@@ -1,0 +1,72 @@
+@startuml
+!theme plain
+
+title URBANIA - Diagrama de Secuencia de Inteligencia Territorial
+
+actor "Analista B2B" as User
+participant "Frontend\n(React)" as UI
+participant "API REST\n(FastAPI)" as API
+participant "DemandAgent" as DA
+participant "RiskAgent" as RA
+participant "BusinessAgent" as BA
+participant "IBM Watsonx\n(Generative AI)" as Watsonx
+
+User -> UI: Selecciona Sector y\nParámetros Financieros
+UI -> API: POST /api/v1/analyze
+activate API
+
+API -> API: M1: run_ingestion() (Normalización)
+
+par Scraping y Scoring Geográfico
+    API -> DA: score(features, sector)
+    activate DA
+    alt Modo Producción (Watsonx=True)
+        DA -> Watsonx: Prompt (Scores de Demanda)
+        Watsonx --> DA: JSON Scores Generados
+    else Modo Demo/Fallback
+        DA -> DA: Math Fallback + Mock Top3
+    end
+    DA --> API: demand_scores
+    deactivate DA
+    
+    API -> RA: score(features)
+    activate RA
+    alt Modo Producción (Watsonx=True)
+        RA -> Watsonx: Prompt (Riesgo / Mitigacion)
+        Watsonx --> RA: JSON Escenarios de Riesgo
+    else Modo Demo/Fallback
+        RA -> RA: Math Fallback (Seguridad, Ilum, Log)
+    end
+    RA --> API: risk_scores
+    deactivate RA
+end
+
+API -> BA: generate_scenarios(demand, risk, params)
+activate BA
+BA -> BA: Fórmula SV (Score de Viabilidad)
+BA -> BA: Configura 3 Escenarios (Agresivo, Conservador, Eq)
+alt Modo Producción (Watsonx=True)
+    BA -> Watsonx: Prompt Generación Reporte Ejecutivo
+    Watsonx --> BA: Narrativa C-Suite (JSON)
+else Modo Demo/Fallback
+    BA -> BA: Generación Hardcoded Narrativa
+end
+BA --> API: business_results
+deactivate BA
+
+API -> API: Ensambla GeoJSON Mapping
+API --> UI: JSON (Layers, Escenarios, Ejec. Report)
+deactivate API
+
+UI -> UI: Actualiza Leaflet Map
+UI -> User: Visualización de Calor e Interfaz C-Suite
+
+User -> UI: Clic en "Exportar PDF"
+UI -> API: POST /api/v1/export/report (format=pdf)
+activate API
+API -> API: URBANIAReportGenerator\n(ReportLab)
+API --> UI: Blob (application/pdf)
+deactivate API
+UI --> User: Descarga de archivo PDF
+
+@enduml

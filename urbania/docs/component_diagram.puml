@@ -1,0 +1,50 @@
+@startuml
+!theme mars
+
+title URBANIA - Diagrama de Componentes (M1-M4)
+
+package "Frontend (React + Vite)" {
+    [React UI] <<Web App>>
+    [Leaflet.js] <<Map Engine>>
+    [D3.js] <<Metrics>>
+    
+    [React UI] --> [Leaflet.js] : "Renderiza GeoJSON"
+    [React UI] --> [D3.js] : "Dibuja KPIs"
+}
+
+interface "REST API (FastAPI)" as API
+
+package "Backend Core (Python)" {
+    [M1: Ingestion Module] <<Data Normalization>>
+    [M2: DemandAgent] <<Watsonx AI>>
+    [M3: RiskAgent] <<Watsonx AI>>
+    [M4: BusinessAgent] <<Financial Engine>>
+    
+    API -down- [M1: Ingestion Module]
+    [M1: Ingestion Module] -right-> [M2: DemandAgent] : "Features Normalizadas"
+    [M1: Ingestion Module] -right-> [M3: RiskAgent] : "Features Normalizadas"
+    [M2: DemandAgent] --> [M4: BusinessAgent] : "Demand Scores"
+    [M3: RiskAgent] --> [M4: BusinessAgent] : "Risk Scores"
+}
+
+cloud "IBM Cloud" {
+    [Watsonx AI API] <<Granite 13B>>
+    [IBM Cloud Functions] <<Serverless>>
+}
+
+database "External Data" {
+    [DENUE (INEGI)]
+    [SNSP (Delincuencia)]
+    [VIIRS (Nocturno)]
+    [Fixture Mock (Demo)]
+}
+
+[React UI] --> API : "JSON (Params) / GET Resultados"
+[M1: Ingestion Module] -.up.> [External Data] : "Extracción"
+
+[M2: DemandAgent] <..> [Watsonx AI API] : "Prompt / JSON"
+[M3: RiskAgent] <..> [Watsonx AI API] : "Prompt / JSON"
+[M4: BusinessAgent] <..> [Watsonx AI API] : "Generación Reporte"
+
+[M1: Ingestion Module] ..> [IBM Cloud Functions] : "Desplegable (Opcional)"
+@enduml

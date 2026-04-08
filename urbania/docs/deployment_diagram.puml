@@ -1,0 +1,56 @@
+@startuml
+!theme toy
+
+title URBANIA - Diagrama de Despliegue UML
+
+node "Browser Cliente" as Browser {
+    artifact "React App (App.jsx)" as App
+    artifact "Leaflet Map DOM" as Map
+    artifact "Dashboard Widgets" as Widgets
+}
+
+node "Developer Machine / Edge Server" as DevMachine {
+    node "Vite Node.js Server" {
+        artifact "Frontend Assets (HTML, JS, CSS)" as Vite
+    }
+    
+    node "Python Server (Uvicorn)" {
+        artifact "FastAPI App (main.py)" as Backend
+        artifact "ReportLab (PDF Engine)" as PDFGen
+        
+        folder "Agentes (Python)" {
+            [BusinessAgent]
+            [RiskAgent]
+            [DemandAgent]
+        }
+    }
+}
+
+node "IBM Cloud (Nube Pública)" as Cloud {
+    node "Watsonx.ai Platform" as Watsonx {
+        [Granite 13B Model]
+    }
+    
+    node "IBM Cloud Functions\n(Alternativa Serverless)" as FaaS {
+        [urbania/analyze Action]
+        [urbania/export Action]
+    }
+}
+
+' Relaciones
+Browser --> Vite : "http (Dev/Serve)"
+Browser --> Backend : "REST API (JSON) via proxy local/produccion"
+
+Backend --> [Granite 13B Model] : "REST (Watsonx API Key)"
+
+' Si se usa el modulo Cloud Functions
+[urbania/analyze Action] ..> [Granite 13B Model] : "REST"
+Browser ..> FaaS : "Alternative API Gateway (CORS)"
+
+note bottom of DevMachine
+  URBANIA puede correr monolítico
+  localmente (uvicorn) o ser
+  orquestado hacia IBM Cloud Functions.
+end note
+
+@enduml
