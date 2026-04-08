@@ -1,0 +1,43 @@
+URBANIA - REPORTE EJECUTIVO DE INTELIGENCIA TERRITORIAL
+=====================================================
+ID Análisis: demo-seed-axtel-cdmx
+Fecha: 2026-04-08
+Sector: TELECOMUNICACIONES
+
+1. RESUMEN ESTRATÉGICO DE ZONA
+------------------------------
+Total Manzanas Analizadas: 50
+- Alta Viabilidad (Verdes): 0
+- Viabilidad Media (Cautela): 9
+- Descarte / Riesgo Alto: 41
+
+RESUMEN EJECUTIVO:
+El analisis multivariable de demanda y riesgo refleja oportunidades segmentadas. El escenario equilibrado presenta la mejor relacion riesgo-rendimiento mitigando factores operacionales colindantes.
+
+2. COMPARATIVA DE ESCENARIOS (PROYECCIÓN 5 AÑOS)
+-------------------------------------------------
+ESCENARIO AGRESIVO:
+- ROI: 156.9%
+- Payback: 3.1 años
+- Exposición Riesgo:  MXN
+- Narrativa: Proyeccion algoritmica automatica para perfil AGRESIVO.
+
+ESCENARIO CONSERVADOR:
+- ROI: 156.9%
+- Payback: 3.1 años
+- Exposición Riesgo:  MXN
+- Narrativa: Proyeccion algoritmica automatica para perfil CONSERVADOR.
+
+ESCENARIO EQUILIBRADO:
+- ROI: 134.1%
+- Payback: 3.4 años
+- Exposición Riesgo:  MXN
+- Narrativa: Proyeccion algoritmica automatica para perfil EQUILIBRADO.
+
+3. RECOMENDACIÓN ESTRATÉGICA
+----------------------------
+Algoritmicamente, sugerimos el Escenario EQUILIBRADO por presentar un factor Sharpe interno superior.
+
+4. ALERTAS Y RIESGOS
+-------------------
+- Fallback algoritmico activo, analisis cualitativo IA no disponible.\n- Verificar parametros de ticket Inversion in situ.\n\n5. PRÓXIMOS PASOS\n--------------\n- Validacion tecnica en campo.\n- Auditoria de iluminacion en zonas de descarte colindantes.
