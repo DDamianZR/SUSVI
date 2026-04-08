@@ -35,11 +35,28 @@ export default function ExecutiveReportPanel({ report, analysisId }) {
 
   const handleExportPDF = async () => {
     setExportingPDF(true);
-    // Placeholder hasta que se implemente el módulo PDF
-    setTimeout(() => {
-      alert(`Módulo PDF export (Analysis ID: ${analysisId}) - En desarrollo.`);
+    try {
+      const res = await fetch('http://localhost:8000/api/v1/export/report', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ analysis_id: analysisId, format: 'pdf' })
+      });
+      if (!res.ok) throw new Error('Error al exportar PDF');
+      
+      const blob = await res.blob();
+      const url = window.URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `Reporte_Ejecutivo_${analysisId.substring(0,8)}.pdf`;
+      document.body.appendChild(a);
+      a.click();
+      window.URL.revokeObjectURL(url);
+      document.body.removeChild(a);
+    } catch (e) {
+      alert("Error en exportación PDF: " + e.message);
+    } finally {
       setExportingPDF(false);
-    }, 1000);
+    }
   };
 
   return (

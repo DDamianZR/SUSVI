@@ -18,7 +18,7 @@ from typing import Any, Dict, List, Optional
 
 from fastapi import FastAPI, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import JSONResponse
+from fastapi.responses import JSONResponse, FileResponse
 from pydantic import BaseModel, Field
 
 # ── Importaciones Internas (Agentes y Utils) ──────────────────────────────
@@ -26,6 +26,7 @@ from data.ingest import flag_production_sources, load_mock_fixture, run_ingestio
 from agents.demand_agent import DemandAgent
 from agents.risk_agent import RiskAgent
 from agents.business_agent import BusinessAgent
+from utils.pdf_generator import URBANIAReportGenerator
 
 # ── 1. Configuracion de Logging ───────────────────────────────────────────
 logging.basicConfig(
@@ -98,8 +99,8 @@ class ExportReportRequest(BaseModel):
     analysis_id: str = Field(..., description="ID unico del analisis retornado por el API.")
     format: str = Field(
         default="json", 
-        pattern="^(json|pdf_ready)$",
-        description="Formato de salida requerido para el reporte ejecutivo. json (raw) o pdf_ready (plano)."
+        pattern="^(json|pdf_ready|pdf)$",
+        description="Formato de salida requerido para el reporte ejecutivo. json, pdf_ready o pdf."
     )
 
 
@@ -312,6 +313,36 @@ async def export_report(req: ExportReportRequest):
             "metadata": data["metadata"]
         })
         return pdf_dict
+        
+    if req.format == "pdf":
+        dummy_agent = BusinessAgent(use_fallback_only=True)
+        pdf_dict = dummy_agent.to_pdf_ready_dict({"reporte_ejecutivo": data["executive_report"]})
+        pdf_dict.update({
+            "analysis_id": data["analysis_id"],
+            "metadata": data["metadata"]
+        })
+        
+        # Calculate KPIs
+        vs = data.get("viability_scores", [])
+        kpis = {
+            "verdes": len([v for v in vs if v["clasificacion"] == "Alta viabilidad"]),
+            "cautela": len([v for v in vs if v["clasificacion"] == "Viabilidad media"]),
+            "descarte": len([v for v in vs if v["clasificacion"] == "Descarte"])
+        }
+        pdf_dict["kpis"] = kpis
+        
+        output_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "tmp")
+        os.makedirs(output_dir, exist_ok=True)
+        output_path = os.path.join(output_dir, f"reporte_{req.analysis_id}.pdf")
+        
+        generator = URBANIAReportGenerator()
+        generator.generate(pdf_dict, output_path)
+        
+        return FileResponse(
+            path=output_path,
+            media_type="application/pdf",
+            filename=f"Reporte_Ejecutivo_{req.analysis_id}.pdf"
+        )
         
     # Salida por Defecto JSON completo
     return {
